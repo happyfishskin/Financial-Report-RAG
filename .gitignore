@@ -1,0 +1,31 @@
+# 秘密
+.env
+.env.*
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 資料（以 system/ 內管線重建，不入版控）
+system/reports_html_copy/
+system/reports_csv_output/
+system/vector_db/
+system/investment_graph_output/
+system/related_party_graph_output/
+system/risk_event_graph_output/
+system/supply_chain_graph_output/
+system/dict.txt.big
+system/_cross_industry_*/
+system/_semi_*/
+system/.fonts/
+system/results/
+system/slides_assets/
+legacy_v12/reports_csv_output
+legacy_v12/vector_db
+baseline_pure_rag/models/*.gguf
+baseline_pure_rag/_cache/
+baseline_pure_rag/results/
+system/out/
+legacy_v12/out/

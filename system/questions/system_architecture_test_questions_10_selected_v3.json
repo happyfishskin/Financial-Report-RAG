@@ -1,0 +1,165 @@
+[
+  {
+    "id": "arch_selected_01",
+    "question_type": "direct_numeric_lookup",
+    "question": "請查詢【家登精密工業】在【114Q4】的【匯率變動對現金及約當現金之影響 Effect of exchange rate changes on cash and cash equivalents】（2024年1月1日至12月31日 2024/1/1To12/31）是多少？",
+    "expected_answer": "22,185",
+    "metadata": {
+      "target_route": "direct_lookup_or_vector",
+      "company_code": "3680",
+      "company_name": "家登精密工業",
+      "quarter": "114Q4",
+      "table_name": "現金流量表",
+      "item_name": "匯率變動對現金及約當現金之影響 Effect of exchange rate changes on cash and cash equivalents",
+      "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+      "source_csv": "3680_114Q4_現金流量表.csv"
+    },
+    "original_id": "arch_test_001"
+  },
+  {
+    "id": "arch_selected_02",
+    "question_type": "direct_numeric_lookup",
+    "question": "請查詢【台灣光罩】在【114Q2】的【營業收入合計 Total operating revenue】（2024年4月1日至6月30日 2024/4/1To6/30）是多少？",
+    "expected_answer": "1,997,876",
+    "metadata": {
+      "target_route": "direct_lookup_or_vector",
+      "company_code": "2338",
+      "company_name": "台灣光罩",
+      "quarter": "114Q2",
+      "table_name": "綜合損益表",
+      "item_name": "營業收入合計 Total operating revenue",
+      "column_header": "2024年4月1日至6月30日 2024/4/1To6/30",
+      "source_csv": "2338_114Q2_綜合損益表.csv"
+    },
+    "original_id": "arch_test_002"
+  },
+  {
+    "id": "arch_selected_03",
+    "question_type": "cross_company_compare",
+    "question": "請比較【旺矽科技】與【智原科技】在【113Q1】的【不動產、廠房及設備 Property, plant and equipment】（2023年12月31日 2023/12/31）分別是多少？",
+    "expected_answer": "旺矽科技: 3,390,814 ｜ 智原科技: 552,569",
+    "metadata": {
+      "target_route": "direct_lookup_multi_company",
+      "quarter": "113Q1",
+      "item_name": "不動產、廠房及設備 Property, plant and equipment",
+      "column_header": "2023年12月31日 2023/12/31",
+      "companies": [
+        "6223",
+        "3035"
+      ]
+    },
+    "original_id": "arch_test_040"
+  },
+  {
+    "id": "arch_selected_04",
+    "question_type": "cross_company_compare",
+    "question": "請比較【穩懋半導體】與【群聯電子】在【113Q1】的【不動產、廠房及設備 Property, plant and equipment】（2024年3月31日 2024/3/31）分別是多少？",
+    "expected_answer": "穩懋半導體: 30,643,992 ｜ 群聯電子: 7,324,270",
+    "metadata": {
+      "target_route": "direct_lookup_multi_company",
+      "quarter": "113Q1",
+      "item_name": "不動產、廠房及設備 Property, plant and equipment",
+      "column_header": "2024年3月31日 2024/3/31",
+      "companies": [
+        "3105",
+        "8299"
+      ]
+    },
+    "original_id": "arch_test_042"
+  },
+  {
+    "id": "arch_selected_05",
+    "question_type": "cross_period_compare",
+    "question": "請比較【聯華電子】在【113Q2】與【113Q3】的【不動產、廠房及設備 Property, plant and equipment】（2023年12月31日 2023/12/31）各是多少？",
+    "expected_answer": "113Q2: 239,123,248 ｜ 113Q3: 239,123,248",
+    "metadata": {
+      "target_route": "direct_lookup_multi_period",
+      "company_code": "2303",
+      "company_name": "聯華電子",
+      "periods": [
+        "113Q2",
+        "113Q3"
+      ],
+      "item_name": "不動產、廠房及設備 Property, plant and equipment",
+      "column_header": "2023年12月31日 2023/12/31"
+    },
+    "original_id": "arch_test_051"
+  },
+  {
+    "id": "arch_selected_06",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【家登精密工業】【113Q3】的【應收關係人款項】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 3680_113Q3_應收關係人款項.md；表名為「應收關係人款項」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "3680",
+      "company_name": "家登精密工業",
+      "quarter": "113Q3",
+      "table_name": "應收關係人款項",
+      "source_md": "reports_csv_output/3680_家登精密工業/113Q3/3680_113Q3_應收關係人款項.md"
+    },
+    "original_id": "arch_test_061"
+  },
+  {
+    "id": "arch_selected_07",
+    "question_type": "investment_graph",
+    "question": "根據投資關係圖譜，【大聯大控股】在【114Q1】揭露的投資方【世友投資股份有限公司】投資了哪一家被投資公司？",
+    "expected_answer": "子擎顧問股份有限公司",
+    "metadata": {
+      "target_route": "graph_rag_investment",
+      "company_code": "3702",
+      "company_name": "大聯大控股",
+      "quarter": "114Q1",
+      "investor_name": "世友投資股份有限公司",
+      "investee_name": "子擎顧問股份有限公司",
+      "source_csv": "reports_csv_output/3702_大聯大控股/114Q1/3702_114Q1_被投資公司名稱、所在地區…等相關資訊.csv"
+    },
+    "original_id": "arch_test_071"
+  },
+  {
+    "id": "arch_selected_08",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【群聯電子】在【113Q2】的【電子產品軟硬件的研發、生產、銷售、技術服務等相關業務及一般投資業】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "合肥芯鵬技術有限公司；本期期初自台灣匯出累積投資金額=0; 本期期末自台灣匯出累積投資金額=0; 被投資公司本期損益=( 38,763 ); 本期認列投資損益=( 9,393 ); 截至本期止已匯回台灣之投資收益=0",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "8299",
+      "company_name": "群聯電子",
+      "quarter": "113Q2",
+      "account": "電子產品軟硬件的研發、生產、銷售、技術服務等相關業務及一般投資業",
+      "party_or_category": "合肥芯鵬技術有限公司",
+      "source_csv": "reports_csv_output/8299_群聯電子/113Q2/8299_113Q2_轉投資大陸地區之事業相關資訊.csv"
+    },
+    "original_id": "arch_test_084"
+  },
+  {
+    "id": "arch_selected_09",
+    "question_type": "supply_chain_graph",
+    "question": "根據半導體產業鏈圖譜，【京碼】屬於哪個產業鏈階段與 segment？",
+    "expected_answer": "下游；生產製程及檢測設備",
+    "metadata": {
+      "target_route": "graph_rag_supply_chain",
+      "company_code": "7611",
+      "company_name": "京碼",
+      "stage": "下游",
+      "segment": "生產製程及檢測設備"
+    },
+    "original_id": "arch_test_091"
+  },
+  {
+    "id": "arch_selected_10",
+    "question_type": "risk_event_graph",
+    "question": "根據風險事件圖譜，【旺矽科技】在【114Q4】的財務科目【其他應付款增加（減少） Increase (decrease) in other payable】被標記為哪一類風險候選？",
+    "expected_answer": "營運資金壓力",
+    "metadata": {
+      "target_route": "graph_rag_risk_event",
+      "company_code": "6223",
+      "company_name": "旺矽科技",
+      "quarter": "114Q4",
+      "item_name": "其他應付款增加（減少） Increase (decrease) in other payable",
+      "matched_risks": "營運資金壓力",
+      "source_fact_file": "reports_csv_output/6223_旺矽科技/114Q4/6223_114Q4_all_table_facts.csv"
+    },
+    "original_id": "arch_test_096"
+  }
+]

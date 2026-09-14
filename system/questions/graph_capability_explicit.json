@@ -1,0 +1,620 @@
+[
+ {
+  "id": "graph_cap_071",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【大聯大控股】在【114Q1】揭露的投資方【世友投資股份有限公司】投資了哪一家主要業務為【資訊軟體服務業】的被投資公司？",
+  "expected_answer": "子擎顧問股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "3702",
+   "company_name": "大聯大控股",
+   "quarter": "114Q1",
+   "investor_name": "世友投資股份有限公司",
+   "investee_name": "子擎顧問股份有限公司",
+   "source_csv": "reports_csv_output/3702_大聯大控股/114Q1/3702_114Q1_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "main_business",
+    "value": "資訊軟體服務業"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_072",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【群聯電子】在【114Q4】揭露的投資方【群欣電子股份有限公司】投資了哪一家主要業務為【快閃記憶體相關應用產品及軟體之開發、設計、銷售和技術服務】的被投資公司？",
+  "expected_answer": "Miphi Semiconductors Private Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "8299",
+   "company_name": "群聯電子",
+   "quarter": "114Q4",
+   "investor_name": "群欣電子股份有限公司",
+   "investee_name": "Miphi Semiconductors Private Limited",
+   "source_csv": "reports_csv_output/8299_群聯電子/114Q4/8299_114Q4_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "main_business",
+    "value": "快閃記憶體相關應用產品及軟體之開發、設計、銷售和技術服務"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_073",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【聯詠科技】在【113Q3】揭露的投資方【聯詠科技(股)公司】投資了哪一家所在地為【香港】的被投資公司？",
+  "expected_answer": "NTK International Limited（迅捷）",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "3034",
+   "company_name": "聯詠科技",
+   "quarter": "113Q3",
+   "investor_name": "聯詠科技(股)公司",
+   "investee_name": "NTK International Limited（迅捷）",
+   "source_csv": "reports_csv_output/3034_聯詠科技/113Q3/3034_113Q3_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "location",
+    "value": "香港"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_074",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【家登精密工業】在【113Q1】揭露的投資方【家登創業投資股份有限公司】投資了哪一家主要業務為【配管工程及電器承裝】的被投資公司？",
+  "expected_answer": "恆陽綠能股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "3680",
+   "company_name": "家登精密工業",
+   "quarter": "113Q1",
+   "investor_name": "家登創業投資股份有限公司",
+   "investee_name": "恆陽綠能股份有限公司",
+   "source_csv": "reports_csv_output/3680_家登精密工業/113Q1/3680_113Q1_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "main_business",
+    "value": "配管工程及電器承裝"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_075",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【旺矽科技】在【113Q3】揭露的投資方【旺矽科技(股)公司】投資了哪一家主要業務為【從事探針卡及半自動點測機買賣】的被投資公司？",
+  "expected_answer": "MPI TRADING CORP.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "6223",
+   "company_name": "旺矽科技",
+   "quarter": "113Q3",
+   "investor_name": "旺矽科技(股)公司",
+   "investee_name": "MPI TRADING CORP.",
+   "source_csv": "reports_csv_output/6223_旺矽科技/113Q3/6223_113Q3_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "main_business",
+    "value": "從事探針卡及半自動點測機買賣"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_076",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【日月光投資控股】在【113Q3】揭露的投資方【A.S.E. Holding Limited】投資了哪一家所在地為【比利時】的被投資公司？",
+  "expected_answer": "Integrated Solutions Enterprise Europe",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "3711",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q3",
+   "investor_name": "A.S.E. Holding Limited",
+   "investee_name": "Integrated Solutions Enterprise Europe",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/113Q3/3711_113Q3_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "location",
+    "value": "比利時"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_077",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【辛耘企業】在【113Q4】揭露的投資方【SCIENTECH INVESTMENT CORP.】投資了哪一家所在地為【模里西斯】的被投資公司？",
+  "expected_answer": "SIMPLE INVESTMENT CORP.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "3583",
+   "company_name": "辛耘企業",
+   "quarter": "113Q4",
+   "investor_name": "SCIENTECH INVESTMENT CORP.",
+   "investee_name": "SIMPLE INVESTMENT CORP.",
+   "source_csv": "reports_csv_output/3583_辛耘企業/113Q4/3583_113Q4_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "location",
+    "value": "模里西斯"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_078",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【南亞科技】在【113Q1】揭露的投資方【本公司】投資了哪一家所在地為【香港】的被投資公司？",
+  "expected_answer": "南亞科技香港公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "2408",
+   "company_name": "南亞科技",
+   "quarter": "113Q1",
+   "investor_name": "本公司",
+   "investee_name": "南亞科技香港公司",
+   "source_csv": "reports_csv_output/2408_南亞科技/113Q1/2408_113Q1_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "location",
+    "value": "香港"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_079",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【華邦電子】在【113Q1】揭露的投資方【華邦國際公司】投資了哪一家被投資公司？",
+  "expected_answer": "WECA公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "2344",
+   "company_name": "華邦電子",
+   "quarter": "113Q1",
+   "investor_name": "華邦國際公司",
+   "investee_name": "WECA公司",
+   "source_csv": "reports_csv_output/2344_華邦電子/113Q1/2344_113Q1_被投資公司名稱、所在地區…等相關資訊.csv",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_080",
+  "question_type": "investment_graph",
+  "question": "根據投資關係圖譜，【日月光投資控股】在【113Q2】揭露的投資方【Huntington Holdings International Co. Ltd.】投資了哪一家期末帳面價值為【2,051,269】的被投資公司？",
+  "expected_answer": "Real Tech Holdings Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_code": "3711",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q2",
+   "investor_name": "Huntington Holdings International Co. Ltd.",
+   "investee_name": "Real Tech Holdings Limited",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/113Q2/3711_113Q2_被投資公司名稱、所在地區…等相關資訊.csv",
+   "discriminator": {
+    "column": "book_value",
+    "value": "2051269.0"
+   },
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_081",
+  "question_type": "related_party_transaction_graph",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【114Q1】，【World Peace International (South Asia) Pte Ltd.】與【WPG South Asia Pte. Ltd.】之間的【其他應收款】交易金額是多少？",
+  "expected_answer": "348,056",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_code": "3702",
+   "company_name": "大聯大控股",
+   "quarter": "114Q1",
+   "party_or_category": "World Peace International (South Asia) Pte Ltd.",
+   "source_csv": "reports_csv_output/3702_大聯大控股/114Q1/3702_114Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "WPG South Asia Pte. Ltd.",
+    "value_4": "其他應收款"
+   },
+   "transacting_party": "World Peace International (South Asia) Pte Ltd.",
+   "counterparty": "WPG South Asia Pte. Ltd.",
+   "account_item": "其他應收款",
+   "amount": "348,056",
+   "relation": "3",
+   "source_row": "3 | World Peace International (South Asia) Pte Ltd. | WPG South Asia Pte. Ltd. | 3 | 其他應收款 | 348,056 | 註6 | 0.08 %",
+   "fix_rule": "R5_關係人整列傾印還原",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_082",
+  "question_type": "related_party_transaction_graph",
+  "question": "根據關係人交易圖譜，【穩懋半導體】在【114Q2】，【江蘇全穩康源農業發展有限公司】與【江蘇全穩農牧科技有限公司】之間的【其他應付款-關係人】交易金額是多少？",
+  "expected_answer": "110,510",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_code": "3105",
+   "company_name": "穩懋半導體",
+   "quarter": "114Q2",
+   "party_or_category": "江蘇全穩康源農業發展有限公司",
+   "source_csv": "reports_csv_output/3105_穩懋半導體/114Q2/3105_114Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "江蘇全穩農牧科技有限公司",
+    "value_4": "其他應付款-關係人"
+   },
+   "transacting_party": "江蘇全穩康源農業發展有限公司",
+   "counterparty": "江蘇全穩農牧科技有限公司",
+   "account_item": "其他應付款-關係人",
+   "amount": "110,510",
+   "relation": "3",
+   "source_row": "2 | 江蘇全穩康源農業發展有限公司 | 江蘇全穩農牧科技有限公司 | 3 | 其他應付款-關係人 | 110,510 | 與一般交易同 | 0.18 %",
+   "fix_rule": "R5_關係人整列傾印還原",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_083",
+  "question_type": "related_party_transaction_graph",
+  "question": "根據關係人交易圖譜，【家登精密工業】在【113Q1】，【家登精密工業股份有限公司】與【上海家登貿易有限公司】之間的【服務費用】交易金額是多少？",
+  "expected_answer": "28,658",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_code": "3680",
+   "company_name": "家登精密工業",
+   "quarter": "113Q1",
+   "party_or_category": "家登精密工業股份有限公司",
+   "source_csv": "reports_csv_output/3680_家登精密工業/113Q1/3680_113Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "上海家登貿易有限公司",
+    "value_4": "服務費用"
+   },
+   "transacting_party": "家登精密工業股份有限公司",
+   "counterparty": "上海家登貿易有限公司",
+   "account_item": "服務費用",
+   "amount": "28,658",
+   "relation": "1",
+   "source_row": "0 | 家登精密工業股份有限公司 | 上海家登貿易有限公司 | 1 | 服務費用 | 28,658 | － | 2.00 %",
+   "fix_rule": "R5_關係人整列傾印還原",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_084",
+  "question_type": "mainland_investment_graph",
+  "question": "根據大陸投資圖譜，【群聯電子】在【113Q2】投資之大陸事業中，主要業務為【電子產品軟硬件的研發、生產、銷售、技術服務等相關業務及一般投資業】的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "合肥芯鵬技術有限公司；本期認列投資損益：( 9,393 )",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_code": "8299",
+   "company_name": "群聯電子",
+   "quarter": "113Q2",
+   "source_csv": "reports_csv_output/8299_群聯電子/113Q2/8299_113Q2_轉投資大陸地區之事業相關資訊.csv",
+   "investee_name": "合肥芯鵬技術有限公司",
+   "value_attribute": "本期認列投資損益",
+   "value_raw": "( 9,393 )",
+   "main_business": "合肥芯鵬技術有限公司",
+   "fix_rule": "P2_mainland_investment_reclassified",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_085",
+  "question_type": "mainland_investment_graph",
+  "question": "根據大陸投資圖譜，【日月光投資控股】在【114Q2】投資之大陸事業中，主要業務為【從事半導體材料製造業務】的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "日月光半導體（上海）有限公司；本期認列投資損益：55,724",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_code": "3711",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q2",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/114Q2/3711_114Q2_轉投資大陸地區之事業相關資訊.csv",
+   "investee_name": "日月光半導體（上海）有限公司",
+   "value_attribute": "本期認列投資損益",
+   "value_raw": "55,724",
+   "main_business": "日月光半導體（上海）有限公司",
+   "fix_rule": "P2_mainland_investment_reclassified",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_086",
+  "question_type": "related_party_transaction_graph",
+  "question": "根據關係人交易圖譜，【華邦電子】在【114Q4】，【華邦公司】與【WECA公司】之間的【其他應付款】交易金額是多少？",
+  "expected_answer": "229,127",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_code": "2344",
+   "company_name": "華邦電子",
+   "quarter": "114Q4",
+   "party_or_category": "華邦公司",
+   "source_csv": "reports_csv_output/2344_華邦電子/114Q4/2344_114Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "WECA公司",
+    "value_4": "其他應付款"
+   },
+   "transacting_party": "華邦公司",
+   "counterparty": "WECA公司",
+   "account_item": "其他應付款",
+   "amount": "229,127",
+   "relation": "母公司對子公司",
+   "source_row": "0 | 華邦公司 | WECA公司 | 母公司對子公司 | 其他應付款 | 229,127 | 0 | 0.00 %",
+   "fix_rule": "R5_關係人整列傾印還原",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_087",
+  "question_type": "related_party_transaction_graph",
+  "question": "根據關係人交易圖譜，【智原科技】在【113Q2】，【智原科技(股)公司】與【智原科技(上海)有限公司】之間的【合約資產】交易金額是多少？",
+  "expected_answer": "8,602",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_code": "3035",
+   "company_name": "智原科技",
+   "quarter": "113Q2",
+   "party_or_category": "智原科技(股)公司",
+   "source_csv": "reports_csv_output/3035_智原科技/113Q2/3035_113Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "智原科技(上海)有限公司",
+    "value_4": "合約資產"
+   },
+   "transacting_party": "智原科技(股)公司",
+   "counterparty": "智原科技(上海)有限公司",
+   "account_item": "合約資產",
+   "amount": "8,602",
+   "relation": "1",
+   "source_row": "0 | 智原科技(股)公司 | 智原科技(上海)有限公司 | 1 | 合約資產 | 8,602 | 依合約而定 | 0.05 %",
+   "fix_rule": "R5_關係人整列傾印還原",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_088",
+  "question_type": "related_party_transaction_graph",
+  "question": "根據關係人交易圖譜，【京鼎精密科技】在【114Q4】，【京鼎精密科技股份有限公司】與【SUCCESSPRAISECORPORATION】之間的【進貨】交易金額是多少？",
+  "expected_answer": "7,877,323",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_code": "3413",
+   "company_name": "京鼎精密科技",
+   "quarter": "114Q4",
+   "party_or_category": "京鼎精密科技股份有限公司",
+   "source_csv": "reports_csv_output/3413_京鼎精密科技/114Q4/3413_114Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "SUCCESSPRAISECORPORATION",
+    "value_4": "進貨"
+   },
+   "transacting_party": "京鼎精密科技股份有限公司",
+   "counterparty": "SUCCESSPRAISECORPORATION",
+   "account_item": "進貨",
+   "amount": "7,877,323",
+   "relation": "(1)",
+   "source_row": "0 | 京鼎精密科技股份有限公司 | SUCCESSPRAISECORPORATION | (1) | 進貨 | 7,877,323 | 發票日起45天 | 38.00 %",
+   "fix_rule": "R5_關係人整列傾印還原",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_089",
+  "question_type": "related_party_transaction_graph",
+  "question": "根據關係人交易圖譜，【台灣光罩】在【114Q1】，【台灣光罩(股)公司】與【友縳投資(股)公司】之間的【利息收入】交易金額是多少？",
+  "expected_answer": "1,997",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_code": "2338",
+   "company_name": "台灣光罩",
+   "quarter": "114Q1",
+   "party_or_category": "台灣光罩(股)公司",
+   "source_csv": "reports_csv_output/2338_台灣光罩/114Q1/2338_114Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "友縳投資(股)公司",
+    "value_4": "利息收入"
+   },
+   "transacting_party": "台灣光罩(股)公司",
+   "counterparty": "友縳投資(股)公司",
+   "account_item": "利息收入",
+   "amount": "1,997",
+   "relation": "3",
+   "source_row": "0 | 台灣光罩(股)公司 | 友縳投資(股)公司 | 3 | 利息收入 | 1,997 | 約定時間收付款 | 0.12 %",
+   "fix_rule": "R5_關係人整列傾印還原",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_090",
+  "question_type": "related_party_transaction_graph",
+  "question": "根據關係人交易圖譜，【台灣光罩】在【113Q2】，【iPro Vision Inc.】與【昱嘉科技(股)公司】之間的【銷貨】交易金額是多少？",
+  "expected_answer": "2,414",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_code": "2338",
+   "company_name": "台灣光罩",
+   "quarter": "113Q2",
+   "party_or_category": "iPro Vision Inc.",
+   "source_csv": "reports_csv_output/2338_台灣光罩/113Q2/2338_113Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "transacting_party": "iPro Vision Inc.",
+   "counterparty": "昱嘉科技(股)公司",
+   "account_item": "銷貨",
+   "amount": "2,414",
+   "relation": "3",
+   "source_row": "7 | iPro Vision Inc. | 昱嘉科技(股)公司 | 3 | 銷貨 | 2,414 | 約定時間收付款 | 0.06 %",
+   "fix_rule": "R5_關係人整列傾印還原",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_091",
+  "question_type": "supply_chain_graph",
+  "question": "根據半導體產業鏈圖譜，【京碼】屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "下游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_code": "7611",
+   "company_name": "京碼",
+   "stage": "下游",
+   "segment": "生產製程及檢測設備",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_092",
+  "question_type": "supply_chain_graph",
+  "question": "根據半導體產業鏈圖譜，【華東】屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "下游；IC封裝測試",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_code": "8110",
+   "company_name": "華東",
+   "stage": "下游",
+   "segment": "IC封裝測試",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_093",
+  "question_type": "supply_chain_graph",
+  "question": "根據半導體產業鏈圖譜，【光環】屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "中游；IC/晶圓製造",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_code": "3234",
+   "company_name": "光環",
+   "stage": "中游",
+   "segment": "IC/晶圓製造",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_094",
+  "question_type": "supply_chain_graph",
+  "question": "根據半導體產業鏈圖譜，【巨有科技】屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "上游；IP設計/IC設計代工服務",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_code": "8227",
+   "company_name": "巨有科技",
+   "stage": "上游",
+   "segment": "IP設計/IC設計代工服務",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_095",
+  "question_type": "supply_chain_graph",
+  "question": "根據半導體產業鏈圖譜，【全訊】屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "下游；IC模組",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_code": "5222",
+   "company_name": "全訊",
+   "stage": "下游",
+   "segment": "IC模組",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_096",
+  "question_type": "risk_event_graph",
+  "question": "根據風險事件圖譜，【旺矽科技】在【114Q4】的財務科目【其他應付款增加（減少） Increase (decrease) in other payable】被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_code": "6223",
+   "company_name": "旺矽科技",
+   "quarter": "114Q4",
+   "item_name": "其他應付款增加（減少） Increase (decrease) in other payable",
+   "matched_risks": "營運資金壓力",
+   "source_fact_file": "reports_csv_output/6223_旺矽科技/114Q4/6223_114Q4_all_table_facts.csv",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_097",
+  "question_type": "risk_event_graph",
+  "question": "根據風險事件圖譜，【日月光投資控股】在【114Q2】的財務科目【營業收入合計 Total operating revenue】被標記為哪一類風險候選？",
+  "expected_answer": "營收波動候選",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_code": "3711",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q2",
+   "item_name": "營業收入合計 Total operating revenue",
+   "matched_risks": "營收波動候選",
+   "source_fact_file": "reports_csv_output/3711_日月光投資控股/114Q2/3711_114Q2_all_table_facts.csv",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_098",
+  "question_type": "risk_event_graph",
+  "question": "根據風險事件圖譜，【創意電子】在【113Q4】的財務科目【外幣兌換利益(損失)】被標記為哪一類風險候選？",
+  "expected_answer": "匯率風險",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_code": "3443",
+   "company_name": "創意電子",
+   "quarter": "113Q4",
+   "item_name": "外幣兌換利益(損失)",
+   "matched_risks": "匯率風險",
+   "source_fact_file": "reports_csv_output/3443_創意電子/113Q4/3443_113Q4_all_table_facts.csv",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_099",
+  "question_type": "risk_event_graph",
+  "question": "根據風險事件圖譜，【台灣光罩】在【114Q3】的財務科目【其他應收款（增加）減少 Decrease (increase) in other receivable】被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_code": "2338",
+   "company_name": "台灣光罩",
+   "quarter": "114Q3",
+   "item_name": "其他應收款（增加）減少 Decrease (increase) in other receivable",
+   "matched_risks": "營運資金壓力",
+   "source_fact_file": "reports_csv_output/2338_台灣光罩/114Q3/2338_114Q3_all_table_facts.csv",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ },
+ {
+  "id": "graph_cap_100",
+  "question_type": "risk_event_graph",
+  "question": "根據風險事件圖譜，【華邦電子】在【113Q2】的財務科目【其他應收款增加 Increase in other receivables】被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_code": "2344",
+   "company_name": "華邦電子",
+   "quarter": "113Q2",
+   "item_name": "其他應收款增加 Increase in other receivables",
+   "matched_risks": "營運資金壓力",
+   "source_fact_file": "reports_csv_output/2344_華邦電子/113Q2/2344_113Q2_all_table_facts.csv",
+   "force_route": "graph_rag",
+   "test_purpose": "graph_capability"
+  }
+ }
+]

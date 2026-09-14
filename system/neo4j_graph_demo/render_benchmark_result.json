@@ -1,0 +1,179 @@
+{
+ "rounds": 3,
+ "expandK": 3,
+ "control": [
+  {
+   "query_ms": 202.13,
+   "download_ms": 34.370000000000005,
+   "bytes": 1450636,
+   "render_ms": 9669.100000023842,
+   "ttfi_ms": 9911.5,
+   "nodes": 2000,
+   "edges": 2618
+  },
+  {
+   "query_ms": 196.08,
+   "download_ms": 22.120000047683703,
+   "bytes": 1450636,
+   "render_ms": 9935.600000023842,
+   "ttfi_ms": 10159.100000023842,
+   "nodes": 2000,
+   "edges": 2618
+  },
+  {
+   "query_ms": 197.3,
+   "download_ms": 34.60000009536742,
+   "bytes": 1450635,
+   "render_ms": 10210.200000047684,
+   "ttfi_ms": 10447.400000095367,
+   "nodes": 2000,
+   "edges": 2618
+  }
+ ],
+ "experiment": [
+  {
+   "init": {
+    "query_ms": 5.42,
+    "download_ms": 322.37999995231627,
+    "bytes": 12837,
+    "render_ms": 29.299999952316284,
+    "ttfi_ms": 359,
+    "nodes": 30,
+    "edges": 0
+   },
+   "expands": [
+    {
+     "name": "聯華電子",
+     "query_ms": 9.35,
+     "download_ms": 3.350000047683716,
+     "bytes": 93780,
+     "render_ms": 101.5,
+     "click_ms": 114.5
+    },
+    {
+     "name": "台灣積體電路製造",
+     "query_ms": 15.79,
+     "download_ms": 4.509999952316285,
+     "bytes": 75952,
+     "render_ms": 341.39999997615814,
+     "click_ms": 361.89999997615814
+    },
+    {
+     "name": "台灣光罩",
+     "query_ms": 9.88,
+     "download_ms": 17.119999999999997,
+     "bytes": 47613,
+     "render_ms": 417.2999999523163,
+     "click_ms": 444.5
+    }
+   ],
+   "final_nodes": 264,
+   "final_edges": 266
+  },
+  {
+   "init": {
+    "query_ms": 6.32,
+    "download_ms": 312.68,
+    "bytes": 12837,
+    "render_ms": 24.100000023841858,
+    "ttfi_ms": 344.89999997615814,
+    "nodes": 30,
+    "edges": 0
+   },
+   "expands": [
+    {
+     "name": "聯華電子",
+     "query_ms": 11.07,
+     "download_ms": 3.329999976158142,
+     "bytes": 93781,
+     "render_ms": 86.29999995231628,
+     "click_ms": 101
+    },
+    {
+     "name": "台灣積體電路製造",
+     "query_ms": 13.32,
+     "download_ms": 3.2800000238418576,
+     "bytes": 75952,
+     "render_ms": 359.89999997615814,
+     "click_ms": 376.89999997615814
+    },
+    {
+     "name": "台灣光罩",
+     "query_ms": 11.44,
+     "download_ms": 18.859999952316286,
+     "bytes": 47614,
+     "render_ms": 419.7000000476837,
+     "click_ms": 450.39999997615814
+    }
+   ],
+   "final_nodes": 264,
+   "final_edges": 266
+  },
+  {
+   "init": {
+    "query_ms": 3.95,
+    "download_ms": 331.55,
+    "bytes": 12837,
+    "render_ms": 21.40000009536743,
+    "ttfi_ms": 358.5,
+    "nodes": 30,
+    "edges": 0
+   },
+   "expands": [
+    {
+     "name": "聯華電子",
+     "query_ms": 8.76,
+     "download_ms": 2.74,
+     "bytes": 93780,
+     "render_ms": 85.89999997615814,
+     "click_ms": 97.79999995231628
+    },
+    {
+     "name": "台灣積體電路製造",
+     "query_ms": 13.03,
+     "download_ms": 4.869999976158143,
+     "bytes": 75952,
+     "render_ms": 333.89999997615814,
+     "click_ms": 351.89999997615814
+    },
+    {
+     "name": "台灣光罩",
+     "query_ms": 7.75,
+     "download_ms": 30.649999976158142,
+     "bytes": 47613,
+     "render_ms": 413.5,
+     "click_ms": 452.2000000476837
+    }
+   ],
+   "final_nodes": 264,
+   "final_edges": 266
+  }
+ ],
+ "summary": {
+  "control": {
+   "query_ms": 198.50333333333333,
+   "download_ms": 30.363333381017043,
+   "render_ms": 9938.30000003179,
+   "ttfi_ms": 10172.666666706404,
+   "bytes": 1450635.6666666667,
+   "nodes": 2000,
+   "edges": 2618
+  },
+  "experiment": {
+   "init_query_ms": 5.23,
+   "init_download_ms": 322.20333331743876,
+   "init_render_ms": 24.93333335717519,
+   "init_ttfi_ms": 354.13333332538605,
+   "init_bytes": 12837,
+   "init_nodes": 30,
+   "expand_click_ms": 305.6777777671814,
+   "expand_query_ms": 11.154444444444445,
+   "expand_download_ms": 9.856666656070285,
+   "expand_render_ms": 284.3777777618832,
+   "expand_bytes": 72448.55555555556,
+   "final_nodes": 264,
+   "final_edges": 266
+  },
+  "first_view_speedup": 28.725527109190587
+ }
+}

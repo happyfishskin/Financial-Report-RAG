@@ -1,0 +1,1482 @@
+[
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "中華精測科技在114Q2投資之大陸事業中，主要業務為電路板組裝加工銷售、印刷電路板的設計及提供技術諮詢和技術服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "蘇州晶測科技有限公司；本期認列投資損益：( 15,659 )",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "中華精測科技",
+   "quarter": "114Q2",
+   "main_business": "電路板組裝加工銷售、印刷電路板的設計及提供技術諮詢和技術服務",
+   "investee_name": "蘇州晶測科技有限公司",
+   "profit_recognised": "( 15,659 )",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_001"
+ },
+ {
+  "question_type": "cross_period_value",
+  "question": "景碩這兩季(113Q1、114Q3)的資產總計變化如何？",
+  "expected_answer": "113Q1: 79,048,783 ｜ 114Q3: 78,917,195 ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3189",
+   "periods": [
+    "113Q1",
+    "114Q3"
+   ],
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_002"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "中華精測科技在113Q2投資之大陸事業中，主要業務為電路板組裝加工銷售、印刷電路板的設計及提供技術諮詢和技術服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "蘇州晶測科技有限公司；本期認列投資損益：( 22,567 )",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "中華精測科技",
+   "quarter": "113Q2",
+   "main_business": "電路板組裝加工銷售、印刷電路板的設計及提供技術諮詢和技術服務",
+   "investee_name": "蘇州晶測科技有限公司",
+   "profit_recognised": "( 22,567 )",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_003"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "力成科技在114Q3，力成科技股份有限公司與晶兆成科技股份有限公司之間的銷貨收入交易金額是多少？",
+  "expected_answer": "6,314",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "力成科技",
+   "quarter": "114Q3",
+   "payer": "力成科技股份有限公司",
+   "counterparty": "晶兆成科技股份有限公司",
+   "account_item": "銷貨收入",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_004"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "聯發科技在114Q4揭露的投資方record_type投資了哪一家所在地為row_text的被投資公司？",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯發科技",
+   "quarter": "114Q4",
+   "investor_name": "record_type",
+   "discriminator": "所在地為row_text",
+   "investee_name": "source_kind",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_005"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "京元電子在113Q2投資之大陸事業中，主要業務為積體電路封裝及測試、加工電子零組件、電子材料、類比或混合自動數據處理機、 固態記憶系統、升溫烤箱控制器等產品製造、銷售及提供相關售後服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "蘇州震坤科技有限公司；本期認列投資損益：110,761",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "京元電子",
+   "quarter": "113Q2",
+   "main_business": "積體電路封裝及測試、加工電子零組件、電子材料、類比或混合自動數據處理機、 固態記憶系統、升溫烤箱控制器等產品製造、銷售及提供相關售後服務",
+   "investee_name": "蘇州震坤科技有限公司",
+   "profit_recognised": "110,761",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_006"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "日月光投資控股在113Q3，日月光集成電路製造（中國）有限公司與矽品科技（蘇州）有限公司之間的其他應收款交易金額是多少？",
+  "expected_answer": "607,887",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q3",
+   "payer": "日月光集成電路製造（中國）有限公司",
+   "counterparty": "矽品科技（蘇州）有限公司",
+   "account_item": "其他應收款",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_007"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "智原科技在114Q3，雅特力科技(重慶)有限公司與雅特力科技股份有限公司之間的營業收入交易金額是多少？",
+  "expected_answer": "103,501",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "智原科技",
+   "quarter": "114Q3",
+   "payer": "雅特力科技(重慶)有限公司",
+   "counterparty": "雅特力科技股份有限公司",
+   "account_item": "營業收入",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_008"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "南亞科技在114Q2的財務科目未實現外幣兌換損失（利益） Unrealized foreign exchange loss (gain)被標記為哪一類風險候選？",
+  "expected_answer": "匯率風險",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "南亞科技",
+   "quarter": "114Q2",
+   "item_name": "未實現外幣兌換損失（利益） Unrealized foreign exchange loss (gain)",
+   "matched_risks": "匯率風險",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_009"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "日月光投資控股在113Q4，日 月 光與日月光電子公司之間的其他應付款交易金額是多少？",
+  "expected_answer": "1,187,272",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q4",
+   "payer": "日 月 光",
+   "counterparty": "日月光電子公司",
+   "account_item": "其他應付款",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_010"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "華邦電子在114Q4的財務科目匯率變動對現金及約當現金之影響 Effect of exchange rate changes on cash and cash equivalents被標記為哪一類風險候選？",
+  "expected_answer": "匯率風險",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "華邦電子",
+   "quarter": "114Q4",
+   "item_name": "匯率變動對現金及約當現金之影響 Effect of exchange rate changes on cash and cash equivalents",
+   "matched_risks": "匯率風險",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_011"
+ },
+ {
+  "question_type": "cross_period_value",
+  "question": "中華精測這兩季(113Q1、114Q2)的資產總計變化如何？",
+  "expected_answer": "113Q1: 8,204,829 ｜ 114Q2: 9,513,834 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "6510",
+   "periods": [
+    "113Q1",
+    "114Q2"
+   ],
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_012"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "力士在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "力士",
+   "stage": "上游",
+   "segment": "IC設計",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_013"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "華邦電和南亞科在114Q1的營業收入合計誰比較高？",
+  "expected_answer": "華邦電: 19,992,617 ｜ 南亞科: 7,187,940 ｜ 較高: 華邦電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "2344",
+    "2408"
+   ],
+   "quarter": "114Q1",
+   "item_name": "營業收入合計 Total operating revenue",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_014"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "巨有科技在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "上游；IP設計/IC設計代工服務",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "巨有科技",
+   "stage": "上游",
+   "segment": "IP設計/IC設計代工服務",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_015"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "英柏得在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "英柏得",
+   "stage": "上游",
+   "segment": "IC設計",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_016"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "中華精測科技在114Q1投資之大陸事業中，主要業務為印刷電路板的設計及提供技術諮詢和技術服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "上海台華電子科技有限公司；本期認列投資損益：416",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "中華精測科技",
+   "quarter": "114Q1",
+   "main_business": "印刷電路板的設計及提供技術諮詢和技術服務",
+   "investee_name": "上海台華電子科技有限公司",
+   "profit_recognised": "416",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_017"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "日月光投控和力旺在114Q2的資產總計誰比較高？",
+  "expected_answer": "日月光投控: 765,174,736 ｜ 力旺: 5,496,945 ｜ 較高: 日月光投控",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "3711",
+    "3529"
+   ],
+   "quarter": "114Q2",
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_018"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "大聯大控股在113Q3的財務科目應收帳款－關係人（增加）減少 Decrease (increase) in accounts receivable due from related parties被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "大聯大控股",
+   "quarter": "113Q3",
+   "item_name": "應收帳款－關係人（增加）減少 Decrease (increase) in accounts receivable due from related parties",
+   "matched_risks": "營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_019"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "日月光投資控股在113Q3揭露的投資方ISE Labs, Inc.投資了哪一家主要業務為從事半導體產品一元化（Turnkey）銷售服務的被投資公司？",
+  "expected_answer": "ISE Services, Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q3",
+   "investor_name": "ISE Labs, Inc.",
+   "discriminator": "主要業務為從事半導體產品一元化（Turnkey）銷售服務",
+   "investee_name": "ISE Services, Inc.",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_020"
+ },
+ {
+  "question_type": "cross_period_value",
+  "question": "景碩這兩季(114Q3、114Q4)的資產總計變化如何？",
+  "expected_answer": "114Q3: 78,917,195 ｜ 114Q4: 79,973,280 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3189",
+   "periods": [
+    "114Q3",
+    "114Q4"
+   ],
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_021"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "新應材在113Q4，新應材公司與AEMC USA之間的營業費用交易金額是多少？",
+  "expected_answer": "6,022",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "新應材",
+   "quarter": "113Q4",
+   "payer": "新應材公司",
+   "counterparty": "AEMC USA",
+   "account_item": "營業費用",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_022"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "家登精密工業在114Q3揭露的投資方家瑞創業投資股份有限公司投資了哪一家主要業務為批發及零售業的被投資公司？",
+  "expected_answer": "益豐國際股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "家登精密工業",
+   "quarter": "114Q3",
+   "investor_name": "家瑞創業投資股份有限公司",
+   "discriminator": "主要業務為批發及零售業",
+   "investee_name": "益豐國際股份有限公司",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_023"
+ },
+ {
+  "question_type": "cross_period_value",
+  "question": "旺矽這兩季(114Q1、114Q2)的資產總計變化如何？",
+  "expected_answer": "114Q1: 19,536,370 ｜ 114Q2: 20,123,254 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "6223",
+   "periods": [
+    "114Q1",
+    "114Q2"
+   ],
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_024"
+ },
+ {
+  "question_type": "cross_period_value",
+  "question": "聯發科這兩季(114Q2、114Q3)的資產總計變化如何？",
+  "expected_answer": "114Q2: 669,214,401 ｜ 114Q3: 687,851,733 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "2454",
+   "periods": [
+    "114Q2",
+    "114Q3"
+   ],
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_025"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "千附精密在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "千附精密",
+   "stage": "中游",
+   "segment": "生產製程及檢測設備",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_026"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "辛耘企業在113Q3的財務科目銷貨收入被標記為哪一類風險候選？",
+  "expected_answer": "營收波動候選",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "辛耘企業",
+   "quarter": "113Q3",
+   "item_name": "銷貨收入",
+   "matched_risks": "營收波動候選",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_027"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "穩懋半導體在113Q1揭露的投資方本公司投資了哪一家所在地為開曼群島的被投資公司？",
+  "expected_answer": "Win Semiconductors Cayman Islands Co., Ltd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "穩懋半導體",
+   "quarter": "113Q1",
+   "investor_name": "本公司",
+   "discriminator": "所在地為開曼群島",
+   "investee_name": "Win Semiconductors Cayman Islands Co., Ltd.",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_028"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "瑞昱和力旺在113Q1的營業收入合計誰比較高？",
+  "expected_answer": "瑞昱: 25,622,844 ｜ 力旺: 802,764 ｜ 較高: 瑞昱",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "2379",
+    "3529"
+   ],
+   "quarter": "113Q1",
+   "item_name": "營業收入合計 Total operating revenue",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_029"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "日月光投資控股在114Q4，FINANCIERE AFG與ASTEELFLASH Germany GmbH之間的其他資產交易金額是多少？",
+  "expected_answer": "350,837",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q4",
+   "payer": "FINANCIERE AFG",
+   "counterparty": "ASTEELFLASH Germany GmbH",
+   "account_item": "其他資產",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_030"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "智原科技在113Q4揭露的投資方Faraday Technology Corp. (B.V.I.)投資了哪一家所在地為薩摩亞的被投資公司？",
+  "expected_answer": "Faraday Technology (Samoa) Corp.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "智原科技",
+   "quarter": "113Q4",
+   "investor_name": "Faraday Technology Corp. (B.V.I.)",
+   "discriminator": "所在地為薩摩亞",
+   "investee_name": "Faraday Technology (Samoa) Corp.",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_031"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "瑞昱和旺矽在113Q4的資產總計誰比較高？",
+  "expected_answer": "瑞昱: 113,896,730 ｜ 旺矽: 16,478,513 ｜ 較高: 瑞昱",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "2379",
+    "6223"
+   ],
+   "quarter": "113Q4",
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_032"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "京元電子在113Q1的財務科目應收帳款（增加）減少 Decrease (increase) in accounts receivable被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "京元電子",
+   "quarter": "113Q1",
+   "item_name": "應收帳款（增加）減少 Decrease (increase) in accounts receivable",
+   "matched_risks": "營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_033"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "凌通在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "凌通",
+   "stage": "上游",
+   "segment": "IC設計",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_034"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "辛耘企業在113Q1的財務科目其他應付款被標記為哪一類風險候選？",
+  "expected_answer": "供應鏈壓力;營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "辛耘企業",
+   "quarter": "113Q1",
+   "item_name": "其他應付款",
+   "matched_risks": "供應鏈壓力;營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_035"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "日月光投資控股在113Q3揭露的投資方ASE Investment (Labuan) Inc.投資了哪一家主要業務為電子零組件，通信機械器材製造的被投資公司？",
+  "expected_answer": "ASE (Korea) Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q3",
+   "investor_name": "ASE Investment (Labuan) Inc.",
+   "discriminator": "主要業務為電子零組件，通信機械器材製造",
+   "investee_name": "ASE (Korea) Inc.",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_036"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "大聯大和力成在113Q4的本期淨利（淨損）誰比較高？",
+  "expected_answer": "大聯大: 7,415,736 ｜ 力成: 8,499,407 ｜ 較高: 力成",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "3702",
+    "6239"
+   ],
+   "quarter": "113Q4",
+   "item_name": "本期淨利（淨損） Profit (loss)",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_037"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "旺矽科技在114Q4，旺矽科技(蘇州)有限公司與旺矽科技(股)公司之間的佣金收入交易金額是多少？",
+  "expected_answer": "8,006",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "旺矽科技",
+   "quarter": "114Q4",
+   "payer": "旺矽科技(蘇州)有限公司",
+   "counterparty": "旺矽科技(股)公司",
+   "account_item": "佣金收入",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_038"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "中華精測和聯電在114Q2的資產總計誰比較高？",
+  "expected_answer": "中華精測: 9,513,834 ｜ 聯電: 548,143,566 ｜ 較高: 聯電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "6510",
+    "2303"
+   ],
+   "quarter": "114Q2",
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_039"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "大聯大控股在114Q4揭露的投資方World Peace International （South Asia） Pte Ltd.投資了哪一家所在地為馬來西亞的被投資公司？",
+  "expected_answer": "WPG C＆C (Malaysia) Sdn. Bhd",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "大聯大控股",
+   "quarter": "114Q4",
+   "investor_name": "World Peace International （South Asia） Pte Ltd.",
+   "discriminator": "所在地為馬來西亞",
+   "investee_name": "WPG C＆C (Malaysia) Sdn. Bhd",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_040"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "聯發科技在113Q1，聯發科技(股)公司與MediaTek USA Inc.之間的其他應付款項-關係人交易金額是多少？",
+  "expected_answer": "1,208,212",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯發科技",
+   "quarter": "113Q1",
+   "payer": "聯發科技(股)公司",
+   "counterparty": "MediaTek USA Inc.",
+   "account_item": "其他應付款項-關係人",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_041"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "世界先進積體電路在114Q2投資之大陸事業中，主要業務為半導體產品行銷及市場服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "世積集成電路（上海）有限公司；本期認列投資損益：213",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "世界先進積體電路",
+   "quarter": "114Q2",
+   "main_business": "半導體產品行銷及市場服務",
+   "investee_name": "世積集成電路（上海）有限公司",
+   "profit_recognised": "213",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_042"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "堡達在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "下游；IC通路",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "堡達",
+   "stage": "下游",
+   "segment": "IC通路",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_043"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "聯發科技在113Q3，Hsu Chia (Samoa) Investment Ltd.與聯發科軟件(上海)有限公司之間的其他應收款-關係人交易金額是多少？",
+  "expected_answer": "1,566,814",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯發科技",
+   "quarter": "113Q3",
+   "payer": "Hsu Chia (Samoa) Investment Ltd.",
+   "counterparty": "聯發科軟件(上海)有限公司",
+   "account_item": "其他應收款-關係人",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_044"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "家登和華邦電在113Q4的營業收入合計誰比較高？",
+  "expected_answer": "家登: 6,544,796 ｜ 華邦電: 81,609,768 ｜ 較高: 華邦電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "3680",
+    "2344"
+   ],
+   "quarter": "113Q4",
+   "item_name": "營業收入合計 Total operating revenue",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_045"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "大聯大控股在113Q4，大聯大電子(香港)有限公司與世平國際(香港)有限公司之間的應收帳款交易金額是多少？",
+  "expected_answer": "851,243",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q4",
+   "payer": "大聯大電子(香港)有限公司",
+   "counterparty": "世平國際(香港)有限公司",
+   "account_item": "應收帳款",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_046"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "京元電子在113Q3投資之大陸事業中，主要業務為從事經營類比或混合自動資料處理機之零附件、固態記憶系統之零附件、 升溫烤箱之加工組裝及銷售業務、積體電路封裝及其測試的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "京隆科技(蘇州)有限公司；本期認列投資損益：2,589,359",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "京元電子",
+   "quarter": "113Q3",
+   "main_business": "從事經營類比或混合自動資料處理機之零附件、固態記憶系統之零附件、 升溫烤箱之加工組裝及銷售業務、積體電路封裝及其測試",
+   "investee_name": "京隆科技(蘇州)有限公司",
+   "profit_recognised": "2,589,359",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_047"
+ },
+ {
+  "question_type": "cross_period_value",
+  "question": "達興這兩季(113Q1、114Q2)的資產總計變化如何？",
+  "expected_answer": "113Q1: 4,762,099 ｜ 114Q2: 4,702,869 ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "5234",
+   "periods": [
+    "113Q1",
+    "114Q2"
+   ],
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_048"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "穩懋半導體在113Q2的財務科目應收帳款（增加）減少 Decrease (increase) in accounts receivable被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "穩懋半導體",
+   "quarter": "113Q2",
+   "item_name": "應收帳款（增加）減少 Decrease (increase) in accounts receivable",
+   "matched_risks": "營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_049"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "中華精測和聯發科在113Q4的本期淨利（淨損）誰比較高？",
+  "expected_answer": "中華精測: 484,871 ｜ 聯發科: 107,140,623 ｜ 較高: 聯發科",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "6510",
+    "2454"
+   ],
+   "quarter": "113Q4",
+   "item_name": "本期淨利（淨損） Profit (loss)",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_050"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "中華精測科技在114Q3投資之大陸事業中，主要業務為電路板組裝加工銷售、印刷電路板的設計及提供技術諮詢和技術服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "蘇州晶測科技有限公司；本期認列投資損益：( 28,703 )",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "中華精測科技",
+   "quarter": "114Q3",
+   "main_business": "電路板組裝加工銷售、印刷電路板的設計及提供技術諮詢和技術服務",
+   "investee_name": "蘇州晶測科技有限公司",
+   "profit_recognised": "( 28,703 )",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_051"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "台灣光罩在114Q4揭露的投資方Innova Vision (B.V.I) Inc.投資了哪一家主要業務為隱形眼鏡銷售的被投資公司？",
+  "expected_answer": "iPro Vision Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "台灣光罩",
+   "quarter": "114Q4",
+   "investor_name": "Innova Vision (B.V.I) Inc.",
+   "discriminator": "主要業務為隱形眼鏡銷售",
+   "investee_name": "iPro Vision Inc.",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_052"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "中華精測科技在113Q4投資之大陸事業中，主要業務為印刷電路板的設計及提供技術諮詢和技術服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "上海台華電子科技有限公司；本期認列投資損益：789",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "中華精測科技",
+   "quarter": "113Q4",
+   "main_business": "印刷電路板的設計及提供技術諮詢和技術服務",
+   "investee_name": "上海台華電子科技有限公司",
+   "profit_recognised": "789",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_053"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "台灣積體電路製造在113Q3的財務科目未實現外幣兌換損失（利益） Unrealized foreign exchange loss (gain)被標記為哪一類風險候選？",
+  "expected_answer": "匯率風險",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "台灣積體電路製造",
+   "quarter": "113Q3",
+   "item_name": "未實現外幣兌換損失（利益） Unrealized foreign exchange loss (gain)",
+   "matched_risks": "匯率風險",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_054"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "富基電通在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "下游；IC通路",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "富基電通",
+   "stage": "下游",
+   "segment": "IC通路",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_055"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "景碩科技在114Q4揭露的投資方晶碩光學股份有限公司投資了哪一家主要業務為醫療器材生產及銷售的被投資公司？",
+  "expected_answer": "PEGAVISION VIETNAM COMPANY LIMITED",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "景碩科技",
+   "quarter": "114Q4",
+   "investor_name": "晶碩光學股份有限公司",
+   "discriminator": "主要業務為醫療器材生產及銷售",
+   "investee_name": "PEGAVISION VIETNAM COMPANY LIMITED",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_056"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "聯發科技在114Q2，聯發科技(股)公司與MediaTek North America Inc.之間的推銷費用交易金額是多少？",
+  "expected_answer": "564,503",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯發科技",
+   "quarter": "114Q2",
+   "payer": "聯發科技(股)公司",
+   "counterparty": "MediaTek North America Inc.",
+   "account_item": "推銷費用",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_057"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "景碩科技在114Q3的財務科目應收帳款－關係人（增加）減少 Decrease (increase) in accounts receivable due from related parties被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "景碩科技",
+   "quarter": "114Q3",
+   "item_name": "應收帳款－關係人（增加）減少 Decrease (increase) in accounts receivable due from related parties",
+   "matched_risks": "營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_058"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "世界先進積體電路在113Q1投資之大陸事業中，主要業務為半導體產品行銷及市場服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "世積集成電路（上海）有限公司；本期認列投資損益：( 188 )",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "世界先進積體電路",
+   "quarter": "113Q1",
+   "main_business": "半導體產品行銷及市場服務",
+   "investee_name": "世積集成電路（上海）有限公司",
+   "profit_recognised": "( 188 )",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_059"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "聯華電子在114Q3的財務科目應付帳款增加（減少） Increase (decrease) in accounts payable被標記為哪一類風險候選？",
+  "expected_answer": "供應鏈壓力;營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "聯華電子",
+   "quarter": "114Q3",
+   "item_name": "應付帳款增加（減少） Increase (decrease) in accounts payable",
+   "matched_risks": "供應鏈壓力;營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_060"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "台灣光罩在113Q1，美祿科技(股)公司與昱品國際貿易(上海)有限公司之間的銷貨交易金額是多少？",
+  "expected_answer": "12,677",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "台灣光罩",
+   "quarter": "113Q1",
+   "payer": "美祿科技(股)公司",
+   "counterparty": "昱品國際貿易(上海)有限公司",
+   "account_item": "銷貨",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_061"
+ },
+ {
+  "question_type": "cross_period_value",
+  "question": "華邦電這兩季(113Q1、113Q3)的資產總計變化如何？",
+  "expected_answer": "113Q1: 185,599,820 ｜ 113Q3: 186,255,837 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "2344",
+   "periods": [
+    "113Q1",
+    "113Q3"
+   ],
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_062"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "新應材在113Q3的財務科目應付帳款 Accounts payable被標記為哪一類風險候選？",
+  "expected_answer": "供應鏈壓力;營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "新應材",
+   "quarter": "113Q3",
+   "item_name": "應付帳款 Accounts payable",
+   "matched_risks": "供應鏈壓力;營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_063"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "南亞科技在114Q4，南亞科技德拉瓦公司與南亞科技股份有限公司之間的應收帳款交易金額是多少？",
+  "expected_answer": "60,471",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "南亞科技",
+   "quarter": "114Q4",
+   "payer": "南亞科技德拉瓦公司",
+   "counterparty": "南亞科技股份有限公司",
+   "account_item": "應收帳款",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_064"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "群聯電子在114Q4揭露的投資方Global Flash Limited投資了哪一家所在地為薩摩亞的被投資公司？",
+  "expected_answer": "Core Storage Electronic (Samoa) Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "群聯電子",
+   "quarter": "114Q4",
+   "investor_name": "Global Flash Limited",
+   "discriminator": "所在地為薩摩亞",
+   "investee_name": "Core Storage Electronic (Samoa) Limited",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_065"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "京元電子在114Q1的財務科目營業收入被標記為哪一類風險候選？",
+  "expected_answer": "營收波動候選",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "京元電子",
+   "quarter": "114Q1",
+   "item_name": "營業收入",
+   "matched_risks": "營收波動候選",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_066"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "智原科技在114Q2的財務科目其他應收款 Other receivables被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "智原科技",
+   "quarter": "114Q2",
+   "item_name": "其他應收款 Other receivables",
+   "matched_risks": "營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_067"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "致茂電子在113Q3揭露的投資方本 公 司投資了哪一家主要業務為溫控平台系統之銷售的被投資公司？",
+  "expected_answer": "Environmental Stress Systems, Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "致茂電子",
+   "quarter": "113Q3",
+   "investor_name": "本 公 司",
+   "discriminator": "主要業務為溫控平台系統之銷售",
+   "investee_name": "Environmental Stress Systems, Inc.",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_068"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "世界先進和華邦電在113Q1的本期淨利（淨損）誰比較高？",
+  "expected_answer": "世界先進: 1,272,079 ｜ 華邦電: ( 264,761 ) ｜ 較高: 世界先進",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "5347",
+    "2344"
+   ],
+   "quarter": "113Q1",
+   "item_name": "本期淨利（淨損） Profit (loss)",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_069"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "精拓科在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "精拓科",
+   "stage": "上游",
+   "segment": "IC設計",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_070"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "博盛半導體在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "博盛半導體",
+   "stage": "上游",
+   "segment": "IC設計",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_071"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "聯華電子在114Q4揭露的投資方宏誠創業投資(股)公司投資了哪一家主要業務為積體電路製造銷售的被投資公司？",
+  "expected_answer": "聯穎光電(股)公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯華電子",
+   "quarter": "114Q4",
+   "investor_name": "宏誠創業投資(股)公司",
+   "discriminator": "主要業務為積體電路製造銷售",
+   "investee_name": "聯穎光電(股)公司",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_072"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "創意在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "上游；IP設計/IC設計代工服務",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "創意",
+   "stage": "上游",
+   "segment": "IP設計/IC設計代工服務",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_073"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "日月光投資控股在113Q1揭露的投資方日月光半導體（上海）有限公司投資了哪一家主要業務為從事貿易相關業務活動的被投資公司？",
+  "expected_answer": "日月光半導體（香港）有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q1",
+   "investor_name": "日月光半導體（上海）有限公司",
+   "discriminator": "主要業務為從事貿易相關業務活動",
+   "investee_name": "日月光半導體（香港）有限公司",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_074"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "智原科技在114Q3，智原科技(股)公司與Faraday Technology Vietnam Company Limited之間的其他應付款交易金額是多少？",
+  "expected_answer": "73,419",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "智原科技",
+   "quarter": "114Q3",
+   "payer": "智原科技(股)公司",
+   "counterparty": "Faraday Technology Vietnam Company Limited",
+   "account_item": "其他應付款",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_075"
+ },
+ {
+  "question_type": "cross_period_value",
+  "question": "智原這兩季(113Q2、114Q2)的資產總計變化如何？",
+  "expected_answer": "113Q2: 18,322,432 ｜ 114Q2: 18,977,680 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3035",
+   "periods": [
+    "113Q2",
+    "114Q2"
+   ],
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_076"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "中華精測科技在114Q4投資之大陸事業中，主要業務為印刷電路板的設計及提供技術諮詢和技術服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "上海台華電子科技有限公司；本期認列投資損益：611",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "中華精測科技",
+   "quarter": "114Q4",
+   "main_business": "印刷電路板的設計及提供技術諮詢和技術服務",
+   "investee_name": "上海台華電子科技有限公司",
+   "profit_recognised": "611",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_077"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "力成科技在114Q1揭露的投資方超豐電子股份有限公司投資了哪一家主要業務為半導體導線架之金屬表面加工處理業務的被投資公司？",
+  "expected_answer": "得群科技股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "力成科技",
+   "quarter": "114Q1",
+   "investor_name": "超豐電子股份有限公司",
+   "discriminator": "主要業務為半導體導線架之金屬表面加工處理業務",
+   "investee_name": "得群科技股份有限公司",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_078"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "華邦電子在113Q3，新唐科技公司與NTSG公司之間的營業成本交易金額是多少？",
+  "expected_answer": "397,106",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "華邦電子",
+   "quarter": "113Q3",
+   "payer": "新唐科技公司",
+   "counterparty": "NTSG公司",
+   "account_item": "營業成本",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_079"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "聯發科技在114Q1，聯發科技(股)公司與MediaTek North America Inc.之間的推銷費用交易金額是多少？",
+  "expected_answer": "341,205",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯發科技",
+   "quarter": "114Q1",
+   "payer": "聯發科技(股)公司",
+   "counterparty": "MediaTek North America Inc.",
+   "account_item": "推銷費用",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_080"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "中華精測科技在113Q3投資之大陸事業中，主要業務為電路板組裝加工銷售、印刷電路板的設計及提供技術諮詢和技術服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "蘇州晶測科技有限公司；本期認列投資損益：( 17,453 )",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "中華精測科技",
+   "quarter": "113Q3",
+   "main_business": "電路板組裝加工銷售、印刷電路板的設計及提供技術諮詢和技術服務",
+   "investee_name": "蘇州晶測科技有限公司",
+   "profit_recognised": "( 17,453 )",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_081"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "旺矽和中華精測在113Q1的資產總計誰比較高？",
+  "expected_answer": "旺矽: 12,565,848 ｜ 中華精測: 8,204,829 ｜ 較高: 旺矽",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "6223",
+    "6510"
+   ],
+   "quarter": "113Q1",
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_082"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "環球晶圓在113Q1的財務科目應付關係人款項被標記為哪一類風險候選？",
+  "expected_answer": "供應鏈壓力;營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "環球晶圓",
+   "quarter": "113Q1",
+   "item_name": "應付關係人款項",
+   "matched_risks": "供應鏈壓力;營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_083"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "南亞科和環球晶在113Q4的營業收入合計誰比較高？",
+  "expected_answer": "南亞科: 34,131,667 ｜ 環球晶: 62,626,004 ｜ 較高: 環球晶",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "2408",
+    "6488"
+   ],
+   "quarter": "113Q4",
+   "item_name": "營業收入合計 Total operating revenue",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_084"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "日月光投資控股在114Q2，日 月 光與環鴻科技公司之間的營業收入交易金額是多少？",
+  "expected_answer": "371,248",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q2",
+   "payer": "日 月 光",
+   "counterparty": "環鴻科技公司",
+   "account_item": "營業收入",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_085"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "景碩科技在113Q2揭露的投資方景碩投資股份有限公司投資了哪一家主要業務為投資業務的被投資公司？",
+  "expected_answer": "竹荷投資股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "景碩科技",
+   "quarter": "113Q2",
+   "investor_name": "景碩投資股份有限公司",
+   "discriminator": "主要業務為投資業務",
+   "investee_name": "竹荷投資股份有限公司",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_086"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "世界先進積體電路在114Q4投資之大陸事業中，主要業務為半導體產品行銷及市場服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "世積集成電路（上海）有限公司；本期認列投資損益：388",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "世界先進積體電路",
+   "quarter": "114Q4",
+   "main_business": "半導體產品行銷及市場服務",
+   "investee_name": "世積集成電路（上海）有限公司",
+   "profit_recognised": "388",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_087"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "台灣積體電路製造在113Q4的財務科目其他應收款－關係人（增加）減少 Decrease (increase) in other receivable due from related parties被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "台灣積體電路製造",
+   "quarter": "113Q4",
+   "item_name": "其他應收款－關係人（增加）減少 Decrease (increase) in other receivable due from related parties",
+   "matched_risks": "營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_088"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "光菱在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "下游；IC通路",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "光菱",
+   "stage": "下游",
+   "segment": "IC通路",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_089"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "台灣光罩在113Q4揭露的投資方record_type投資了哪一家所在地為row_text的被投資公司？",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "台灣光罩",
+   "quarter": "113Q4",
+   "investor_name": "record_type",
+   "discriminator": "所在地為row_text",
+   "investee_name": "source_kind",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_090"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "台灣光罩在113Q2，台灣光罩(股)公司與群豐科技(股)公司之間的租金收入交易金額是多少？",
+  "expected_answer": "25,755",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "台灣光罩",
+   "quarter": "113Q2",
+   "payer": "台灣光罩(股)公司",
+   "counterparty": "群豐科技(股)公司",
+   "account_item": "租金收入",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_091"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "台灣光罩在113Q2，友縳投資(股)公司與艾格生科技(股)公司之間的利息收入交易金額是多少？",
+  "expected_answer": "3,690",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "台灣光罩",
+   "quarter": "113Q2",
+   "payer": "友縳投資(股)公司",
+   "counterparty": "艾格生科技(股)公司",
+   "account_item": "利息收入",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_092"
+ },
+ {
+  "question_type": "cross_company_value",
+  "question": "力積電和穩懋在113Q2的資產總計誰比較高？",
+  "expected_answer": "力積電: 195,099,340 ｜ 穩懋: 65,013,818 ｜ 較高: 力積電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "companies": [
+    "6770",
+    "3105"
+   ],
+   "quarter": "113Q2",
+   "item_name": "資產總計 Total assets",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_093"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "台灣積體電路製造在113Q4揭露的投資方TSMC Partners投資了哪一家所在地為加拿大的被投資公司？",
+  "expected_answer": "TSMC Canada",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "台灣積體電路製造",
+   "quarter": "113Q4",
+   "investor_name": "TSMC Partners",
+   "discriminator": "所在地為加拿大",
+   "investee_name": "TSMC Canada",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_094"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "台灣光罩在113Q4揭露的投資方Innova Vision (B.V.I) Inc.投資了哪一家主要業務為隱形眼鏡銷售的被投資公司？",
+  "expected_answer": "iPro Vision Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "台灣光罩",
+   "quarter": "113Q4",
+   "investor_name": "Innova Vision (B.V.I) Inc.",
+   "discriminator": "主要業務為隱形眼鏡銷售",
+   "investee_name": "iPro Vision Inc.",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_095"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "家登精密工業在114Q1，家碩科技股份有限公司與家登精密工業股份有限公司之間的銷 貨交易金額是多少？",
+  "expected_answer": "20,510",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "家登精密工業",
+   "quarter": "114Q1",
+   "payer": "家碩科技股份有限公司",
+   "counterparty": "家登精密工業股份有限公司",
+   "account_item": "銷 貨",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_096"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "神盾在半導體產業鏈裡屬於哪一段？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "神盾",
+   "stage": "上游",
+   "segment": "IC設計",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_097"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "智原科技在114Q2的財務科目應收帳款－關係人（增加）減少 Decrease (increase) in accounts receivable due from related parties被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "智原科技",
+   "quarter": "114Q2",
+   "item_name": "應收帳款－關係人（增加）減少 Decrease (increase) in accounts receivable due from related parties",
+   "matched_risks": "營運資金壓力",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_098"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "群聯電子在113Q3揭露的投資方Global Flash Limited投資了哪一家所在地為薩摩亞的被投資公司？",
+  "expected_answer": "Core Storage Electronic (Samoa) Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "群聯電子",
+   "quarter": "113Q3",
+   "investor_name": "Global Flash Limited",
+   "discriminator": "所在地為薩摩亞",
+   "investee_name": "Core Storage Electronic (Samoa) Limited",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_099"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "力晶積成電子製造在113Q4揭露的投資方record_type投資了哪一家所在地為row_text的被投資公司？",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "力晶積成電子製造",
+   "quarter": "113Q4",
+   "investor_name": "record_type",
+   "discriminator": "所在地為row_text",
+   "investee_name": "source_kind",
+   "test_purpose": "graph_routing_natural_large"
+  },
+  "id": "gnat_100"
+ }
+]

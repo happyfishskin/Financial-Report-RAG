@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>財報 RAG 客戶問答（確定性雙軌）</title>
+<script src="/static/vis-network.min.js"></script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#12141c; color:#e2e8f0; min-height:100vh;
+    font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+  }
+  header {
+    display:flex; align-items:center; gap:14px;
+    padding:16px 28px; background:#1a1d27; border-bottom:1px solid #2d3748;
+  }
+  header h1 { font-size:1.05rem; font-weight:700; }
+  #status-chip {
+    font-size:.75rem; padding:4px 12px; border-radius:20px;
+    background:#2d3748; color:#a0aec0;
+  }
+  #status-chip.ready { background:#1c4532; color:#9ae6b4; }
+  #status-chip.err   { background:#63171b; color:#feb2b2; }
+  .wrap { max-width:1100px; margin:0 auto; padding:28px 24px 60px; }
+
+  /* 輸入區 */
+  .ask-box { display:flex; gap:10px; }
+  #q-input {
+    flex:1; background:#1f2430; color:#e2e8f0; border:1px solid #3a4556;
+    border-radius:12px; padding:14px 16px; font-size:.95rem; resize:vertical;
+    min-height:58px; font-family:inherit;
+  }
+  #q-input:focus { outline:none; border-color:#63b3ed; }
+  #ask-btn {
+    background:#2b6cb0; color:#fff; border:none; border-radius:12px;
+    padding:0 28px; font-size:.95rem; cursor:pointer; font-family:inherit;
+  }
+  #ask-btn:hover { background:#3182ce; }
+  #ask-btn:disabled { background:#2d3748; color:#718096; cursor:not-allowed; }
+
+  /* 範例 */
+  #examples { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  .ex-chip {
+    font-size:.74rem; padding:5px 12px; border-radius:16px; cursor:pointer;
+    background:#1f2430; border:1px solid #3a4556; color:#a0aec0;
+    max-width:340px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  }
+  .ex-chip:hover { border-color:#63b3ed; color:#e2e8f0; }
+  .ex-chip b { color:#63b3ed; font-weight:600; }
+
+  /* 結果 */
+  #result { margin-top:26px; display:none; }
+  .route-bar { display:flex; align-items:center; gap:10px; margin-bottom:12px; flex-wrap:wrap; }
+  .route-badge {
+    font-size:.78rem; font-weight:700; padding:5px 14px; border-radius:8px;
+  }
+  .route-direct { background:#1c4532; color:#9ae6b4; }
+  .route-graph  { background:#3c2a63; color:#d6bcfa; }
+  .route-vector { background:#1e3a5f; color:#90cdf4; }
+  .route-none   { background:#4a3520; color:#f6ad55; }
+  .route-meta   { font-size:.74rem; color:#718096; }
+
+  .answer-card {
+    background:#1a1d27; border:1px solid #2d3748; border-left:4px solid #63b3ed;
+    border-radius:12px; padding:18px 22px; font-size:1.02rem; line-height:1.8;
+    white-space:pre-wrap; word-break:break-all;
+  }
+
+  /* 雙軌管線示意 */
+  .pipeline { display:flex; gap:8px; margin:16px 0 4px; }
+  .pipe-step {
+    flex:1; text-align:center; font-size:.74rem; padding:8px 4px;
+    border-radius:8px; background:#1f2430; border:1px solid #2d3748; color:#4a5568;
+  }
+  .pipe-step.hit  { border-color:#63b3ed; color:#e2e8f0; background:#1e3a5f; }
+  .pipe-step.pass { color:#718096; }
+
+  /* 圖譜 */
+  #graph-area { margin-top:18px; display:none; }
+  #graph-canvas {
+    height:520px; background:#161922; border:1px solid #2d3748; border-radius:12px;
+  }
+  .graph-cap { font-size:.74rem; color:#718096; margin:8px 2px 0; }
+
+  /* 片段卡片 */
+  #frag-area { margin-top:18px; display:none; }
+  .frag-title { font-size:.82rem; color:#a0aec0; margin-bottom:10px; }
+  .frag-card {
+    background:#1a1d27; border:1px solid #2d3748; border-radius:10px;
+    padding:12px 16px; margin-bottom:10px; font-size:.82rem;
+  }
+  .frag-head { display:flex; gap:10px; flex-wrap:wrap; color:#63b3ed; margin-bottom:6px; font-size:.76rem; }
+  .frag-head .score { color:#f6ad55; }
+  .fact-grid { display:grid; grid-template-columns:auto 1fr; gap:3px 14px; }
+  .fact-grid .k { color:#718096; }
+  .fact-grid .v.big { color:#9ae6b4; font-weight:700; font-size:.95rem; }
+  .frag-card pre {
+    white-space:pre-wrap; word-break:break-all; color:#cbd5e0;
+    font-size:.76rem; line-height:1.6; max-height:180px; overflow:auto;
+    font-family:ui-monospace,Consolas,monospace; margin-top:4px;
+  }
+  #spinner { display:none; margin-top:26px; color:#718096; font-size:.85rem; }
+  .dots::after { content:""; animation:dots 1.2s steps(4,end) infinite; }
+  @keyframes dots { 0%{content:""} 25%{content:"."} 50%{content:".."} 75%{content:"..."} }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>財報 RAG 客戶問答 — 確定性雙軌展示（rag_test_system_v14）</h1>
+  <span id="status-chip">初始化中…</span>
+</header>
+
+<div class="wrap">
+  <div class="ask-box">
+    <textarea id="q-input" placeholder="輸入財報問題，例如：台積電 114Q2 的營業收入是多少？"></textarea>
+    <button id="ask-btn" onclick="ask()" disabled>送出</button>
+  </div>
+  <div id="examples"></div>
+
+  <div id="spinner"><span class="dots">系統思考中（LLM 意圖路由 → 雙軌檢索）</span></div>
+
+  <div id="result">
+    <div class="pipeline" id="pipeline"></div>
+    <div class="route-bar">
+      <span class="route-badge" id="route-badge"></span>
+      <span class="route-meta" id="route-meta"></span>
+    </div>
+    <div class="answer-card" id="answer-card"></div>
+
+    <div id="graph-area">
+      <div id="graph-canvas"></div>
+      <div class="graph-cap" id="graph-cap"></div>
+    </div>
+
+    <div id="frag-area">
+      <div class="frag-title" id="frag-title"></div>
+      <div id="frag-list"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+function esc(s) { const d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML; }
+
+/* ── 初始化狀態輪詢 ── */
+async function pollStatus() {
+  try {
+    const d = await (await fetch("/api/status")).json();
+    const chip = $("status-chip");
+    if (d.error) { chip.textContent = "初始化失敗：" + d.error; chip.className = "err"; return; }
+    if (d.ready) { chip.textContent = "● 系統就緒"; chip.className = "ready"; $("ask-btn").disabled = false; return; }
+    chip.textContent = "初始化中：" + d.stage;
+    setTimeout(pollStatus, 1500);
+  } catch { setTimeout(pollStatus, 2500); }
+}
+pollStatus();
+
+/* ── 範例問題 ── */
+async function loadExamples() {
+  try {
+    const exs = await (await fetch("/api/examples")).json();
+    const box = $("examples");
+    exs.forEach(ex => {
+      const chip = document.createElement("div");
+      chip.className = "ex-chip";
+      chip.innerHTML = `<b>${esc(ex.route)}</b>｜${esc(ex.question)}`;
+      chip.title = ex.question;
+      chip.onclick = () => { $("q-input").value = ex.question; };
+      box.appendChild(chip);
+    });
+  } catch {}
+}
+loadExamples();
+
+/* ── 確定性雙軌管線示意 ──
+   軌道一含兩個分支（關係事實／數值事實），皆為零 LLM 生成的確定性直查；
+   軌道二為語意向量降級軌。graph_rag* 為已下架三軌之標記，保留以相容舊結果重播。 */
+const MODE_INFO = {
+  relation_lookup:    { label: "關係事實直查命中", cls: "route-graph",  step: 0 },
+  direct_lookup:      { label: "數值事實直查命中", cls: "route-direct", step: 1 },
+  vector_search:      { label: "向量搜尋 + LLM 生成", cls: "route-vector", step: 2 },
+  no_evidence:        { label: "查無資料／條件不足", cls: "route-none", step: -1 },
+  graph_rag:          { label: "關係事實直查命中", cls: "route-graph",  step: 0 },
+  graph_rag_l0:       { label: "關係事實直查命中", cls: "route-graph",  step: 0 },
+  graph_rag_local:    { label: "關係事實直查命中", cls: "route-graph",  step: 0 },
+  graph_rag_topology: { label: "線上圖遍歷命中（已下架）", cls: "route-graph", step: 0 },
+};
+function renderPipeline(mode) {
+  const info = MODE_INFO[mode] || MODE_INFO.no_evidence;
+  const steps = ["① 軌道一・關係事實直查", "② 軌道一・數值事實直查", "③ 軌道二・向量降級"];
+  $("pipeline").innerHTML = steps.map((s, i) => {
+    let cls = "pipe-step";
+    if (i === info.step) cls += " hit";
+    else if (info.step >= 0 && i < info.step) cls += " pass";
+    return `<div class="${cls}">${s}${i === info.step ? " ✓" : (info.step >= 0 && i < info.step ? "（未命中→降級）" : "")}</div>`;
+  }).join("");
+}
+
+/* ── 送出問題 ── */
+let network = null;
+async function ask() {
+  const q = $("q-input").value.trim();
+  if (!q) return;
+  $("ask-btn").disabled = true;
+  $("result").style.display = "none";
+  $("spinner").style.display = "block";
+  try {
+    const r = await fetch("/api/ask?q=" + encodeURIComponent(q));
+    const d = await r.json();
+    if (d.error) throw new Error(d.detail || d.stage || d.error);
+    render(d);
+  } catch (e) {
+    $("result").style.display = "block";
+    $("pipeline").innerHTML = "";
+    $("route-badge").className = "route-badge route-none";
+    $("route-badge").textContent = "錯誤";
+    $("route-meta").textContent = "";
+    $("answer-card").textContent = "查詢失敗：" + (e.message || e);
+    $("graph-area").style.display = "none";
+    $("frag-area").style.display = "none";
+  } finally {
+    $("spinner").style.display = "none";
+    $("ask-btn").disabled = false;
+  }
+}
+$("q-input").addEventListener("keydown", e => {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(); }
+});
+
+function render(d) {
+  const info = MODE_INFO[d.answer_mode] || MODE_INFO.no_evidence;
+  renderPipeline(d.answer_mode);
+  $("route-badge").className = "route-badge " + info.cls;
+  $("route-badge").textContent = info.label;
+  const rt = d.router || {};
+  $("route-meta").textContent =
+    `耗時 ${d.latency_sec}s｜路由 ${rt.route || "—"}｜公司 ${(rt.companies || []).join("、") || "—"}` +
+    `｜期間 ${(rt.quarters || []).join("、") || "—"}`;
+  $("answer-card").textContent = d.answer || "（無回答）";
+  $("result").style.display = "block";
+
+  /* 圖譜 */
+  if (d.display === "graph" && d.graph && d.graph.nodes.length) {
+    $("graph-area").style.display = "block";
+    $("frag-area").style.display = "none";
+    drawGraph(d.graph);
+  } else if (d.display === "fragments" && d.fragments && d.fragments.length) {
+    $("graph-area").style.display = "none";
+    $("frag-area").style.display = "block";
+    renderFragments(d);
+  } else {
+    $("graph-area").style.display = "none";
+    $("frag-area").style.display = "none";
+  }
+}
+
+const GROUP_STYLE = {
+  anchor:   { color: { background:"#2b6cb0", border:"#63b3ed" }, size:30, font:{ size:16 } },
+  Company:  { color: { background:"#2c5282", border:"#63b3ed" }, size:22 },
+  default:  { color: { background:"#4a5568", border:"#a0aec0" }, size:14 },
+};
+function drawGraph(g) {
+  const nodes = g.nodes.map(n => {
+    const st = n.in_answer
+      ? { color:{ background:"#9c4221", border:"#f6ad55" }, size:26, font:{ size:15, color:"#fbd38d" } }
+      : (GROUP_STYLE[n.group] || GROUP_STYLE.default);
+    return { ...n, ...st, shape:"dot", font: { color:"#e2e8f0", size:12, ...(st.font||{}) } };
+  });
+  const edges = g.edges.map(e => ({ ...e, arrows:"to",
+    color:{ color:"#4a5568", highlight:"#63b3ed" },
+    font:{ color:"#718096", size:9, strokeWidth:0 } }));
+  if (network) network.destroy();
+  network = new vis.Network($("graph-canvas"),
+    { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) },
+    { physics: { stabilization:{ iterations:150 },
+                 barnesHut:{ gravitationalConstant:-6000, springLength:130 } },
+      interaction: { hover:true, tooltipDelay:150 } });
+  $("graph-cap").textContent =
+    `圖譜來源：${g.graph_source}｜錨點公司：${g.anchor_company}｜` +
+    `${g.nodes.length} 節點 / ${g.edges.length} 邊（橘色 = 出現在答案中的節點）`;
+}
+
+function renderFragments(d) {
+  const kind = d.fragment_kind;
+  $("frag-title").textContent = kind === "fact"
+    ? `📌 直接查表命中的財報事實（${d.fragments.length} 筆）`
+    : `📄 向量檢索到的資料片段（${d.fragments.length} 筆，依相似度排序）`;
+  $("frag-list").innerHTML = d.fragments.map(f => {
+    if (kind === "fact") {
+      return `<div class="frag-card">
+        <div class="frag-head"><span>${esc(f.company_name)}</span><span>${esc(f.quarter)}</span><span>${esc(f.table_name)}</span></div>
+        <div class="fact-grid">
+          <span class="k">科目</span><span class="v">${esc(f.item_name)}</span>
+          <span class="k">欄位</span><span class="v">${esc(f.column_header)}</span>
+          <span class="k">數值</span><span class="v big">${esc(f.value)}</span>
+        </div></div>`;
+    }
+    return `<div class="frag-card">
+      <div class="frag-head">
+        <span>${esc(f.company_name)}</span><span>${esc(f.quarter)}</span><span>${esc(f.table_name)}</span>
+        <span class="score">score ${(+f.score).toFixed(3)}</span>
+      </div>
+      <pre>${esc((f.content || "").slice(0, 1200))}</pre></div>`;
+  }).join("");
+}
+</script>
+</body>
+</html>

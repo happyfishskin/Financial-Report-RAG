@@ -1,0 +1,400 @@
+[
+  {
+    "id": "arch_wrong_001",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【家登精密工業】【113Q3】的【應收關係人款項】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 3680_113Q3_應收關係人款項.md；表名為「應收關係人款項」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "3680",
+      "company_name": "家登精密工業",
+      "quarter": "113Q3",
+      "table_name": "應收關係人款項",
+      "source_md": "reports_csv_output/3680_家登精密工業/113Q3/3680_113Q3_應收關係人款項.md"
+    },
+    "original_id": "arch_test_061",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_002",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【家登精密工業】【113Q1】的【財務成本】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 3680_113Q1_財務成本.md；表名為「財務成本」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "3680",
+      "company_name": "家登精密工業",
+      "quarter": "113Q1",
+      "table_name": "財務成本",
+      "source_md": "reports_csv_output/3680_家登精密工業/113Q1/3680_113Q1_財務成本.md"
+    },
+    "original_id": "arch_test_062",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_003",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【新應材】【114Q2】的【處分金融資產】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 4749_114Q2_處分金融資產.md；表名為「處分金融資產」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "4749",
+      "company_name": "新應材",
+      "quarter": "114Q2",
+      "table_name": "處分金融資產",
+      "source_md": "reports_csv_output/4749_新應材/114Q2/4749_114Q2_處分金融資產.md"
+    },
+    "original_id": "arch_test_063",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_004",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【辛耘企業】【114Q1】的【現金流量表】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 3583_114Q1_現金流量表.md；表名為「現金流量表」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "3583",
+      "company_name": "辛耘企業",
+      "quarter": "114Q1",
+      "table_name": "現金流量表",
+      "source_md": "reports_csv_output/3583_辛耘企業/114Q1/3583_114Q1_現金流量表.md"
+    },
+    "original_id": "arch_test_064",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_005",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【聯發科技】【114Q1】的【財務成本】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 2454_114Q1_財務成本.md；表名為「財務成本」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "2454",
+      "company_name": "聯發科技",
+      "quarter": "114Q1",
+      "table_name": "財務成本",
+      "source_md": "reports_csv_output/2454_聯發科技/114Q1/2454_114Q1_財務成本.md"
+    },
+    "original_id": "arch_test_065",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_006",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【新應材】【113Q1】的【應收款項之帳齡分析】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 4749_113Q1_應收款項之帳齡分析.md；表名為「應收款項之帳齡分析」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "4749",
+      "company_name": "新應材",
+      "quarter": "113Q1",
+      "table_name": "應收款項之帳齡分析",
+      "source_md": "reports_csv_output/4749_新應材/113Q1/4749_113Q1_應收款項之帳齡分析.md"
+    },
+    "original_id": "arch_test_066",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_007",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【京鼎精密科技】【113Q2】的【利息收入】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 3413_113Q2_利息收入.md；表名為「利息收入」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "3413",
+      "company_name": "京鼎精密科技",
+      "quarter": "113Q2",
+      "table_name": "利息收入",
+      "source_md": "reports_csv_output/3413_京鼎精密科技/113Q2/3413_113Q2_利息收入.md"
+    },
+    "original_id": "arch_test_067",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_008",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【環球晶圓】【113Q2】的【資金貸與他人】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 6488_113Q2_資金貸與他人.md；表名為「資金貸與他人」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "6488",
+      "company_name": "環球晶圓",
+      "quarter": "113Q2",
+      "table_name": "資金貸與他人",
+      "source_md": "reports_csv_output/6488_環球晶圓/113Q2/6488_113Q2_資金貸與他人.md"
+    },
+    "original_id": "arch_test_068",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_009",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【祥碩科技】【114Q1】的【其他收入】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 5269_114Q1_其他收入.md；表名為「其他收入」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "5269",
+      "company_name": "祥碩科技",
+      "quarter": "114Q1",
+      "table_name": "其他收入",
+      "source_md": "reports_csv_output/5269_祥碩科技/114Q1/5269_114Q1_其他收入.md"
+    },
+    "original_id": "arch_test_069",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_010",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【瑞昱半導體】【114Q4】的【被投資公司名稱、所在地區…等相關資訊】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 2379_114Q4_被投資公司名稱、所在地區…等相關資訊.md；表名為「被投資公司名稱、所在地區…等相關資訊」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "2379",
+      "company_name": "瑞昱半導體",
+      "quarter": "114Q4",
+      "table_name": "被投資公司名稱、所在地區…等相關資訊",
+      "source_md": "reports_csv_output/2379_瑞昱半導體/114Q4/2379_114Q4_被投資公司名稱、所在地區…等相關資訊.md"
+    },
+    "original_id": "arch_test_070",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_011",
+    "question_type": "investment_graph",
+    "question": "根據投資關係圖譜，【聯詠科技】在【113Q3】揭露的投資方【聯詠科技(股)公司】投資了哪一家被投資公司？",
+    "expected_answer": "NTK International Limited（迅捷）",
+    "metadata": {
+      "target_route": "graph_rag_investment",
+      "company_code": "3034",
+      "company_name": "聯詠科技",
+      "quarter": "113Q3",
+      "investor_name": "聯詠科技(股)公司",
+      "investee_name": "NTK International Limited（迅捷）",
+      "source_csv": "reports_csv_output/3034_聯詠科技/113Q3/3034_113Q3_被投資公司名稱、所在地區…等相關資訊.csv"
+    },
+    "original_id": "arch_test_073",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_012",
+    "question_type": "investment_graph",
+    "question": "根據投資關係圖譜，【家登精密工業】在【113Q1】揭露的投資方【家登創業投資股份有限公司】投資了哪一家被投資公司？",
+    "expected_answer": "恆陽綠能股份有限公司",
+    "metadata": {
+      "target_route": "graph_rag_investment",
+      "company_code": "3680",
+      "company_name": "家登精密工業",
+      "quarter": "113Q1",
+      "investor_name": "家登創業投資股份有限公司",
+      "investee_name": "恆陽綠能股份有限公司",
+      "source_csv": "reports_csv_output/3680_家登精密工業/113Q1/3680_113Q1_被投資公司名稱、所在地區…等相關資訊.csv"
+    },
+    "original_id": "arch_test_074",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_013",
+    "question_type": "investment_graph",
+    "question": "根據投資關係圖譜，【旺矽科技】在【113Q3】揭露的投資方【旺矽科技(股)公司】投資了哪一家被投資公司？",
+    "expected_answer": "MPI TRADING CORP.",
+    "metadata": {
+      "target_route": "graph_rag_investment",
+      "company_code": "6223",
+      "company_name": "旺矽科技",
+      "quarter": "113Q3",
+      "investor_name": "旺矽科技(股)公司",
+      "investee_name": "MPI TRADING CORP.",
+      "source_csv": "reports_csv_output/6223_旺矽科技/113Q3/6223_113Q3_被投資公司名稱、所在地區…等相關資訊.csv"
+    },
+    "original_id": "arch_test_075",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_014",
+    "question_type": "investment_graph",
+    "question": "根據投資關係圖譜，【辛耘企業】在【113Q4】揭露的投資方【SCIENTECH INVESTMENT CORP.】投資了哪一家被投資公司？",
+    "expected_answer": "SIMPLE INVESTMENT CORP.",
+    "metadata": {
+      "target_route": "graph_rag_investment",
+      "company_code": "3583",
+      "company_name": "辛耘企業",
+      "quarter": "113Q4",
+      "investor_name": "SCIENTECH INVESTMENT CORP.",
+      "investee_name": "SIMPLE INVESTMENT CORP.",
+      "source_csv": "reports_csv_output/3583_辛耘企業/113Q4/3583_113Q4_被投資公司名稱、所在地區…等相關資訊.csv"
+    },
+    "original_id": "arch_test_077",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_015",
+    "question_type": "investment_graph",
+    "question": "根據投資關係圖譜，【南亞科技】在【113Q1】揭露的投資方【本公司】投資了哪一家被投資公司？",
+    "expected_answer": "南亞科技香港公司",
+    "metadata": {
+      "target_route": "graph_rag_investment",
+      "company_code": "2408",
+      "company_name": "南亞科技",
+      "quarter": "113Q1",
+      "investor_name": "本公司",
+      "investee_name": "南亞科技香港公司",
+      "source_csv": "reports_csv_output/2408_南亞科技/113Q1/2408_113Q1_被投資公司名稱、所在地區…等相關資訊.csv"
+    },
+    "original_id": "arch_test_078",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_016",
+    "question_type": "investment_graph",
+    "question": "根據投資關係圖譜，【日月光投資控股】在【113Q2】揭露的投資方【Huntington Holdings International Co. Ltd.】投資了哪一家被投資公司？",
+    "expected_answer": "Real Tech Holdings Limited",
+    "metadata": {
+      "target_route": "graph_rag_investment",
+      "company_code": "3711",
+      "company_name": "日月光投資控股",
+      "quarter": "113Q2",
+      "investor_name": "Huntington Holdings International Co. Ltd.",
+      "investee_name": "Real Tech Holdings Limited",
+      "source_csv": "reports_csv_output/3711_日月光投資控股/113Q2/3711_113Q2_被投資公司名稱、所在地區…等相關資訊.csv"
+    },
+    "original_id": "arch_test_080",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_017",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【大聯大控股】在【114Q1】的【3】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "World Peace International (South Asia) Pte Ltd.；value_2=WPG South Asia Pte. Ltd.; value_3=3; value_4=其他應收款; value_5=348,056; value_6=註6; value_7=0.08 %",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "3702",
+      "company_name": "大聯大控股",
+      "quarter": "114Q1",
+      "account": "3",
+      "party_or_category": "World Peace International (South Asia) Pte Ltd.",
+      "source_csv": "reports_csv_output/3702_大聯大控股/114Q1/3702_114Q1_母子公司間業務關係及重要交易往來情形.csv"
+    },
+    "original_id": "arch_test_081",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_018",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【穩懋半導體】在【114Q2】的【2】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "江蘇全穩康源農業發展有限公司；value_2=江蘇全穩農牧科技有限公司; value_3=3; value_4=其他應付款-關係人; value_5=110,510; value_6=與一般交易同; value_7=0.18 %",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "3105",
+      "company_name": "穩懋半導體",
+      "quarter": "114Q2",
+      "account": "2",
+      "party_or_category": "江蘇全穩康源農業發展有限公司",
+      "source_csv": "reports_csv_output/3105_穩懋半導體/114Q2/3105_114Q2_母子公司間業務關係及重要交易往來情形.csv"
+    },
+    "original_id": "arch_test_082",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_019",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【家登精密工業】在【113Q1】的【0】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "家登精密工業股份有限公司；value_2=上海家登貿易有限公司; value_3=1; value_4=服務費用; value_5=28,658; value_7=2.00 %",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "3680",
+      "company_name": "家登精密工業",
+      "quarter": "113Q1",
+      "account": "0",
+      "party_or_category": "家登精密工業股份有限公司",
+      "source_csv": "reports_csv_output/3680_家登精密工業/113Q1/3680_113Q1_母子公司間業務關係及重要交易往來情形.csv"
+    },
+    "original_id": "arch_test_083",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_020",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【華邦電子】在【114Q4】的【0】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "華邦公司；value_2=WECA公司; value_3=母公司對子公司; value_4=其他應付款; value_5=229,127; value_6=0; value_7=0.00 %",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "2344",
+      "company_name": "華邦電子",
+      "quarter": "114Q4",
+      "account": "0",
+      "party_or_category": "華邦公司",
+      "source_csv": "reports_csv_output/2344_華邦電子/114Q4/2344_114Q4_母子公司間業務關係及重要交易往來情形.csv"
+    },
+    "original_id": "arch_test_086",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_021",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【智原科技】在【113Q2】的【0】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "智原科技(股)公司；value_2=智原科技(上海)有限公司; value_3=1; value_4=合約資產; value_5=8,602; value_6=依合約而定; value_7=0.05 %",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "3035",
+      "company_name": "智原科技",
+      "quarter": "113Q2",
+      "account": "0",
+      "party_or_category": "智原科技(股)公司",
+      "source_csv": "reports_csv_output/3035_智原科技/113Q2/3035_113Q2_母子公司間業務關係及重要交易往來情形.csv"
+    },
+    "original_id": "arch_test_087",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_022",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【京鼎精密科技】在【114Q4】的【0】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "京鼎精密科技股份有限公司；value_2=SUCCESSPRAISECORPORATION; value_3=(1); value_4=進貨; value_5=7,877,323; value_6=發票日起45天; value_7=38.00 %",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "3413",
+      "company_name": "京鼎精密科技",
+      "quarter": "114Q4",
+      "account": "0",
+      "party_or_category": "京鼎精密科技股份有限公司",
+      "source_csv": "reports_csv_output/3413_京鼎精密科技/114Q4/3413_114Q4_母子公司間業務關係及重要交易往來情形.csv"
+    },
+    "original_id": "arch_test_088",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_023",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【台灣光罩】在【114Q1】的【0】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "台灣光罩(股)公司；value_2=友縳投資(股)公司; value_3=3; value_4=利息收入; value_5=1,997; value_6=約定時間收付款; value_7=0.12 %",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "2338",
+      "company_name": "台灣光罩",
+      "quarter": "114Q1",
+      "account": "0",
+      "party_or_category": "台灣光罩(股)公司",
+      "source_csv": "reports_csv_output/2338_台灣光罩/114Q1/2338_114Q1_母子公司間業務關係及重要交易往來情形.csv"
+    },
+    "original_id": "arch_test_089",
+    "failure_source": "pasted_eval_text"
+  },
+  {
+    "id": "arch_wrong_024",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【台灣光罩】在【113Q2】的【7】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "iPro Vision Inc.；value_2=昱嘉科技(股)公司; value_3=3; value_4=銷貨; value_5=2,414; value_6=約定時間收付款; value_7=0.06 %",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "2338",
+      "company_name": "台灣光罩",
+      "quarter": "113Q2",
+      "account": "7",
+      "party_or_category": "iPro Vision Inc.",
+      "source_csv": "reports_csv_output/2338_台灣光罩/113Q2/2338_113Q2_母子公司間業務關係及重要交易往來情形.csv"
+    },
+    "original_id": "arch_test_090",
+    "failure_source": "pasted_eval_text"
+  }
+]

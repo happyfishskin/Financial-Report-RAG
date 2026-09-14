@@ -1,0 +1,579 @@
+[
+ {
+  "question_type": "investment_graph",
+  "question": "大聯大控股在113Q3揭露的投資方大聯大控股投資了哪一家所在地為新加坡的被投資公司？",
+  "expected_answer": "WPG South Asia Pte. Ltd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "大聯大控股",
+   "quarter": "113Q3",
+   "investor_name": "大聯大控股",
+   "investee_name": "WPG South Asia Pte. Ltd.",
+   "discriminator": {
+    "column": "location",
+    "value": "新加坡"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_001"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "創意電子在113Q2揭露的投資方record_type投資了哪一家所在地為row_text的被投資公司？",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "創意電子",
+   "quarter": "113Q2",
+   "investor_name": "record_type",
+   "investee_name": "source_kind",
+   "discriminator": {
+    "column": "location",
+    "value": "row_text"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_002"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "世界先進積體電路在113Q4揭露的投資方record_type投資了哪一家所在地為row_text的被投資公司？",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "世界先進積體電路",
+   "quarter": "113Q4",
+   "investor_name": "record_type",
+   "investee_name": "source_kind",
+   "discriminator": {
+    "column": "location",
+    "value": "row_text"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_003"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "聯華電子在114Q1揭露的投資方GREEN EARTH LIMITED投資了哪一家所在地為開曼群島的被投資公司？",
+  "expected_answer": "UNITED MICROCHIP CORPORATION",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯華電子",
+   "quarter": "114Q1",
+   "investor_name": "GREEN EARTH LIMITED",
+   "investee_name": "UNITED MICROCHIP CORPORATION",
+   "discriminator": {
+    "column": "location",
+    "value": "開曼群島"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_004"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "致茂電子在114Q1揭露的投資方record_type投資了哪一家所在地為row_text的被投資公司？",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "致茂電子",
+   "quarter": "114Q1",
+   "investor_name": "record_type",
+   "investee_name": "source_kind",
+   "discriminator": {
+    "column": "location",
+    "value": "row_text"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_005"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "大聯大控股在113Q2揭露的投資方WPG South Asia Pte. Ltd.投資了哪一家所在地為菲律賓的被投資公司？",
+  "expected_answer": "WPG Electronics (Philippines) Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "大聯大控股",
+   "quarter": "113Q2",
+   "investor_name": "WPG South Asia Pte. Ltd.",
+   "investee_name": "WPG Electronics (Philippines) Inc.",
+   "discriminator": {
+    "column": "location",
+    "value": "菲律賓"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_006"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "日月光投資控股在114Q2揭露的投資方record_type投資了哪一家所在地為row_text的被投資公司？",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q2",
+   "investor_name": "record_type",
+   "investee_name": "source_kind",
+   "discriminator": {
+    "column": "location",
+    "value": "row_text"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_007"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "日月光投資控股在114Q3揭露的投資方A.S.E. Holding Limited投資了哪一家所在地為馬來西亞的被投資公司？",
+  "expected_answer": "ASE Investment (Labuan) Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q3",
+   "investor_name": "A.S.E. Holding Limited",
+   "investee_name": "ASE Investment (Labuan) Inc.",
+   "discriminator": {
+    "column": "location",
+    "value": "馬來西亞"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_008"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "致茂電子在114Q2揭露的投資方record_type投資了哪一家所在地為row_text的被投資公司？",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "致茂電子",
+   "quarter": "114Q2",
+   "investor_name": "record_type",
+   "investee_name": "source_kind",
+   "discriminator": {
+    "column": "location",
+    "value": "row_text"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_009"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "日月光投資控股在114Q1揭露的投資方本 公 司投資了哪一家主要業務為整合服務業務的被投資公司？",
+  "expected_answer": "日月光整合服務公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q1",
+   "investor_name": "本 公 司",
+   "investee_name": "日月光整合服務公司",
+   "discriminator": {
+    "column": "main_business",
+    "value": "整合服務業務"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_010"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "聯詠科技在114Q1，聯詠科技（股）公司與Novatek USA Inc.之間的推銷費用交易金額是多少？",
+  "expected_answer": "16,853",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯詠科技",
+   "quarter": "114Q1",
+   "party_or_category": "聯詠科技（股）公司",
+   "transacting_party": "聯詠科技（股）公司",
+   "counterparty": "Novatek USA Inc.",
+   "account_item": "推銷費用",
+   "source_csv": "reports_csv_output/3034_聯詠科技/114Q1/3034_114Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "Novatek USA Inc.",
+    "value_4": "推銷費用"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_011"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "華邦電子在113Q4，新唐科技公司與NTCJ公司之間的應付帳款－關係人交易金額是多少？",
+  "expected_answer": "265,019",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "華邦電子",
+   "quarter": "113Q4",
+   "party_or_category": "新唐科技公司",
+   "transacting_party": "新唐科技公司",
+   "counterparty": "NTCJ公司",
+   "account_item": "應付帳款－關係人",
+   "source_csv": "reports_csv_output/2344_華邦電子/113Q4/2344_113Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "NTCJ公司",
+    "value_4": "應付帳款－關係人"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_012"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "南亞科技在113Q2，南亞科技股份有限公司與南亞科技美國公司之間的應收帳款交易金額是多少？",
+  "expected_answer": "900,820",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "南亞科技",
+   "quarter": "113Q2",
+   "party_or_category": "南亞科技股份有限公司",
+   "transacting_party": "南亞科技股份有限公司",
+   "counterparty": "南亞科技美國公司",
+   "account_item": "應收帳款",
+   "source_csv": "reports_csv_output/2408_南亞科技/113Q2/2408_113Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "南亞科技美國公司",
+    "value_4": "應收帳款"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_013"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "力晶積成電子製造在114Q4，力積電公司與Maxram公司之間的研究發展費用交易金額是多少？",
+  "expected_answer": "10,776",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "力晶積成電子製造",
+   "quarter": "114Q4",
+   "party_or_category": "力積電公司",
+   "transacting_party": "力積電公司",
+   "counterparty": "Maxram公司",
+   "account_item": "研究發展費用",
+   "source_csv": "reports_csv_output/6770_力晶積成電子製造/114Q4/6770_114Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "Maxram公司",
+    "value_4": "研究發展費用"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_014"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "旺矽科技在113Q4，旺矽科技(股)公司與MPI AMERICA INC.之間的其他應收款交易金額是多少？",
+  "expected_answer": "281",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "旺矽科技",
+   "quarter": "113Q4",
+   "party_or_category": "旺矽科技(股)公司",
+   "transacting_party": "旺矽科技(股)公司",
+   "counterparty": "MPI AMERICA INC.",
+   "account_item": "其他應收款",
+   "source_csv": "reports_csv_output/6223_旺矽科技/113Q4/6223_113Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "MPI AMERICA INC.",
+    "value_4": "其他應收款"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_015"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "環球晶圓在114Q2，GWS與MEMC Sdn Bhd之間的進貨交易金額是多少？",
+  "expected_answer": "666,004",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "環球晶圓",
+   "quarter": "114Q2",
+   "party_or_category": "GWS",
+   "transacting_party": "GWS",
+   "counterparty": "MEMC Sdn Bhd",
+   "account_item": "進貨",
+   "source_csv": "reports_csv_output/6488_環球晶圓/114Q2/6488_114Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "MEMC Sdn Bhd",
+    "value_4": "進貨"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_016"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "日月光投資控股在113Q2，環鴻科技公司與環榮電子（惠州）有限公司之間的營業收入交易金額是多少？",
+  "expected_answer": "100,656",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q2",
+   "party_or_category": "環鴻科技公司",
+   "transacting_party": "環鴻科技公司",
+   "counterparty": "環榮電子（惠州）有限公司",
+   "account_item": "營業收入",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/113Q2/3711_113Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "環榮電子（惠州）有限公司",
+    "value_4": "營業收入"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_017"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "致茂電子在113Q1，本公司與Neworld Electronics Limited之間的應收帳款交易金額是多少？",
+  "expected_answer": "312,357",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "致茂電子",
+   "quarter": "113Q1",
+   "party_or_category": "本公司",
+   "transacting_party": "本公司",
+   "counterparty": "Neworld Electronics Limited",
+   "account_item": "應收帳款",
+   "source_csv": "reports_csv_output/2360_致茂電子/113Q1/2360_113Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "Neworld Electronics Limited",
+    "value_4": "應收帳款"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_018"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "矽創屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "矽創",
+   "stage": "上游",
+   "segment": "IC設計",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_019"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "永光屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "中游；化學品",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "永光",
+   "stage": "中游",
+   "segment": "化學品",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_020"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "聖凰屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "聖凰",
+   "stage": "中游",
+   "segment": "生產製程及檢測設備",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_021"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "尼克森屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "尼克森",
+   "stage": "上游",
+   "segment": "IC設計",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_022"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "瑞鼎屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "瑞鼎",
+   "stage": "上游",
+   "segment": "IC設計",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_023"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "家登精密工業在114Q2的財務科目其他應付款－關係人被標記為哪一類風險候選？",
+  "expected_answer": "供應鏈壓力;營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "家登精密工業",
+   "quarter": "114Q2",
+   "item_name": "其他應付款－關係人",
+   "matched_risks": "供應鏈壓力;營運資金壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_024"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "智原科技在114Q1的財務科目其他關係人被標記為哪一類風險候選？",
+  "expected_answer": "供應鏈壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "智原科技",
+   "quarter": "114Q1",
+   "item_name": "其他關係人",
+   "matched_risks": "供應鏈壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_025"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "致茂電子在114Q2的財務科目應收帳款-按攤銷後成本衡量之非關係人被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "致茂電子",
+   "quarter": "114Q2",
+   "item_name": "應收帳款-按攤銷後成本衡量之非關係人",
+   "matched_risks": "營運資金壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_026"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "群聯電子在114Q2的財務科目其他應付款增加（減少） Increase (decrease) in other payable被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "群聯電子",
+   "quarter": "114Q2",
+   "item_name": "其他應付款增加（減少） Increase (decrease) in other payable",
+   "matched_risks": "營運資金壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_027"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "聯詠科技在114Q3的財務科目應收帳款淨額 Accounts receivable, net被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "聯詠科技",
+   "quarter": "114Q3",
+   "item_name": "應收帳款淨額 Accounts receivable, net",
+   "matched_risks": "營運資金壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_028"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "景碩科技在114Q3投資之大陸事業中，主要業務為研發、生產及銷售新型精密電子元器件、線路板及相關產品，並提供售後服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "百碩電腦(蘇州)有限公司；本期認列投資損益：( 36,735 )",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "景碩科技",
+   "quarter": "114Q3",
+   "main_business": "研發、生產及銷售新型精密電子元器件、線路板及相關產品，並提供售後服務",
+   "investee_name": "百碩電腦(蘇州)有限公司",
+   "value_attribute": "本期認列投資損益",
+   "value_raw": "( 36,735 )",
+   "source_csv": "reports_csv_output/3189_景碩科技/114Q3/3189_114Q3_轉投資大陸地區之事業相關資訊.csv",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_029"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "旺矽科技在114Q3投資之大陸事業中，主要業務為研發、生產LED半導體照明芯片、計算機零部件、LED製程設備、新型電子元器件；電子材料、電子元器件、電子產品、LED製程設備、機械設備及零部件的採購、批發、佣金代理及進出口業務。的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "旺矽科技(蘇州)有限公司；本期認列投資損益：85,157",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "旺矽科技",
+   "quarter": "114Q3",
+   "main_business": "研發、生產LED半導體照明芯片、計算機零部件、LED製程設備、新型電子元器件；電子材料、電子元器件、電子產品、LED製程設備、機械設備及零部件的採購、批發、佣金代理及進出口業務。",
+   "investee_name": "旺矽科技(蘇州)有限公司",
+   "value_attribute": "本期認列投資損益",
+   "value_raw": "85,157",
+   "source_csv": "reports_csv_output/6223_旺矽科技/114Q3/6223_114Q3_轉投資大陸地區之事業相關資訊.csv",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_030"
+ }
+]

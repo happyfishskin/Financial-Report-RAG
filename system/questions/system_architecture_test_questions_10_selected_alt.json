@@ -1,0 +1,165 @@
+[
+  {
+    "id": "arch_selected_alt_01",
+    "question_type": "direct_numeric_lookup",
+    "question": "請查詢【新應材】在【114Q2】的【期末現金及約當現金餘額 Cash and cash equivalents at end of period】（2024年1月1日至6月30日 2024/1/1To6/30）是多少？",
+    "expected_answer": "477,185",
+    "metadata": {
+      "target_route": "direct_lookup_or_vector",
+      "company_code": "4749",
+      "company_name": "新應材",
+      "quarter": "114Q2",
+      "table_name": "現金流量表",
+      "item_name": "期末現金及約當現金餘額 Cash and cash equivalents at end of period",
+      "column_header": "2024年1月1日至6月30日 2024/1/1To6/30",
+      "source_csv": "4749_114Q2_現金流量表.csv"
+    },
+    "original_id": "arch_test_003"
+  },
+  {
+    "id": "arch_selected_alt_02",
+    "question_type": "direct_numeric_lookup",
+    "question": "請查詢【大聯大控股】在【113Q4】的【本期現金及約當現金增加（減少）數 Net increase (decrease) in cash and cash equivalents】（2024年1月1日至12月31日 2024/1/1To12/31）是多少？",
+    "expected_answer": "891,975",
+    "metadata": {
+      "target_route": "direct_lookup_or_vector",
+      "company_code": "3702",
+      "company_name": "大聯大控股",
+      "quarter": "113Q4",
+      "table_name": "現金流量表",
+      "item_name": "本期現金及約當現金增加（減少）數 Net increase (decrease) in cash and cash equivalents",
+      "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+      "source_csv": "3702_113Q4_現金流量表.csv"
+    },
+    "original_id": "arch_test_004"
+  },
+  {
+    "id": "arch_selected_alt_03",
+    "question_type": "cross_company_compare",
+    "question": "請比較【台灣光罩】與【辛耘企業】在【113Q1】的【不動產、廠房及設備 Property, plant and equipment】（2023年3月31日 2023/3/31）分別是多少？",
+    "expected_answer": "台灣光罩: 8,361,506 ｜ 辛耘企業: 1,576,670",
+    "metadata": {
+      "target_route": "direct_lookup_multi_company",
+      "quarter": "113Q1",
+      "item_name": "不動產、廠房及設備 Property, plant and equipment",
+      "column_header": "2023年3月31日 2023/3/31",
+      "companies": [
+        "2338",
+        "3583"
+      ]
+    },
+    "original_id": "arch_test_041"
+  },
+  {
+    "id": "arch_selected_alt_04",
+    "question_type": "cross_company_compare",
+    "question": "請比較【力成科技】與【力旺電子】在【113Q1】的【不動產、廠房及設備轉列費用數 Property, plan and equipment transferred to expenses】（2023年1月1日至3月31日 2023/1/1To3/31）分別是多少？",
+    "expected_answer": "力成科技: 247 ｜ 力旺電子: 68",
+    "metadata": {
+      "target_route": "direct_lookup_multi_company",
+      "quarter": "113Q1",
+      "item_name": "不動產、廠房及設備轉列費用數 Property, plan and equipment transferred to expenses",
+      "column_header": "2023年1月1日至3月31日 2023/1/1To3/31",
+      "companies": [
+        "6239",
+        "3529"
+      ]
+    },
+    "original_id": "arch_test_043"
+  },
+  {
+    "id": "arch_selected_alt_05",
+    "question_type": "cross_period_compare",
+    "question": "請比較【聯華電子】在【114Q2】與【114Q3】的【不動產、廠房及設備 Property, plant and equipment】（2024年12月31日 2024/12/31）各是多少？",
+    "expected_answer": "114Q2: 279,059,037 ｜ 114Q3: 279,059,037",
+    "metadata": {
+      "target_route": "direct_lookup_multi_period",
+      "company_code": "2303",
+      "company_name": "聯華電子",
+      "periods": [
+        "114Q2",
+        "114Q3"
+      ],
+      "item_name": "不動產、廠房及設備 Property, plant and equipment",
+      "column_header": "2024年12月31日 2024/12/31"
+    },
+    "original_id": "arch_test_052"
+  },
+  {
+    "id": "arch_selected_alt_06",
+    "question_type": "vector_table_retrieval",
+    "question": "請從向量檢索的 Markdown 表格中找出【辛耘企業】【114Q1】的【現金流量表】表，並說明這張表主要揭露哪類財報資訊。",
+    "expected_answer": "應檢索到來源表 3583_114Q1_現金流量表.md；表名為「現金流量表」。",
+    "metadata": {
+      "target_route": "vector_search",
+      "company_code": "3583",
+      "company_name": "辛耘企業",
+      "quarter": "114Q1",
+      "table_name": "現金流量表",
+      "source_md": "reports_csv_output/3583_辛耘企業/114Q1/3583_114Q1_現金流量表.md"
+    },
+    "original_id": "arch_test_064"
+  },
+  {
+    "id": "arch_selected_alt_07",
+    "question_type": "investment_graph",
+    "question": "根據投資關係圖譜，【群聯電子】在【114Q4】揭露的投資方【群欣電子股份有限公司】投資了哪一家被投資公司？",
+    "expected_answer": "Miphi Semiconductors Private Limited",
+    "metadata": {
+      "target_route": "graph_rag_investment",
+      "company_code": "8299",
+      "company_name": "群聯電子",
+      "quarter": "114Q4",
+      "investor_name": "群欣電子股份有限公司",
+      "investee_name": "Miphi Semiconductors Private Limited",
+      "source_csv": "reports_csv_output/8299_群聯電子/114Q4/8299_114Q4_被投資公司名稱、所在地區…等相關資訊.csv"
+    },
+    "original_id": "arch_test_072"
+  },
+  {
+    "id": "arch_selected_alt_08",
+    "question_type": "related_party_transaction_graph",
+    "question": "根據關係人交易圖譜，【日月光投資控股】在【114Q2】的【從事半導體材料製造業務】涉及哪個關係人或類別？金額摘要是多少？",
+    "expected_answer": "日月光半導體（上海）有限公司；本期期初自台灣匯出累積投資金額=1,497,683; 本期期末自台灣匯出累積投資金額=1,497,683; 被投資公司本期損益=46,939; 本期認列投資損益=55,724; 截至本期止已匯回台灣之投資收益=0",
+    "metadata": {
+      "target_route": "graph_rag_related_party",
+      "company_code": "3711",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q2",
+      "account": "從事半導體材料製造業務",
+      "party_or_category": "日月光半導體（上海）有限公司",
+      "source_csv": "reports_csv_output/3711_日月光投資控股/114Q2/3711_114Q2_轉投資大陸地區之事業相關資訊.csv"
+    },
+    "original_id": "arch_test_085"
+  },
+  {
+    "id": "arch_selected_alt_09",
+    "question_type": "supply_chain_graph",
+    "question": "根據半導體產業鏈圖譜，【華東】屬於哪個產業鏈階段與 segment？",
+    "expected_answer": "下游；IC封裝測試",
+    "metadata": {
+      "target_route": "graph_rag_supply_chain",
+      "company_code": "8110",
+      "company_name": "華東",
+      "stage": "下游",
+      "segment": "IC封裝測試"
+    },
+    "original_id": "arch_test_092"
+  },
+  {
+    "id": "arch_selected_alt_10",
+    "question_type": "risk_event_graph",
+    "question": "根據風險事件圖譜，【日月光投資控股】在【114Q2】的財務科目【營業收入合計 Total operating revenue】被標記為哪一類風險候選？",
+    "expected_answer": "營收波動候選",
+    "metadata": {
+      "target_route": "graph_rag_risk_event",
+      "company_code": "3711",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q2",
+      "item_name": "營業收入合計 Total operating revenue",
+      "matched_risks": "營收波動候選",
+      "source_fact_file": "reports_csv_output/3711_日月光投資控股/114Q2/3711_114Q2_all_table_facts.csv"
+    },
+    "original_id": "arch_test_097"
+  }
+]

@@ -1,0 +1,954 @@
+[
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【華邦電子】在【113Q2】揭露的關係人交易中，交易人【新唐科技公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "NTCA公司 ｜ NTCJ公司 ｜ NTIL公司 ｜ NTSG公司 ｜ 芯唐香港公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "華邦電子",
+   "quarter": "113Q2",
+   "payer": "新唐科技公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "NTCA公司",
+    "NTCJ公司",
+    "NTIL公司",
+    "NTSG公司",
+    "芯唐香港公司"
+   ],
+   "n_candidates": 5,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_001"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【華邦電子】在【114Q1】揭露的關係人交易中，交易人【華邦公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "WECA公司 ｜ WECJ公司 ｜ WTL公司 ｜ 新唐科技公司 ｜ 華邦蘇州公司 ｜ 華邦香港公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "華邦電子",
+   "quarter": "114Q1",
+   "payer": "華邦公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "WECA公司",
+    "WECJ公司",
+    "WTL公司",
+    "新唐科技公司",
+    "華邦蘇州公司",
+    "華邦香港公司"
+   ],
+   "n_candidates": 6,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_002"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【聯華電子】在【113Q3】揭露的關係人交易中，交易人【聯芯集成電路製造(廈門)有限公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "UMC GROUP (USA) ｜ 聯暻半導體(山東)有限公司(註六)",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯華電子",
+   "quarter": "113Q3",
+   "payer": "聯芯集成電路製造(廈門)有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "UMC GROUP (USA)",
+    "聯暻半導體(山東)有限公司(註六)"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_003"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【聯華電子】在【113Q4】揭露的關係人交易中，交易人【聯華電子(股)公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "UMC GROUP (USA) ｜ 聯暻半導體(山東)有限公司(註六) ｜ 聯芯集成電路製造(廈門)有限公司 ｜ 聯芯集成電路製造(廈門)有限公司(註五)",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯華電子",
+   "quarter": "113Q4",
+   "payer": "聯華電子(股)公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "UMC GROUP (USA)",
+    "聯暻半導體(山東)有限公司(註六)",
+    "聯芯集成電路製造(廈門)有限公司",
+    "聯芯集成電路製造(廈門)有限公司(註五)"
+   ],
+   "n_candidates": 4,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_004"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【聯發科技】在【113Q1】揭露的關係人交易中，交易人【Hsu Fa (Samoa) Investment Ltd.】有哪些交易對象？請全部列出。",
+  "expected_answer": "聯發科軟件(武漢)有限公司 ｜ 聯發芯軟件設計(成都)有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯發科技",
+   "quarter": "113Q1",
+   "payer": "Hsu Fa (Samoa) Investment Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "聯發科軟件(武漢)有限公司",
+    "聯發芯軟件設計(成都)有限公司"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_005"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【113Q4】揭露的關係人交易中，交易人【大聯大商貿(深圳)有限公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "Yosun Hong Kong Corp. Ltd. ｜ 大聯大商貿有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q4",
+   "payer": "大聯大商貿(深圳)有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Yosun Hong Kong Corp. Ltd.",
+    "大聯大商貿有限公司"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_006"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【穩懋半導體】在【114Q4】揭露的關係人交易中，交易人【江蘇穩盈農業發展有限公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "Chainwin Biotech and Agrotech (Cayman Islands) Co., Ltd. ｜ 江蘇全穩康源農業發展有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "穩懋半導體",
+   "quarter": "114Q4",
+   "payer": "江蘇穩盈農業發展有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Chainwin Biotech and Agrotech (Cayman Islands) Co., Ltd.",
+    "江蘇全穩康源農業發展有限公司"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_007"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【113Q4】揭露的關係人交易中，交易人【World Peace International (South Asia) Pte Ltd.】有哪些交易對象？請全部列出。",
+  "expected_answer": "WPG C＆C (Malaysia) Sdn. Bhd ｜ WPG C＆C (Thailand) Co., Ltd. ｜ WPG C＆C Computers And Peripheral (India) Private Limited ｜ WPG South Asia Pte. Ltd. ｜ WPI International (South Asia) Pte. Ltd ｜ WPI Technology Pte. Ltd. ｜ World Peace International (India) Pvt., Ltd. ｜ 世平興業股份有限公司 ｜ 大聯大訊聯有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q4",
+   "payer": "World Peace International (South Asia) Pte Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "WPG C＆C (Malaysia) Sdn. Bhd",
+    "WPG C＆C (Thailand) Co., Ltd.",
+    "WPG C＆C Computers And Peripheral (India) Private Limited",
+    "WPG South Asia Pte. Ltd.",
+    "WPI International (South Asia) Pte. Ltd",
+    "WPI Technology Pte. Ltd.",
+    "World Peace International (India) Pvt., Ltd.",
+    "世平興業股份有限公司",
+    "大聯大訊聯有限公司"
+   ],
+   "n_candidates": 9,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_008"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【華邦電子】在【114Q3】揭露的關係人交易中，交易人【新唐科技公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "NTCA公司 ｜ NTCJ公司 ｜ NTIL公司 ｜ NTSG公司 ｜ 芯唐香港公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "華邦電子",
+   "quarter": "114Q3",
+   "payer": "新唐科技公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "NTCA公司",
+    "NTCJ公司",
+    "NTIL公司",
+    "NTSG公司",
+    "芯唐香港公司"
+   ],
+   "n_candidates": 5,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_009"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【旺矽科技】在【113Q2】揭露的關係人交易中，交易人【旺矽科技(股)公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "Celadon Systems, Inc. ｜ MEGTAS CO.,LTD. ｜ MPI AMERICA INC. ｜ 旺矽科技(蘇州)有限公司 ｜ 琉明光電(常州)有限公司 ｜ 長洛國際(股)公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "旺矽科技",
+   "quarter": "113Q2",
+   "payer": "旺矽科技(股)公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Celadon Systems, Inc.",
+    "MEGTAS CO.,LTD.",
+    "MPI AMERICA INC.",
+    "旺矽科技(蘇州)有限公司",
+    "琉明光電(常州)有限公司",
+    "長洛國際(股)公司"
+   ],
+   "n_candidates": 6,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_010"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【日月光投資控股】在【114Q1】揭露的關係人交易中，交易人【USI Enterprise Limited】有哪些交易對象？請全部列出。",
+  "expected_answer": "Real Tech Holdings Limited ｜ 環旭電子公司 ｜ 環電公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q1",
+   "payer": "USI Enterprise Limited",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Real Tech Holdings Limited",
+    "環旭電子公司",
+    "環電公司"
+   ],
+   "n_candidates": 3,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_011"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【台灣光罩】在【114Q3】揭露的關係人交易中，交易人【美闊貿易(上海)有限公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "四川美闊電子科技有限公司 ｜ 美祿科技(股)公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "台灣光罩",
+   "quarter": "114Q3",
+   "payer": "美闊貿易(上海)有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "四川美闊電子科技有限公司",
+    "美祿科技(股)公司"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_012"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【113Q2】揭露的關係人交易中，交易人【WPI Technology Pte. Ltd.】有哪些交易對象？請全部列出。",
+  "expected_answer": "世平國際(香港)有限公司 ｜ 世平興業股份有限公司 ｜ 大聯大電子(香港)有限公司 ｜ 鑫鵬瑜有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q2",
+   "payer": "WPI Technology Pte. Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "世平國際(香港)有限公司",
+    "世平興業股份有限公司",
+    "大聯大電子(香港)有限公司",
+    "鑫鵬瑜有限公司"
+   ],
+   "n_candidates": 4,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_013"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【114Q4】揭露的關係人交易中，交易人【WPI Technology Pte. Ltd.】有哪些交易對象？請全部列出。",
+  "expected_answer": "世平國際(香港)有限公司 ｜ 世平興業股份有限公司 ｜ 鑫鵬瑜有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "114Q4",
+   "payer": "WPI Technology Pte. Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "世平國際(香港)有限公司",
+    "世平興業股份有限公司",
+    "鑫鵬瑜有限公司"
+   ],
+   "n_candidates": 3,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_014"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【瑞昱半導體】在【114Q4】揭露的關係人交易中，交易人【Realtek Singapore Private Limited】有哪些交易對象？請全部列出。",
+  "expected_answer": "Cortina Access, Inc. ｜ Realtek Bangalore Private Limited ｜ Realtek Semiconductor (Japan) Corp. ｜ Realtek Semiconductor (Malaysia) Sdn. Bhd. ｜ Realtek Viet Nam Co.,Ltd. ｜ 合肥沛睿微電子股份有限公司 ｜ 瑞昱半導體(深圳)有限公司 ｜ 瑞晟微電子(蘇州)有限公司 ｜ 科締納科技股份有限公司 ｜ 科締納網絡系統(上海)有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "瑞昱半導體",
+   "quarter": "114Q4",
+   "payer": "Realtek Singapore Private Limited",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Cortina Access, Inc.",
+    "Realtek Bangalore Private Limited",
+    "Realtek Semiconductor (Japan) Corp.",
+    "Realtek Semiconductor (Malaysia) Sdn. Bhd.",
+    "Realtek Viet Nam Co.,Ltd.",
+    "合肥沛睿微電子股份有限公司",
+    "瑞昱半導體(深圳)有限公司",
+    "瑞晟微電子(蘇州)有限公司",
+    "科締納科技股份有限公司",
+    "科締納網絡系統(上海)有限公司"
+   ],
+   "n_candidates": 10,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_015"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【群聯電子】在【113Q4】揭露的關係人交易中，交易人【群聯電子】有哪些交易對象？請全部列出。",
+  "expected_answer": "Nextorage Corporation ｜ PHISON TECHNOLOGY INDIA PRIVATE LIMITED ｜ Phison Electronics Japan Corp. ｜ Phison Technology Inc. ｜ 曜成科技股份有限公司 ｜ 深圳佳存電子科技有限公司 ｜ 群佳科技製造股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "群聯電子",
+   "quarter": "113Q4",
+   "payer": "群聯電子",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Nextorage Corporation",
+    "PHISON TECHNOLOGY INDIA PRIVATE LIMITED",
+    "Phison Electronics Japan Corp.",
+    "Phison Technology Inc.",
+    "曜成科技股份有限公司",
+    "深圳佳存電子科技有限公司",
+    "群佳科技製造股份有限公司"
+   ],
+   "n_candidates": 7,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_016"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【114Q4】揭露的關係人交易中，交易人【品佳電子有限公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "品佳股份有限公司 ｜ 鑫鵬瑜有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "114Q4",
+   "payer": "品佳電子有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "品佳股份有限公司",
+    "鑫鵬瑜有限公司"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_017"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【京鼎精密科技】在【114Q2】揭露的關係人交易中，交易人【京鼎精密科技股份有限公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "SUCCESS PRAISE CORPORATION ｜ 富士邁半導體精密工業(上海)有限公司 ｜ 富曜半導體(昆山)有限公司 ｜ 承鼎精密股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "京鼎精密科技",
+   "quarter": "114Q2",
+   "payer": "京鼎精密科技股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "SUCCESS PRAISE CORPORATION",
+    "富士邁半導體精密工業(上海)有限公司",
+    "富曜半導體(昆山)有限公司",
+    "承鼎精密股份有限公司"
+   ],
+   "n_candidates": 4,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_018"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【力旺電子】在【113Q4】揭露的關係人交易中，交易人【熵碼公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "PUFsecurity ｜ 熵積公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "力旺電子",
+   "quarter": "113Q4",
+   "payer": "熵碼公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "PUFsecurity",
+    "熵積公司"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_019"
+ },
+ {
+  "question_type": "rp_counterparty_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【113Q2】揭露的關係人交易中，交易人【友尚股份有限公司】有哪些交易對象？請全部列出。",
+  "expected_answer": "Yosun Hong Kong Corp. Ltd. ｜ Yosun Singapore Pte Ltd. ｜ 大聯大商貿(深圳)有限公司 ｜ 大聯大商貿有限公司 ｜ 富威科技股份有限公司 ｜ 建智股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q2",
+   "payer": "友尚股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Yosun Hong Kong Corp. Ltd.",
+    "Yosun Singapore Pte Ltd.",
+    "大聯大商貿(深圳)有限公司",
+    "大聯大商貿有限公司",
+    "富威科技股份有限公司",
+    "建智股份有限公司"
+   ],
+   "n_candidates": 6,
+   "listed_dimension": "交易對象(value_2)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_020"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【智原科技】在【113Q2】揭露的關係人交易中，交易人【智原科技(股)公司】與【寅通科技股份有限公司】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應收款 ｜ 應收帳款 ｜ 營業收入",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "智原科技",
+   "quarter": "113Q2",
+   "payer": "智原科技(股)公司",
+   "counterparty": "寅通科技股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應收款",
+    "應收帳款",
+    "營業收入"
+   ],
+   "n_candidates": 3,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_021"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【113Q3】揭露的關係人交易中，交易人【友尚股份有限公司】與【Yosun Hong Kong Corp. Ltd.】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應收款 ｜ 應收帳款 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q3",
+   "payer": "友尚股份有限公司",
+   "counterparty": "Yosun Hong Kong Corp. Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應收款",
+    "應收帳款",
+    "銷貨"
+   ],
+   "n_candidates": 3,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_022"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【環球晶圓】在【114Q1】揭露的關係人交易中，交易人【本公司】與【昆山中辰】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "進貨 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "環球晶圓",
+   "quarter": "114Q1",
+   "payer": "本公司",
+   "counterparty": "昆山中辰",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "進貨",
+    "銷貨"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_023"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【日月光投資控股】在【113Q3】揭露的關係人交易中，交易人【日 月 光】與【日月光電子公司】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "應付帳款 ｜ 營業成本",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q3",
+   "payer": "日 月 光",
+   "counterparty": "日月光電子公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "應付帳款",
+    "營業成本"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_024"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【力旺電子】在【113Q2】揭露的關係人交易中，交易人【熵碼公司】與【熵積公司】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應付款－關係人 ｜ 營業費用",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "力旺電子",
+   "quarter": "113Q2",
+   "payer": "熵碼公司",
+   "counterparty": "熵積公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應付款－關係人",
+    "營業費用"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_025"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【智原科技】在【113Q2】揭露的關係人交易中，交易人【智原科技(股)公司】與【Faraday Technology Vietnam Company Limited】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應付款 ｜ 研究設計費",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "智原科技",
+   "quarter": "113Q2",
+   "payer": "智原科技(股)公司",
+   "counterparty": "Faraday Technology Vietnam Company Limited",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應付款",
+    "研究設計費"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_026"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【中華精測科技】在【113Q1】揭露的關係人交易中，交易人【中華精測科技股份有限公司】與【CHPT Japan Co., Ltd.】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應付款 ｜ 營業費用",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "中華精測科技",
+   "quarter": "113Q1",
+   "payer": "中華精測科技股份有限公司",
+   "counterparty": "CHPT Japan Co., Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應付款",
+    "營業費用"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_027"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【台灣光罩】在【114Q4】揭露的關係人交易中，交易人【百樂千翔能源(股)公司】與【艾格生科技(股)公司】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應收款(資金貸與) ｜ 利息收入",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "台灣光罩",
+   "quarter": "114Q4",
+   "payer": "百樂千翔能源(股)公司",
+   "counterparty": "艾格生科技(股)公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應收款(資金貸與)",
+    "利息收入"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_028"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【日月光投資控股】在【113Q2】揭露的關係人交易中，交易人【Universal Global Technology Co., Limited】與【Universal Scientific Industrial (France)】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應收款 ｜ 其他資產",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q2",
+   "payer": "Universal Global Technology Co., Limited",
+   "counterparty": "Universal Scientific Industrial (France)",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應收款",
+    "其他資產"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_029"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【環球晶圓】在【114Q1】揭露的關係人交易中，交易人【GWS】與【MEMC LLC】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "進貨 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "環球晶圓",
+   "quarter": "114Q1",
+   "payer": "GWS",
+   "counterparty": "MEMC LLC",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "進貨",
+    "銷貨"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_030"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【114Q2】揭露的關係人交易中，交易人【詮鼎科技股份有限公司】與【振遠科技股份有限公司】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應收款 ｜ 應收帳款 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "114Q2",
+   "payer": "詮鼎科技股份有限公司",
+   "counterparty": "振遠科技股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應收款",
+    "應收帳款",
+    "銷貨"
+   ],
+   "n_candidates": 3,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_031"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【114Q2】揭露的關係人交易中，交易人【世平國際(香港)有限公司】與【World Peace International (South Asia) Pte Ltd.】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應收款 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "114Q2",
+   "payer": "世平國際(香港)有限公司",
+   "counterparty": "World Peace International (South Asia) Pte Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應收款",
+    "銷貨"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_032"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【114Q3】揭露的關係人交易中，交易人【世平國際(香港)有限公司】與【WPI Technology Pte. Ltd.】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "應收帳款 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "114Q3",
+   "payer": "世平國際(香港)有限公司",
+   "counterparty": "WPI Technology Pte. Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "應收帳款",
+    "銷貨"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_033"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【113Q2】揭露的關係人交易中，交易人【詮鼎科技股份有限公司】與【振遠科技股份有限公司】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應收款 ｜ 應收帳款 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q2",
+   "payer": "詮鼎科技股份有限公司",
+   "counterparty": "振遠科技股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應收款",
+    "應收帳款",
+    "銷貨"
+   ],
+   "n_candidates": 3,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_034"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【大聯大控股】在【113Q1】揭露的關係人交易中，交易人【世平興業股份有限公司】與【WPI Technology Pte. Ltd.】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "應收帳款 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q1",
+   "payer": "世平興業股份有限公司",
+   "counterparty": "WPI Technology Pte. Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "應收帳款",
+    "銷貨"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_035"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【京元電子】在【113Q1】揭露的關係人交易中，交易人【京元電子股份有限公司】與【KYEC USA Corp.】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "佣金支出 ｜ 應付費用",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "京元電子",
+   "quarter": "113Q1",
+   "payer": "京元電子股份有限公司",
+   "counterparty": "KYEC USA Corp.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "佣金支出",
+    "應付費用"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_036"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【智原科技】在【114Q4】揭露的關係人交易中，交易人【智原科技(股)公司】與【智原微電子(蘇州)有限公司】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應付款 ｜ 合約資產 ｜ 營業收入 ｜ 研究設計費",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "智原科技",
+   "quarter": "114Q4",
+   "payer": "智原科技(股)公司",
+   "counterparty": "智原微電子(蘇州)有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應付款",
+    "合約資產",
+    "營業收入",
+    "研究設計費"
+   ],
+   "n_candidates": 4,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_037"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【環球晶圓】在【114Q2】揭露的關係人交易中，交易人【GWS】與【MEMC LLC】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "進貨 ｜ 銷貨",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "環球晶圓",
+   "quarter": "114Q2",
+   "payer": "GWS",
+   "counterparty": "MEMC LLC",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "進貨",
+    "銷貨"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_038"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【創意電子】在【113Q1】揭露的關係人交易中，交易人【創意公司】與【GUC歐洲子公司】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "應付費用及其他流動負債 ｜ 營業費用",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "創意電子",
+   "quarter": "113Q1",
+   "payer": "創意公司",
+   "counterparty": "GUC歐洲子公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "應付費用及其他流動負債",
+    "營業費用"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_039"
+ },
+ {
+  "question_type": "rp_account_ambiguous",
+  "question": "根據關係人交易圖譜，【日月光投資控股】在【113Q3】揭露的關係人交易中，交易人【J＆R Holding Limited】與【ASE (Korea) Inc.】之間有哪些交易科目？請全部列出。",
+  "expected_answer": "其他應付款 ｜ 利息費用",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q3",
+   "payer": "J＆R Holding Limited",
+   "counterparty": "ASE (Korea) Inc.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "其他應付款",
+    "利息費用"
+   ],
+   "n_candidates": 2,
+   "listed_dimension": "交易科目(value_4)",
+   "heldout_stratum": "candidate_ambiguity_related_party",
+   "gold_semantics": "A：全部列出才算對（集合相等、順序無關）"
+  },
+  "id": "ho3_rp_040"
+ }
+]

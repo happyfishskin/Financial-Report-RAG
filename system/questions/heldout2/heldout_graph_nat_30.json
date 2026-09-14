@@ -1,0 +1,579 @@
+[
+ {
+  "question_type": "investment_graph",
+  "question": "群聯電子在113Q1揭露的投資方Global Flash Limited投資了哪一家所在地為薩摩亞的被投資公司？",
+  "expected_answer": "Core Storage Electronic (Samoa) Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "群聯電子",
+   "quarter": "113Q1",
+   "investor_name": "Global Flash Limited",
+   "investee_name": "Core Storage Electronic (Samoa) Limited",
+   "discriminator": {
+    "column": "location",
+    "value": "薩摩亞"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_001"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "力成科技在114Q1揭露的投資方力成科技投資了哪一家所在地為新加坡的被投資公司？",
+  "expected_answer": "Powertech Technology (Singapore) Pte. Ltd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "力成科技",
+   "quarter": "114Q1",
+   "investor_name": "力成科技",
+   "investee_name": "Powertech Technology (Singapore) Pte. Ltd.",
+   "discriminator": {
+    "column": "location",
+    "value": "新加坡"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_002"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "力成科技在114Q3揭露的投資方力成科技投資了哪一家所在地為英屬維京群島的被投資公司？",
+  "expected_answer": "POWERTECH HOLDING (BVI) INC.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "力成科技",
+   "quarter": "114Q3",
+   "investor_name": "力成科技",
+   "investee_name": "POWERTECH HOLDING (BVI) INC.",
+   "discriminator": {
+    "column": "location",
+    "value": "英屬維京群島"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_003"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "華邦電子在113Q1揭露的投資方MML公司投資了哪一家主要業務為投資業務的被投資公司？",
+  "expected_answer": "GLLC公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "華邦電子",
+   "quarter": "113Q1",
+   "investor_name": "MML公司",
+   "investee_name": "GLLC公司",
+   "discriminator": {
+    "column": "main_business",
+    "value": "投資業務"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_004"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "瑞昱半導體在113Q4揭露的投資方Bluocean Inc.投資了哪一家所在地為馬來西亞的被投資公司？",
+  "expected_answer": "Realtek Semiconductor (Malaysia) Sdn.Bhd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "瑞昱半導體",
+   "quarter": "113Q4",
+   "investor_name": "Bluocean Inc.",
+   "investee_name": "Realtek Semiconductor (Malaysia) Sdn.Bhd.",
+   "discriminator": {
+    "column": "location",
+    "value": "馬來西亞"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_005"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "致茂電子在113Q4揭露的投資方Chroma ATE Europe B.V.投資了哪一家主要業務為電子量測儀器等之銷售維護的被投資公司？",
+  "expected_answer": "Chroma Germany GmbH",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "致茂電子",
+   "quarter": "113Q4",
+   "investor_name": "Chroma ATE Europe B.V.",
+   "investee_name": "Chroma Germany GmbH",
+   "discriminator": {
+    "column": "main_business",
+    "value": "電子量測儀器等之銷售維護"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_006"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "辛耘企業在114Q4揭露的投資方亞亞科技股份有限公司投資了哪一家所在地為薩摩亞的被投資公司？",
+  "expected_answer": "LEADWIN GROUP LIMITED",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "辛耘企業",
+   "quarter": "114Q4",
+   "investor_name": "亞亞科技股份有限公司",
+   "investee_name": "LEADWIN GROUP LIMITED",
+   "discriminator": {
+    "column": "location",
+    "value": "薩摩亞"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_007"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "大聯大控股在113Q3揭露的投資方龍臨實業股份有限公司投資了哪一家所在地為英屬維京群島的被投資公司？",
+  "expected_answer": "Longview Technology GC Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "大聯大控股",
+   "quarter": "113Q3",
+   "investor_name": "龍臨實業股份有限公司",
+   "investee_name": "Longview Technology GC Limited",
+   "discriminator": {
+    "column": "location",
+    "value": "英屬維京群島"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_008"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "致茂電子在113Q3揭露的投資方合茂投資股份有限公司投資了哪一家主要業務為LED測試的被投資公司？",
+  "expected_answer": "晶測電子股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "致茂電子",
+   "quarter": "113Q3",
+   "investor_name": "合茂投資股份有限公司",
+   "investee_name": "晶測電子股份有限公司",
+   "discriminator": {
+    "column": "main_business",
+    "value": "LED測試"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_009"
+ },
+ {
+  "question_type": "investment_graph",
+  "question": "力旺電子在114Q2揭露的投資方力旺公司投資了哪一家主要業務為產品設計、智慧財產管理、技術服務的被投資公司？",
+  "expected_answer": "eMemory Japan",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "力旺電子",
+   "quarter": "114Q2",
+   "investor_name": "力旺公司",
+   "investee_name": "eMemory Japan",
+   "discriminator": {
+    "column": "main_business",
+    "value": "產品設計、智慧財產管理、技術服務"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_010"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "智原科技在113Q4，智原科技(股)公司與上海璟創電子科技有限公司之間的應收帳款交易金額是多少？",
+  "expected_answer": "20,049",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "智原科技",
+   "quarter": "113Q4",
+   "party_or_category": "智原科技(股)公司",
+   "transacting_party": "智原科技(股)公司",
+   "counterparty": "上海璟創電子科技有限公司",
+   "account_item": "應收帳款",
+   "source_csv": "reports_csv_output/3035_智原科技/113Q4/3035_113Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "上海璟創電子科技有限公司",
+    "value_4": "應收帳款"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_011"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "大聯大控股在113Q3，品佳股份有限公司與大聯大商貿(深圳)有限公司之間的應收帳款交易金額是多少？",
+  "expected_answer": "237,510",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "113Q3",
+   "party_or_category": "品佳股份有限公司",
+   "transacting_party": "品佳股份有限公司",
+   "counterparty": "大聯大商貿(深圳)有限公司",
+   "account_item": "應收帳款",
+   "source_csv": "reports_csv_output/3702_大聯大控股/113Q3/3702_113Q3_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "大聯大商貿(深圳)有限公司",
+    "value_4": "應收帳款"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_012"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "瑞昱半導體在114Q1，瑞昱半導體股份有限公司與昱鈜科技股份有限公司之間的其他收入交易金額是多少？",
+  "expected_answer": "36,000",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "瑞昱半導體",
+   "quarter": "114Q1",
+   "party_or_category": "瑞昱半導體股份有限公司",
+   "transacting_party": "瑞昱半導體股份有限公司",
+   "counterparty": "昱鈜科技股份有限公司",
+   "account_item": "其他收入",
+   "source_csv": "reports_csv_output/2379_瑞昱半導體/114Q1/2379_114Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "昱鈜科技股份有限公司",
+    "value_4": "其他收入"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_013"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "華邦電子在114Q4，NTCJ公司與芯唐香港公司之間的應收帳款－關係人交易金額是多少？",
+  "expected_answer": "324,151",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "華邦電子",
+   "quarter": "114Q4",
+   "party_or_category": "NTCJ公司",
+   "transacting_party": "NTCJ公司",
+   "counterparty": "芯唐香港公司",
+   "account_item": "應收帳款－關係人",
+   "source_csv": "reports_csv_output/2344_華邦電子/114Q4/2344_114Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "芯唐香港公司",
+    "value_4": "應收帳款－關係人"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_014"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "中華精測科技在113Q3，中華精測科技股份有限公司與Chunghwa Precision Test Tech USA Corporation之間的營業收入交易金額是多少？",
+  "expected_answer": "342",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "中華精測科技",
+   "quarter": "113Q3",
+   "party_or_category": "中華精測科技股份有限公司",
+   "transacting_party": "中華精測科技股份有限公司",
+   "counterparty": "Chunghwa Precision Test Tech USA Corporation",
+   "account_item": "營業收入",
+   "source_csv": "reports_csv_output/6510_中華精測科技/113Q3/6510_113Q3_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "Chunghwa Precision Test Tech USA Corporation",
+    "value_4": "營業收入"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_015"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "日月光投資控股在113Q2，日 月 光與環隆電氣公司之間的應收帳款交易金額是多少？",
+  "expected_answer": "874,630",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q2",
+   "party_or_category": "日 月 光",
+   "transacting_party": "日 月 光",
+   "counterparty": "環隆電氣公司",
+   "account_item": "應收帳款",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/113Q2/3711_113Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "環隆電氣公司",
+    "value_4": "應收帳款"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_016"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "致茂電子在113Q1，Neworld Electronics Limited與中茂電子（深圳）有限公司之間的應收帳款交易金額是多少？",
+  "expected_answer": "154,011",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "致茂電子",
+   "quarter": "113Q1",
+   "party_or_category": "Neworld Electronics Limited",
+   "transacting_party": "Neworld Electronics Limited",
+   "counterparty": "中茂電子（深圳）有限公司",
+   "account_item": "應收帳款",
+   "source_csv": "reports_csv_output/2360_致茂電子/113Q1/2360_113Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "中茂電子（深圳）有限公司",
+    "value_4": "應收帳款"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_017"
+ },
+ {
+  "question_type": "related_party_transaction_graph",
+  "question": "京元電子在113Q1，京元電子股份有限公司與京隆科技(蘇州)有限公司之間的銷貨收入交易金額是多少？",
+  "expected_answer": "1,755",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "京元電子",
+   "quarter": "113Q1",
+   "party_or_category": "京元電子股份有限公司",
+   "transacting_party": "京元電子股份有限公司",
+   "counterparty": "京隆科技(蘇州)有限公司",
+   "account_item": "銷貨收入",
+   "source_csv": "reports_csv_output/2449_京元電子/113Q1/2449_113Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "京隆科技(蘇州)有限公司",
+    "value_4": "銷貨收入"
+   },
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_018"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "久昌屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "久昌",
+   "stage": "上游",
+   "segment": "IC設計",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_019"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "達興材料屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "中游；化學品",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "達興材料",
+   "stage": "中游",
+   "segment": "化學品",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_020"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "天擎屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "天擎",
+   "stage": "上游",
+   "segment": "IC設計",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_021"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "智微屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "智微",
+   "stage": "上游",
+   "segment": "IC設計",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_022"
+ },
+ {
+  "question_type": "supply_chain_graph",
+  "question": "翔耀屬於哪個產業鏈階段與 segment？",
+  "expected_answer": "中游；光罩",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "翔耀",
+   "stage": "中游",
+   "segment": "光罩",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_023"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "瑞昱半導體在114Q3的財務科目應付帳款 Accounts payable被標記為哪一類風險候選？",
+  "expected_answer": "供應鏈壓力;營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "瑞昱半導體",
+   "quarter": "114Q3",
+   "item_name": "應付帳款 Accounts payable",
+   "matched_risks": "供應鏈壓力;營運資金壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_024"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "旺矽科技在114Q2的財務科目研發、生產LED半導體照明芯片、計算機零部件、LED製程設備、新型電子元器件；電子材料、電子元器件、電子產品、LED製程設備、機械設備及零部件的採購、批發、佣金代理及進出口業務被標記為哪一類風險候選？",
+  "expected_answer": "供應鏈壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "旺矽科技",
+   "quarter": "114Q2",
+   "item_name": "研發、生產LED半導體照明芯片、計算機零部件、LED製程設備、新型電子元器件；電子材料、電子元器件、電子產品、LED製程設備、機械設備及零部件的採購、批發、佣金代理及進出口業務",
+   "matched_risks": "供應鏈壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_025"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "華邦電子在113Q2的財務科目其他應付款－關係人被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "華邦電子",
+   "quarter": "113Q2",
+   "item_name": "其他應付款－關係人",
+   "matched_risks": "營運資金壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_026"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "達興材料在114Q2的財務科目應收帳款（增加）減少 Decrease (increase) in accounts receivable被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "達興材料",
+   "quarter": "114Q2",
+   "item_name": "應收帳款（增加）減少 Decrease (increase) in accounts receivable",
+   "matched_risks": "營運資金壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_027"
+ },
+ {
+  "question_type": "risk_event_graph",
+  "question": "台灣光罩在113Q3的財務科目應收帳款-關係人被標記為哪一類風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "台灣光罩",
+   "quarter": "113Q3",
+   "item_name": "應收帳款-關係人",
+   "matched_risks": "營運資金壓力",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_028"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "景碩科技在114Q1投資之大陸事業中，主要業務為研發、生產及銷售新型精密電子元器件、線路板及相關產品，並提供售後服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "百碩電腦(蘇州)有限公司；本期認列投資損益：( 13,477 )",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "景碩科技",
+   "quarter": "114Q1",
+   "main_business": "研發、生產及銷售新型精密電子元器件、線路板及相關產品，並提供售後服務",
+   "investee_name": "百碩電腦(蘇州)有限公司",
+   "value_attribute": "本期認列投資損益",
+   "value_raw": "( 13,477 )",
+   "source_csv": "reports_csv_output/3189_景碩科技/114Q1/3189_114Q1_轉投資大陸地區之事業相關資訊.csv",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_029"
+ },
+ {
+  "question_type": "mainland_investment_graph",
+  "question": "京元電子在113Q3投資之大陸事業中，主要業務為積體電路封裝及測試、加工電子零組件、電子材料、類比或混合自動數據處理機、 固態記憶系統、升溫烤箱控制器等產品製造、銷售及提供相關售後服務的被投資公司是哪一家？其本期認列投資損益是多少？",
+  "expected_answer": "蘇州震坤科技有限公司；本期認列投資損益：156,237",
+  "metadata": {
+   "target_route": "graph_rag_mainland_investment",
+   "company_name": "京元電子",
+   "quarter": "113Q3",
+   "main_business": "積體電路封裝及測試、加工電子零組件、電子材料、類比或混合自動數據處理機、 固態記憶系統、升溫烤箱控制器等產品製造、銷售及提供相關售後服務",
+   "investee_name": "蘇州震坤科技有限公司",
+   "value_attribute": "本期認列投資損益",
+   "value_raw": "156,237",
+   "source_csv": "reports_csv_output/2449_京元電子/113Q3/2449_113Q3_轉投資大陸地區之事業相關資訊.csv",
+   "heldout_twin_of": "graph_routing_natural.json",
+   "test_purpose": "graph_routing",
+   "expected_route": "graph_rag"
+  },
+  "id": "ho_graph_nat_030"
+ }
+]

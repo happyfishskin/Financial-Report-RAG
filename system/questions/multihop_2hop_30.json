@@ -1,0 +1,662 @@
+[
+  {
+    "id": "mh2_001",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "聯發科技在114Q4的轉投資架構中，MediaTek Global Holdings Limited間接持有（非直接持有）一家主要業務為「研發」的公司，請問是哪一家？",
+    "expected_answer": "MediaTek India Technology Pvt. Ltd.",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "聯發科技",
+      "quarter": "114Q4",
+      "hop1_investor": "MediaTek Global Holdings Limited",
+      "hop2_intermediate": "Digimoc Holdings Limited",
+      "hop3_target": "MediaTek India Technology Pvt. Ltd.",
+      "discriminator": {
+        "column": "main_business",
+        "value": "研發"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_002",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "台灣光罩在114Q2的轉投資架構中，台灣光罩間接持有（非直接持有）一家主要業務為「記憶體產品零售及批發」的公司，請問是哪一家？",
+    "expected_answer": "閃點半導體(股)公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "台灣光罩",
+      "quarter": "114Q2",
+      "hop1_investor": "台灣光罩",
+      "hop2_intermediate": "友縳投資(股)公司",
+      "hop3_target": "閃點半導體(股)公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "記憶體產品零售及批發"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_003",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "大聯大控股在114Q4的轉投資架構中，大聯大控股間接持有（非直接持有）一家主要業務為「環境衛生及污染防治服務業」的公司，請問是哪一家？",
+    "expected_answer": "揚堡實業股份有限公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "大聯大控股",
+      "quarter": "114Q4",
+      "hop1_investor": "大聯大控股",
+      "hop2_intermediate": "世友投資股份有限公司",
+      "hop3_target": "揚堡實業股份有限公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "環境衛生及污染防治服務業"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_004",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "日月光投資控股在114Q4的轉投資架構中，本 公 司間接持有（非直接持有）一家主要業務為「自有剩餘攤位及辦公大樓出租」的公司，請問是哪一家？",
+    "expected_answer": "宏錦光公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q4",
+      "hop1_investor": "本 公 司",
+      "hop2_intermediate": "日 月 光",
+      "hop3_target": "宏錦光公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "自有剩餘攤位及辦公大樓出租"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_005",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "台灣光罩在114Q4的轉投資架構中，百樂千翔能源(股)公司間接持有（非直接持有）一家主要業務為「轉投資其他公司」的公司，請問是哪一家？",
+    "expected_answer": "Aptos Global Holding Corp.",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "台灣光罩",
+      "quarter": "114Q4",
+      "hop1_investor": "百樂千翔能源(股)公司",
+      "hop2_intermediate": "群成能源(股)公司",
+      "hop3_target": "Aptos Global Holding Corp.",
+      "discriminator": {
+        "column": "main_business",
+        "value": "轉投資其他公司"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_006",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "日月光投資控股在114Q4的轉投資架構中，本 公 司間接持有（非直接持有）一家主要業務為「各型積體電路之製造、組合、加工、測試及銷售」的公司，請問是哪一家？",
+    "expected_answer": "ASE Electronics (M) Sdn. Bhd.",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q4",
+      "hop1_investor": "本 公 司",
+      "hop2_intermediate": "日 月 光",
+      "hop3_target": "ASE Electronics (M) Sdn. Bhd.",
+      "discriminator": {
+        "column": "main_business",
+        "value": "各型積體電路之製造、組合、加工、測試及銷售"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_007",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "大聯大控股在114Q4的轉投資架構中，世友投資股份有限公司間接持有（非直接持有）一家主要業務為「控股公司」的公司，請問是哪一家？",
+    "expected_answer": "鑫聯大(香港)有限公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "大聯大控股",
+      "quarter": "114Q4",
+      "hop1_investor": "世友投資股份有限公司",
+      "hop2_intermediate": "鑫聯大投資控股股份有限公司",
+      "hop3_target": "鑫聯大(香港)有限公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "控股公司"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_008",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "日月光投資控股在114Q4的轉投資架構中，Universal Global Technology Co., Limited間接持有（非直接持有）一家主要業務為「從事各種電腦及週邊設備之製造、加工維修及銷售」的公司，請問是哪一家？",
+    "expected_answer": "環隆電氣公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q4",
+      "hop1_investor": "Universal Global Technology Co., Limited",
+      "hop2_intermediate": "環鴻科技公司",
+      "hop3_target": "環隆電氣公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "從事各種電腦及週邊設備之製造、加工維修及銷售"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_009",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "台灣光罩在114Q4的轉投資架構中，台灣光罩間接持有（非直接持有）一家主要業務為「NAND型快閃記憶體及固態硬碟等相關產品設計、封裝、測試」的公司，請問是哪一家？",
+    "expected_answer": "群豐科技(股)公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "台灣光罩",
+      "quarter": "114Q4",
+      "hop1_investor": "台灣光罩",
+      "hop2_intermediate": "光鉅控股(股)公司",
+      "hop3_target": "群豐科技(股)公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "NAND型快閃記憶體及固態硬碟等相關產品設計、封裝、測試"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_010",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "日月光投資控股在114Q4的轉投資架構中，Huntington Holdings International Co. Ltd.間接持有（非直接持有）一家主要業務為「投資諮詢服務及倉儲管理服務」的公司，請問是哪一家？",
+    "expected_answer": "USI Enterprise Limited",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q4",
+      "hop1_investor": "Huntington Holdings International Co. Ltd.",
+      "hop2_intermediate": "Real Tech Holdings Limited",
+      "hop3_target": "USI Enterprise Limited",
+      "discriminator": {
+        "column": "main_business",
+        "value": "投資諮詢服務及倉儲管理服務"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_011",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "日月光投資控股在114Q4的轉投資架構中，日 月 光間接持有（非直接持有）一家主要業務為「積體電路之封裝及製造」的公司，請問是哪一家？",
+    "expected_answer": "ASE Japan Co., Ltd.",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q4",
+      "hop1_investor": "日 月 光",
+      "hop2_intermediate": "J ＆ R Holding Limited",
+      "hop3_target": "ASE Japan Co., Ltd.",
+      "discriminator": {
+        "column": "main_business",
+        "value": "積體電路之封裝及製造"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_012",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "華邦電子在114Q4的轉投資架構中，華邦公司間接持有（非直接持有）一家主要業務為「電子商務及投資業務」的公司，請問是哪一家？",
+    "expected_answer": "CTL公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "華邦電子",
+      "quarter": "114Q4",
+      "hop1_investor": "華邦公司",
+      "hop2_intermediate": "Callisto公司",
+      "hop3_target": "CTL公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "電子商務及投資業務"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_013",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "京鼎精密科技在114Q4的轉投資架構中，FairTech International Corporation間接持有（非直接持有）一家主要業務為「從事轉投資及控股事務」的公司，請問是哪一家？",
+    "expected_answer": "Ranking Trading Incorporated",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "京鼎精密科技",
+      "quarter": "114Q4",
+      "hop1_investor": "FairTech International Corporation",
+      "hop2_intermediate": "Quiz Technology Enterprise Inc.",
+      "hop3_target": "Ranking Trading Incorporated",
+      "discriminator": {
+        "column": "main_business",
+        "value": "從事轉投資及控股事務"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_014",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "聯華電子在114Q4的轉投資架構中，聯華電子間接持有（非直接持有）一家主要業務為「醫療器材檢測儀器及試劑耗材」的公司，請問是哪一家？",
+    "expected_answer": "永加利醫學科技(股)公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "聯華電子",
+      "quarter": "114Q4",
+      "hop1_investor": "聯華電子",
+      "hop2_intermediate": "弘鼎創業投資(股)公司",
+      "hop3_target": "永加利醫學科技(股)公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "醫療器材檢測儀器及試劑耗材"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_015",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "大聯大控股在114Q4的轉投資架構中，鑫聯大投資控股股份有限公司間接持有（非直接持有）一家主要業務為「經營B2C與O2O事業的電子商務公司」的公司，請問是哪一家？",
+    "expected_answer": "合邦商網股份有限公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "大聯大控股",
+      "quarter": "114Q4",
+      "hop1_investor": "鑫聯大投資控股股份有限公司",
+      "hop2_intermediate": "捷元股份有限公司",
+      "hop3_target": "合邦商網股份有限公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "經營B2C與O2O事業的電子商務公司"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_016",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "環球晶圓在114Q4的轉投資架構中，GWBV間接持有（非直接持有）一家主要業務為「投資各項事業」的公司，請問是哪一家？",
+    "expected_answer": "安科思資本",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "環球晶圓",
+      "quarter": "114Q4",
+      "hop1_investor": "GWBV",
+      "hop2_intermediate": "MEMC Korea",
+      "hop3_target": "安科思資本",
+      "discriminator": {
+        "column": "main_business",
+        "value": "投資各項事業"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_017",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "日月光投資控股在114Q1的轉投資架構中，本 公 司間接持有（非直接持有）一家主要業務為「從事塑膠化學產業」的公司，請問是哪一家？",
+    "expected_answer": "塑美貝科技公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q1",
+      "hop1_investor": "本 公 司",
+      "hop2_intermediate": "日 月 光",
+      "hop3_target": "塑美貝科技公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "從事塑膠化學產業"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_018",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "台灣光罩在114Q2的轉投資架構中，台灣光罩間接持有（非直接持有）一家主要業務為「3D列印及塑膠模具設計」的公司，請問是哪一家？",
+    "expected_answer": "數可科技(股)公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "台灣光罩",
+      "quarter": "114Q2",
+      "hop1_investor": "台灣光罩",
+      "hop2_intermediate": "友縳投資(股)公司",
+      "hop3_target": "數可科技(股)公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "3D列印及塑膠模具設計"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_019",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "京鼎精密科技在114Q4的轉投資架構中，京鼎精密科技間接持有（非直接持有）一家主要業務為「經營半導體設備之維修業務」的公司，請問是哪一家？",
+    "expected_answer": "FairTech Corporation LLC",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "京鼎精密科技",
+      "quarter": "114Q4",
+      "hop1_investor": "京鼎精密科技",
+      "hop2_intermediate": "富蘭登科技股份有限公司",
+      "hop3_target": "FairTech Corporation LLC",
+      "discriminator": {
+        "column": "main_business",
+        "value": "經營半導體設備之維修業務"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_020",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "環球晶圓在114Q4的轉投資架構中，本公司間接持有（非直接持有）一家主要業務為「磊晶矽晶圓生產及磊晶代工等貿易」的公司，請問是哪一家？",
+    "expected_answer": "GTI",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "環球晶圓",
+      "quarter": "114Q4",
+      "hop1_investor": "本公司",
+      "hop2_intermediate": "GWBV",
+      "hop3_target": "GTI",
+      "discriminator": {
+        "column": "main_business",
+        "value": "磊晶矽晶圓生產及磊晶代工等貿易"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_021",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "聯發科技在114Q4的轉投資架構中，旭達投資(股)公司間接持有（非直接持有）一家主要業務為「技術服務」的公司，請問是哪一家？",
+    "expected_answer": "聚星電子(股)公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "聯發科技",
+      "quarter": "114Q4",
+      "hop1_investor": "旭達投資(股)公司",
+      "hop2_intermediate": "翔發投資(股)公司",
+      "hop3_target": "聚星電子(股)公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "技術服務"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_022",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "大聯大控股在114Q4的轉投資架構中，大聯大控股間接持有（非直接持有）一家主要業務為「物流自動化設備商」的公司，請問是哪一家？",
+    "expected_answer": "泰科動力股份有限公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "大聯大控股",
+      "quarter": "114Q4",
+      "hop1_investor": "大聯大控股",
+      "hop2_intermediate": "世友投資股份有限公司",
+      "hop3_target": "泰科動力股份有限公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "物流自動化設備商"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_023",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "辛耘企業在114Q4的轉投資架構中，辛耘企業間接持有（非直接持有）一家主要業務為「一般儀器及精密儀器製造業務」的公司，請問是哪一家？",
+    "expected_answer": "盟基生醫股份有限公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "辛耘企業",
+      "quarter": "114Q4",
+      "hop1_investor": "辛耘企業",
+      "hop2_intermediate": "亞亞科技股份有限公司",
+      "hop3_target": "盟基生醫股份有限公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "一般儀器及精密儀器製造業務"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_024",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "日月光投資控股在114Q4的轉投資架構中，環旭電子公司間接持有（非直接持有）一家主要業務為「主機板及電腦系統組裝」的公司，請問是哪一家？",
+    "expected_answer": "Universal Scientific Industrial De Mexico S.A. De C.V.",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q4",
+      "hop1_investor": "環旭電子公司",
+      "hop2_intermediate": "Universal Global Technology Co., Limited",
+      "hop3_target": "Universal Scientific Industrial De Mexico S.A. De C.V.",
+      "discriminator": {
+        "column": "main_business",
+        "value": "主機板及電腦系統組裝"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_025",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "台灣光罩在114Q4的轉投資架構中，友縳投資(股)公司間接持有（非直接持有）一家主要業務為「電子零組件及能源技術服務業」的公司，請問是哪一家？",
+    "expected_answer": "群成能源(股)公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "台灣光罩",
+      "quarter": "114Q4",
+      "hop1_investor": "友縳投資(股)公司",
+      "hop2_intermediate": "百樂千翔能源(股)公司",
+      "hop3_target": "群成能源(股)公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "電子零組件及能源技術服務業"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_026",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "聯發科技在114Q4的轉投資架構中，Gaintech Co. Limited間接持有（非直接持有）一家主要業務為「軟件開發」的公司，請問是哪一家？",
+    "expected_answer": "MoMAGIC Technologies Private Limited",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "聯發科技",
+      "quarter": "114Q4",
+      "hop1_investor": "Gaintech Co. Limited",
+      "hop2_intermediate": "Smarthead Limited",
+      "hop3_target": "MoMAGIC Technologies Private Limited",
+      "discriminator": {
+        "column": "main_business",
+        "value": "軟件開發"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_027",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "京鼎精密科技在114Q4的轉投資架構中，京鼎精密科技間接持有（非直接持有）一家主要業務為「經營無人機之製造及研究技術」的公司，請問是哪一家？",
+    "expected_answer": "哈克斯航太股份有限公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "京鼎精密科技",
+      "quarter": "114Q4",
+      "hop1_investor": "京鼎精密科技",
+      "hop2_intermediate": "富蘭登科技股份有限公司",
+      "hop3_target": "哈克斯航太股份有限公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "經營無人機之製造及研究技術"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_028",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "世界先進積體電路在114Q4的轉投資架構中，世界先進公司間接持有（非直接持有）一家主要業務為「半導體相關事業投資」的公司，請問是哪一家？",
+    "expected_answer": "VIS Investment Holding, Inc.",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "世界先進積體電路",
+      "quarter": "114Q4",
+      "hop1_investor": "世界先進公司",
+      "hop2_intermediate": "VIS Associates Inc.",
+      "hop3_target": "VIS Investment Holding, Inc.",
+      "discriminator": {
+        "column": "main_business",
+        "value": "半導體相關事業投資"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_029",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "日月光投資控股在114Q4的轉投資架構中，日 月 光間接持有（非直接持有）一家主要業務為「從事資訊軟體服務業務」的公司，請問是哪一家？",
+    "expected_answer": "笛林傑公司",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "日月光投資控股",
+      "quarter": "114Q4",
+      "hop1_investor": "日 月 光",
+      "hop2_intermediate": "台灣福雷電子公司",
+      "hop3_target": "笛林傑公司",
+      "discriminator": {
+        "column": "main_business",
+        "value": "從事資訊軟體服務業務"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  },
+  {
+    "id": "mh2_030",
+    "question_type": "multi_hop_graph_reasoning",
+    "question": "大聯大控股在114Q4的轉投資架構中，WPI International (South Asia) Pte. Ltd間接持有（非直接持有）一家主要業務為「資訊產品代理經銷」的公司，請問是哪一家？",
+    "expected_answer": "WPG C＆C (Thailand) Co., Ltd.",
+    "metadata": {
+      "target_route": "graph_rag_multihop",
+      "question_type": "multi_hop_graph_reasoning",
+      "company_name": "大聯大控股",
+      "quarter": "114Q4",
+      "hop1_investor": "WPI International (South Asia) Pte. Ltd",
+      "hop2_intermediate": "World Peace International （South Asia） Pte Ltd.",
+      "hop3_target": "WPG C＆C (Thailand) Co., Ltd.",
+      "discriminator": {
+        "column": "main_business",
+        "value": "資訊產品代理經銷"
+      },
+      "hops": 2,
+      "no_direct_edge": true,
+      "layer0_cannot_answer": true
+    }
+  }
+]

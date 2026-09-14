@@ -1,0 +1,852 @@
+[
+ {
+  "id": "ratio_001",
+  "question": "台積電113Q2的淨利率是多少？",
+  "expected_ratio": 36.77,
+  "expected_answer": "36.77%",
+  "metadata": {
+   "company_alias": "台積電",
+   "company_name": "台灣積體電路製造",
+   "company_code": "2330",
+   "quarter": "113Q2",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "247,661,438",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "673,510,177"
+  }
+ },
+ {
+  "id": "ratio_002",
+  "question": "力旺114Q1的淨利率是多少？",
+  "expected_ratio": 49.79,
+  "expected_answer": "49.79%",
+  "metadata": {
+   "company_alias": "力旺",
+   "company_name": "力旺電子",
+   "company_code": "3529",
+   "quarter": "114Q1",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "453,951",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "911,734"
+  }
+ },
+ {
+  "id": "ratio_003",
+  "question": "環球晶113Q3的淨利率是多少？",
+  "expected_ratio": 18.6,
+  "expected_answer": "18.6%",
+  "metadata": {
+   "company_alias": "環球晶",
+   "company_name": "環球晶圓",
+   "company_code": "6488",
+   "quarter": "113Q3",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "2,952,246",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "15,869,978"
+  }
+ },
+ {
+  "id": "ratio_004",
+  "question": "聯發科113Q4的毛利率是多少？",
+  "expected_ratio": 49.64,
+  "expected_answer": "49.64%",
+  "metadata": {
+   "company_alias": "聯發科",
+   "company_name": "聯發科技",
+   "company_code": "2454",
+   "quarter": "113Q4",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "263,385,701",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "530,585,886"
+  }
+ },
+ {
+  "id": "ratio_005",
+  "question": "力成113Q1的毛利率是多少？",
+  "expected_ratio": 17.5,
+  "expected_answer": "17.5%",
+  "metadata": {
+   "company_alias": "力成",
+   "company_name": "力成科技",
+   "company_code": "6239",
+   "quarter": "113Q1",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "3,207,053",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "18,328,881"
+  }
+ },
+ {
+  "id": "ratio_006",
+  "question": "世界先進113Q3的研發費用率是多少？",
+  "expected_ratio": 4.33,
+  "expected_answer": "4.33%",
+  "metadata": {
+   "company_alias": "世界先進",
+   "company_name": "世界先進積體電路",
+   "company_code": "5347",
+   "quarter": "113Q3",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "511,098",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "11,804,158"
+  }
+ },
+ {
+  "id": "ratio_007",
+  "question": "日月光投控113Q3的毛利率是多少？",
+  "expected_ratio": 16.51,
+  "expected_answer": "16.51%",
+  "metadata": {
+   "company_alias": "日月光投控",
+   "company_name": "日月光投資控股",
+   "company_code": "3711",
+   "quarter": "113Q3",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "26,431,722",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "160,105,106"
+  }
+ },
+ {
+  "id": "ratio_008",
+  "question": "日月光114Q2的毛利率是多少？",
+  "expected_ratio": 17.04,
+  "expected_answer": "17.04%",
+  "metadata": {
+   "company_alias": "日月光",
+   "company_name": "日月光投資控股",
+   "company_code": "3711",
+   "quarter": "114Q2",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "25,687,520",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "150,750,323"
+  }
+ },
+ {
+  "id": "ratio_009",
+  "question": "京元電113Q3的負債比率是多少？",
+  "expected_ratio": 47.95,
+  "expected_answer": "47.95%",
+  "metadata": {
+   "company_alias": "京元電",
+   "company_name": "京元電子",
+   "company_code": "2449",
+   "quarter": "113Q3",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "39,594,873",
+   "denominator_item": "資產總計",
+   "denominator_raw": "82,576,690"
+  }
+ },
+ {
+  "id": "ratio_010",
+  "question": "力成113Q1的負債比率是多少？",
+  "expected_ratio": 34.72,
+  "expected_answer": "34.72%",
+  "metadata": {
+   "company_alias": "力成",
+   "company_name": "力成科技",
+   "company_code": "6239",
+   "quarter": "113Q1",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "37,919,417",
+   "denominator_item": "資產總計",
+   "denominator_raw": "109,227,940"
+  }
+ },
+ {
+  "id": "ratio_011",
+  "question": "聯電113Q3的研發費用率是多少？",
+  "expected_ratio": 6.65,
+  "expected_answer": "6.65%",
+  "metadata": {
+   "company_alias": "聯電",
+   "company_name": "聯華電子",
+   "company_code": "2303",
+   "quarter": "113Q3",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "4,021,752",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "60,485,085"
+  }
+ },
+ {
+  "id": "ratio_012",
+  "question": "日月光投控113Q2的淨利率是多少？",
+  "expected_ratio": 5.82,
+  "expected_answer": "5.82%",
+  "metadata": {
+   "company_alias": "日月光投控",
+   "company_name": "日月光投資控股",
+   "company_code": "3711",
+   "quarter": "113Q2",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "8,165,136",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "140,238,063"
+  }
+ },
+ {
+  "id": "ratio_013",
+  "question": "致茂114Q3的淨利率是多少？",
+  "expected_ratio": 79.78,
+  "expected_answer": "79.78%",
+  "metadata": {
+   "company_alias": "致茂",
+   "company_name": "致茂電子",
+   "company_code": "2360",
+   "quarter": "114Q3",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "5,114,017",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "6,410,119"
+  }
+ },
+ {
+  "id": "ratio_014",
+  "question": "聯電114Q1的淨利率是多少？",
+  "expected_ratio": 13.38,
+  "expected_answer": "13.38%",
+  "metadata": {
+   "company_alias": "聯電",
+   "company_name": "聯華電子",
+   "company_code": "2303",
+   "quarter": "114Q1",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "7,743,239",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "57,858,957"
+  }
+ },
+ {
+  "id": "ratio_015",
+  "question": "聯發科113Q4的研發費用率是多少？",
+  "expected_ratio": 24.88,
+  "expected_answer": "24.88%",
+  "metadata": {
+   "company_alias": "聯發科",
+   "company_name": "聯發科技",
+   "company_code": "2454",
+   "quarter": "113Q4",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "131,993,135",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "530,585,886"
+  }
+ },
+ {
+  "id": "ratio_016",
+  "question": "旺矽113Q2的研發費用率是多少？",
+  "expected_ratio": 10.43,
+  "expected_answer": "10.43%",
+  "metadata": {
+   "company_alias": "旺矽",
+   "company_name": "旺矽科技",
+   "company_code": "6223",
+   "quarter": "113Q2",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "249,662",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "2,392,994"
+  }
+ },
+ {
+  "id": "ratio_017",
+  "question": "大聯大114Q2的淨利率是多少？",
+  "expected_ratio": 0.91,
+  "expected_answer": "0.91%",
+  "metadata": {
+   "company_alias": "大聯大",
+   "company_name": "大聯大控股",
+   "company_code": "3702",
+   "quarter": "114Q2",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "2,278,602",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "250,452,020"
+  }
+ },
+ {
+  "id": "ratio_018",
+  "question": "祥碩113Q1的毛利率是多少？",
+  "expected_ratio": 59.21,
+  "expected_answer": "59.21%",
+  "metadata": {
+   "company_alias": "祥碩",
+   "company_name": "祥碩科技",
+   "company_code": "5269",
+   "quarter": "113Q1",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "1,153,510",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "1,948,193"
+  }
+ },
+ {
+  "id": "ratio_019",
+  "question": "穩懋114Q1的營業利益率是多少？",
+  "expected_ratio": -6.06,
+  "expected_answer": "-6.06%",
+  "metadata": {
+   "company_alias": "穩懋",
+   "company_name": "穩懋半導體",
+   "company_code": "3105",
+   "quarter": "114Q1",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "( 216,566 )",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "3,575,803"
+  }
+ },
+ {
+  "id": "ratio_020",
+  "question": "聯詠113Q1的營業利益率是多少？",
+  "expected_ratio": 21.06,
+  "expected_answer": "21.06%",
+  "metadata": {
+   "company_alias": "聯詠",
+   "company_name": "聯詠科技",
+   "company_code": "3034",
+   "quarter": "113Q1",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "5,144,291",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "24,427,885"
+  }
+ },
+ {
+  "id": "ratio_021",
+  "question": "聯電114Q2的營業利益率是多少？",
+  "expected_ratio": 18.41,
+  "expected_answer": "18.41%",
+  "metadata": {
+   "company_alias": "聯電",
+   "company_name": "聯華電子",
+   "company_code": "2303",
+   "quarter": "114Q2",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "10,819,712",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "58,757,657"
+  }
+ },
+ {
+  "id": "ratio_022",
+  "question": "華邦電113Q4的負債比率是多少？",
+  "expected_ratio": 44.22,
+  "expected_answer": "44.22%",
+  "metadata": {
+   "company_alias": "華邦電",
+   "company_name": "華邦電子",
+   "company_code": "2344",
+   "quarter": "113Q4",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "78,624,727",
+   "denominator_item": "資產總計",
+   "denominator_raw": "177,784,148"
+  }
+ },
+ {
+  "id": "ratio_023",
+  "question": "中華精測113Q3的負債比率是多少？",
+  "expected_ratio": 8.14,
+  "expected_answer": "8.14%",
+  "metadata": {
+   "company_alias": "中華精測",
+   "company_name": "中華精測科技",
+   "company_code": "6510",
+   "quarter": "113Q3",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "685,341",
+   "denominator_item": "資產總計",
+   "denominator_raw": "8,416,417"
+  }
+ },
+ {
+  "id": "ratio_024",
+  "question": "致茂114Q4的研發費用率是多少？",
+  "expected_ratio": 9.03,
+  "expected_answer": "9.03%",
+  "metadata": {
+   "company_alias": "致茂",
+   "company_name": "致茂電子",
+   "company_code": "2360",
+   "quarter": "114Q4",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "2,556,457",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "28,310,935"
+  }
+ },
+ {
+  "id": "ratio_025",
+  "question": "大聯大114Q1的負債比率是多少？",
+  "expected_ratio": 79.31,
+  "expected_answer": "79.31%",
+  "metadata": {
+   "company_alias": "大聯大",
+   "company_name": "大聯大控股",
+   "company_code": "3702",
+   "quarter": "114Q1",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "336,150,568",
+   "denominator_item": "資產總計",
+   "denominator_raw": "423,849,685"
+  }
+ },
+ {
+  "id": "ratio_026",
+  "question": "力成114Q4的營業利益率是多少？",
+  "expected_ratio": 10.85,
+  "expected_answer": "10.85%",
+  "metadata": {
+   "company_alias": "力成",
+   "company_name": "力成科技",
+   "company_code": "6239",
+   "quarter": "114Q4",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "8,131,839",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "74,929,320"
+  }
+ },
+ {
+  "id": "ratio_027",
+  "question": "聯電113Q4的淨利率是多少？",
+  "expected_ratio": 20.28,
+  "expected_answer": "20.28%",
+  "metadata": {
+   "company_alias": "聯電",
+   "company_name": "聯華電子",
+   "company_code": "2303",
+   "quarter": "113Q4",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "47,106,256",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "232,302,584"
+  }
+ },
+ {
+  "id": "ratio_028",
+  "question": "達興114Q4的毛利率是多少？",
+  "expected_ratio": 40.6,
+  "expected_answer": "40.6%",
+  "metadata": {
+   "company_alias": "達興",
+   "company_name": "達興材料",
+   "company_code": "5234",
+   "quarter": "114Q4",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "1,879,496",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "4,629,779"
+  }
+ },
+ {
+  "id": "ratio_029",
+  "question": "群聯114Q3的營業利益率是多少？",
+  "expected_ratio": 7.85,
+  "expected_answer": "7.85%",
+  "metadata": {
+   "company_alias": "群聯",
+   "company_name": "群聯電子",
+   "company_code": "8299",
+   "quarter": "114Q3",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "1,424,287",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "18,136,797"
+  }
+ },
+ {
+  "id": "ratio_030",
+  "question": "中華精測114Q2的毛利率是多少？",
+  "expected_ratio": 55.85,
+  "expected_answer": "55.85%",
+  "metadata": {
+   "company_alias": "中華精測",
+   "company_name": "中華精測科技",
+   "company_code": "6510",
+   "quarter": "114Q2",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "678,941",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "1,215,735"
+  }
+ },
+ {
+  "id": "ratio_031",
+  "question": "旺矽113Q1的負債比率是多少？",
+  "expected_ratio": 34.69,
+  "expected_answer": "34.69%",
+  "metadata": {
+   "company_alias": "旺矽",
+   "company_name": "旺矽科技",
+   "company_code": "6223",
+   "quarter": "113Q1",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "4,359,469",
+   "denominator_item": "資產總計",
+   "denominator_raw": "12,565,848"
+  }
+ },
+ {
+  "id": "ratio_032",
+  "question": "世界先進113Q2的研發費用率是多少？",
+  "expected_ratio": 4.53,
+  "expected_answer": "4.53%",
+  "metadata": {
+   "company_alias": "世界先進",
+   "company_name": "世界先進積體電路",
+   "company_code": "5347",
+   "quarter": "113Q2",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "501,558",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "11,065,086"
+  }
+ },
+ {
+  "id": "ratio_033",
+  "question": "智原113Q4的淨利率是多少？",
+  "expected_ratio": 9.69,
+  "expected_answer": "9.69%",
+  "metadata": {
+   "company_alias": "智原",
+   "company_name": "智原科技",
+   "company_code": "3035",
+   "quarter": "113Q4",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "1,071,892",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "11,064,852"
+  }
+ },
+ {
+  "id": "ratio_034",
+  "question": "辛耘114Q1的毛利率是多少？",
+  "expected_ratio": 31.72,
+  "expected_answer": "31.72%",
+  "metadata": {
+   "company_alias": "辛耘",
+   "company_name": "辛耘企業",
+   "company_code": "3583",
+   "quarter": "114Q1",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "892,009",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "2,812,388"
+  }
+ },
+ {
+  "id": "ratio_035",
+  "question": "達興114Q1的營業利益率是多少？",
+  "expected_ratio": 18.66,
+  "expected_answer": "18.66%",
+  "metadata": {
+   "company_alias": "達興",
+   "company_name": "達興材料",
+   "company_code": "5234",
+   "quarter": "114Q1",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "206,418",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "1,106,061"
+  }
+ },
+ {
+  "id": "ratio_036",
+  "question": "京元電114Q4的負債比率是多少？",
+  "expected_ratio": 50.15,
+  "expected_answer": "50.15%",
+  "metadata": {
+   "company_alias": "京元電",
+   "company_name": "京元電子",
+   "company_code": "2449",
+   "quarter": "114Q4",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "50,740,202",
+   "denominator_item": "資產總計",
+   "denominator_raw": "101,177,951"
+  }
+ },
+ {
+  "id": "ratio_037",
+  "question": "景碩113Q4的研發費用率是多少？",
+  "expected_ratio": 8.55,
+  "expected_answer": "8.55%",
+  "metadata": {
+   "company_alias": "景碩",
+   "company_name": "景碩科技",
+   "company_code": "3189",
+   "quarter": "113Q4",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "2,611,654",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "30,534,979"
+  }
+ },
+ {
+  "id": "ratio_038",
+  "question": "致茂114Q2的負債比率是多少？",
+  "expected_ratio": 39.96,
+  "expected_answer": "39.96%",
+  "metadata": {
+   "company_alias": "致茂",
+   "company_name": "致茂電子",
+   "company_code": "2360",
+   "quarter": "114Q2",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "16,298,709",
+   "denominator_item": "資產總計",
+   "denominator_raw": "40,784,771"
+  }
+ },
+ {
+  "id": "ratio_039",
+  "question": "旺矽113Q1的毛利率是多少？",
+  "expected_ratio": 50.12,
+  "expected_answer": "50.12%",
+  "metadata": {
+   "company_alias": "旺矽",
+   "company_name": "旺矽科技",
+   "company_code": "6223",
+   "quarter": "113Q1",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "1,025,892",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "2,046,692"
+  }
+ },
+ {
+  "id": "ratio_040",
+  "question": "南亞科113Q3的負債比率是多少？",
+  "expected_ratio": 19.1,
+  "expected_answer": "19.1%",
+  "metadata": {
+   "company_alias": "南亞科",
+   "company_name": "南亞科技",
+   "company_code": "2408",
+   "quarter": "113Q3",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "38,895,566",
+   "denominator_item": "資產總計",
+   "denominator_raw": "203,649,322"
+  }
+ },
+ {
+  "id": "ratio_041",
+  "question": "聯詠114Q4的營業利益率是多少？",
+  "expected_ratio": 18.12,
+  "expected_answer": "18.12%",
+  "metadata": {
+   "company_alias": "聯詠",
+   "company_name": "聯詠科技",
+   "company_code": "3034",
+   "quarter": "114Q4",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "18,237,094",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "100,663,144"
+  }
+ },
+ {
+  "id": "ratio_042",
+  "question": "環球晶114Q1的營業利益率是多少？",
+  "expected_ratio": 16.6,
+  "expected_answer": "16.6%",
+  "metadata": {
+   "company_alias": "環球晶",
+   "company_name": "環球晶圓",
+   "company_code": "6488",
+   "quarter": "114Q1",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "2,589,117",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "15,594,522"
+  }
+ },
+ {
+  "id": "ratio_043",
+  "question": "祥碩113Q3的負債比率是多少？",
+  "expected_ratio": 7.39,
+  "expected_answer": "7.39%",
+  "metadata": {
+   "company_alias": "祥碩",
+   "company_name": "祥碩科技",
+   "company_code": "5269",
+   "quarter": "113Q3",
+   "ratio_type": "負債比率",
+   "numerator_item": "負債總計",
+   "numerator_raw": "2,480,170",
+   "denominator_item": "資產總計",
+   "denominator_raw": "33,565,379"
+  }
+ },
+ {
+  "id": "ratio_044",
+  "question": "祥碩114Q1的研發費用率是多少？",
+  "expected_ratio": 18.87,
+  "expected_answer": "18.87%",
+  "metadata": {
+   "company_alias": "祥碩",
+   "company_name": "祥碩科技",
+   "company_code": "5269",
+   "quarter": "114Q1",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "473,546",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "2,509,137"
+  }
+ },
+ {
+  "id": "ratio_045",
+  "question": "日月光113Q3的研發費用率是多少？",
+  "expected_ratio": 4.65,
+  "expected_answer": "4.65%",
+  "metadata": {
+   "company_alias": "日月光",
+   "company_name": "日月光投資控股",
+   "company_code": "3711",
+   "quarter": "113Q3",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "7,439,208",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "160,105,106"
+  }
+ },
+ {
+  "id": "ratio_046",
+  "question": "中華精測114Q3的營業利益率是多少？",
+  "expected_ratio": 24.73,
+  "expected_answer": "24.73%",
+  "metadata": {
+   "company_alias": "中華精測",
+   "company_name": "中華精測科技",
+   "company_code": "6510",
+   "quarter": "114Q3",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "307,103",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "1,242,034"
+  }
+ },
+ {
+  "id": "ratio_047",
+  "question": "智原114Q4的營業利益率是多少？",
+  "expected_ratio": 3.07,
+  "expected_answer": "3.07%",
+  "metadata": {
+   "company_alias": "智原",
+   "company_name": "智原科技",
+   "company_code": "3035",
+   "quarter": "114Q4",
+   "ratio_type": "營業利益率",
+   "numerator_item": "營業利益（損失）",
+   "numerator_raw": "552,384",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "17,992,808"
+  }
+ },
+ {
+  "id": "ratio_048",
+  "question": "致茂113Q3的淨利率是多少？",
+  "expected_ratio": 25.75,
+  "expected_answer": "25.75%",
+  "metadata": {
+   "company_alias": "致茂",
+   "company_name": "致茂電子",
+   "company_code": "2360",
+   "quarter": "113Q3",
+   "ratio_type": "淨利率",
+   "numerator_item": "本期淨利（淨損）",
+   "numerator_raw": "1,450,251",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "5,631,766"
+  }
+ },
+ {
+  "id": "ratio_049",
+  "question": "旺矽113Q4的研發費用率是多少？",
+  "expected_ratio": 10.71,
+  "expected_answer": "10.71%",
+  "metadata": {
+   "company_alias": "旺矽",
+   "company_name": "旺矽科技",
+   "company_code": "6223",
+   "quarter": "113Q4",
+   "ratio_type": "研發費用率",
+   "numerator_item": "研究發展費用",
+   "numerator_raw": "1,089,293",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "10,171,861"
+  }
+ },
+ {
+  "id": "ratio_050",
+  "question": "環球晶114Q2的毛利率是多少？",
+  "expected_ratio": 25.76,
+  "expected_answer": "25.76%",
+  "metadata": {
+   "company_alias": "環球晶",
+   "company_name": "環球晶圓",
+   "company_code": "6488",
+   "quarter": "114Q2",
+   "ratio_type": "毛利率",
+   "numerator_item": "營業毛利（毛損）",
+   "numerator_raw": "4,123,003",
+   "denominator_item": "營業收入合計",
+   "denominator_raw": "16,007,909"
+  }
+ }
+]

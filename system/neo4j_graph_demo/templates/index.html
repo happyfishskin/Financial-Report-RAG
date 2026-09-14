@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo4j 財報知識圖譜 Demo</title>
+
+  <!-- vis.js Network（本地檔，離線可用）-->
+  <script src="/static/vis-network.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #1a1d27;
+      border-bottom: 1px solid #2d3748;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    header h1 { font-size: 1.1rem; font-weight: 600; letter-spacing: .3px; }
+    #health-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #4a5568; margin-left: auto;
+      transition: background .3s;
+    }
+    #health-dot.ok  { background: #48bb78; box-shadow: 0 0 6px #48bb78; }
+    #health-dot.err { background: #f56565; box-shadow: 0 0 6px #f56565; }
+    #health-label { font-size: .75rem; color: #a0aec0; }
+
+    /* ── Tab Bar ── */
+    .tab-bar {
+      display: flex;
+      background: #1a1d27;
+      border-bottom: 1px solid #2d3748;
+      padding: 0 24px;
+    }
+    .tab-btn {
+      padding: 12px 20px;
+      font-size: .88rem;
+      font-weight: 500;
+      border: none;
+      background: none;
+      color: #718096;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: color .2s, border-color .2s;
+    }
+    .tab-btn.active { color: #63b3ed; border-bottom-color: #63b3ed; }
+
+    /* ── Main Layout ── */
+    .main {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 260px;
+      min-width: 220px;
+      background: #1a1d27;
+      border-right: 1px solid #2d3748;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 16px;
+      gap: 12px;
+      overflow-y: auto;
+    }
+    .sidebar h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .8px; color: #718096; margin-bottom: 4px; }
+
+    .btn {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: none;
+      font-size: .88rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity .2s, transform .1s;
+    }
+    .btn:active { transform: scale(.97); }
+    .btn:disabled { opacity: .4; cursor: not-allowed; }
+
+    .btn-primary { background: #3182ce; color: #fff; }
+    .btn-primary:hover:not(:disabled) { background: #2b6cb0; }
+    .btn-success { background: #276749; color: #9ae6b4; }
+    .btn-success:hover:not(:disabled) { background: #22543d; }
+    .btn-ghost   { background: #2d3748; color: #a0aec0; }
+    .btn-ghost:hover:not(:disabled) { background: #4a5568; }
+
+    /* ── Stats Card ── */
+    .stat-card {
+      background: #2d3748;
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .stat-card .label { font-size: .72rem; color: #718096; text-transform: uppercase; letter-spacing: .6px; }
+    .stat-card .value { font-size: 1.5rem; font-weight: 700; color: #63b3ed; margin: 2px 0; }
+    .stat-card .sub   { font-size: .75rem; color: #a0aec0; }
+
+    /* ── Graph Panel ── */
+    .graph-panel {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    .graph-canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ── Tooltip / Node Info ── */
+    #node-info {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: #1a1d27;
+      border: 1px solid #2d3748;
+      border-radius: 10px;
+      padding: 14px 16px;
+      min-width: 200px;
+      max-width: 280px;
+      display: none;
+      font-size: .82rem;
+    }
+    #node-info h3 { font-size: .92rem; color: #63b3ed; margin-bottom: 8px; }
+    #node-info table { width: 100%; border-collapse: collapse; }
+    #node-info td { padding: 3px 0; color: #a0aec0; }
+    #node-info td:first-child { color: #718096; padding-right: 10px; white-space: nowrap; }
+
+    /* ── Loading Spinner ── */
+    .spinner-overlay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(15,17,23,.7);
+      display: none;
+      z-index: 10;
+    }
+    .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid #2d3748;
+      border-top-color: #63b3ed;
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Company Pills (experiment) ── */
+    #company-pills { display: flex; flex-direction: column; gap: 6px; }
+    .pill-btn {
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #2d3748;
+      background: #2d3748;
+      color: #a0aec0;
+      font-size: .82rem;
+      cursor: pointer;
+      text-align: left;
+      transition: background .15s, color .15s, border-color .15s;
+    }
+    .pill-btn:hover   { background: #3182ce22; border-color: #3182ce; color: #63b3ed; }
+    .pill-btn.loaded  { background: #276749; border-color: #48bb78; color: #9ae6b4; }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      gap: 14px;
+      padding: 8px 20px;
+      background: #1a1d27;
+      border-top: 1px solid #2d3748;
+      font-size: .75rem;
+      color: #a0aec0;
+    }
+    .legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+
+    /* ── Tab Panels ── */
+    .panel-wrap { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: flex; flex-direction: row; flex: 1; overflow: hidden; }
+  </style>
+</head>
+<body>
+
+<!-- ══ Header ══ -->
+<header>
+  <h1>Neo4j 圖形渲染效能對照實驗</h1>
+  <span id="health-label">Neo4j</span>
+  <div id="health-dot"></div>
+</header>
+
+<!-- ══ Tab Bar ══ -->
+<div class="tab-bar">
+  <button class="tab-btn active" data-tab="control">控制組：全圖一次渲染</button>
+  <button class="tab-btn"       data-tab="experiment">實驗組：點擊動態分層</button>
+  <button class="tab-btn"       data-tab="questions">測試問題集</button>
+  <button class="tab-btn"       data-tab="bench">⏱ 自動對照實驗</button>
+  <button class="tab-btn"       data-tab="v14">🧠 v14 圖譜問答</button>
+</div>
+
+<!-- ══ Main ══ -->
+<div class="main">
+
+  <!-- ─── 控制組 ─── -->
+  <div id="tab-control" class="tab-panel active panel-wrap">
+    <div style="display:flex; flex:1; overflow:hidden;">
+      <div class="sidebar">
+        <h2>控制組操作</h2>
+        <button class="btn btn-primary" id="ctrl-load-btn" onclick="controlLoadAll()">
+          一次載入全圖
+        </button>
+        <button class="btn btn-ghost" onclick="controlReset()">重置</button>
+
+        <div class="stat-card">
+          <div class="label">查詢耗時</div>
+          <div class="value" id="ctrl-query-ms">—</div>
+          <div class="sub">Neo4j → API</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">渲染耗時</div>
+          <div class="value" id="ctrl-render-ms">—</div>
+          <div class="sub">API → 首幀完成</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">節點 / 邊</div>
+          <div class="value" id="ctrl-counts">—</div>
+          <div class="sub">本次載入</div>
+        </div>
+      </div>
+
+      <div class="graph-panel">
+        <div class="spinner-overlay" id="ctrl-spinner"><div class="spinner"></div></div>
+        <div id="ctrl-graph" class="graph-canvas"></div>
+        <div id="node-info-ctrl" id="node-info">
+          <h3 id="ni-ctrl-name">節點詳情</h3>
+          <table id="ni-ctrl-table"></table>
+        </div>
+      </div>
+    </div>
+    <div class="legend">
+      <span><span class="legend-dot" style="background:#63b3ed"></span>Company（核心公司）</span>
+      <span><span class="legend-dot" style="background:#68d391"></span>FinancialItem（財報科目）</span>
+    </div>
+  </div>
+
+  <!-- ─── 實驗組 ─── -->
+  <div id="tab-experiment" class="tab-panel panel-wrap">
+    <div style="display:flex; flex:1; overflow:hidden;">
+      <div class="sidebar">
+        <h2>實驗組操作</h2>
+        <button class="btn btn-success" id="exp-init-btn" onclick="experimentInit()">
+          Step 1：載入公司節點
+        </button>
+        <button class="btn btn-ghost" onclick="experimentReset()">重置</button>
+
+        <div style="margin-top:4px">
+          <h2 style="margin-bottom:8px">點擊展開財報科目</h2>
+          <div id="company-pills"></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="label">查詢耗時</div>
+          <div class="value" id="exp-query-ms">—</div>
+          <div class="sub">Neo4j → API</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">渲染耗時</div>
+          <div class="value" id="exp-render-ms">—</div>
+          <div class="sub">API → 首幀完成</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">節點 / 邊</div>
+          <div class="value" id="exp-counts">—</div>
+          <div class="sub">當前圖上</div>
+        </div>
+      </div>
+
+      <div class="graph-panel">
+        <div class="spinner-overlay" id="exp-spinner"><div class="spinner"></div></div>
+        <div id="exp-graph" class="graph-canvas"></div>
+        <div id="node-info-exp" style="
+          position:absolute; bottom:20px; right:20px;
+          background:#1a1d27; border:1px solid #2d3748; border-radius:10px;
+          padding:14px 16px; min-width:200px; max-width:280px;
+          display:none; font-size:.82rem;">
+          <h3 id="ni-exp-name" style="font-size:.92rem;color:#63b3ed;margin-bottom:8px;">節點詳情</h3>
+          <table id="ni-exp-table" style="width:100%;border-collapse:collapse;"></table>
+        </div>
+      </div>
+    </div>
+    <div class="legend">
+      <span><span class="legend-dot" style="background:#63b3ed"></span>Company（點擊可展開）</span>
+      <span><span class="legend-dot" style="background:#68d391"></span>FinancialItem（展開後顯示）</span>
+      <span><span class="legend-dot" style="background:#f6ad55"></span>已展開的公司</span>
+    </div>
+  </div>
+
+  <!-- ─── 測試問題集 Tab ─── -->
+  <div id="tab-questions" class="tab-panel panel-wrap">
+    <div style="display:flex; flex:1; overflow:hidden;">
+
+      <!-- 問題列表 側邊欄 -->
+      <div class="sidebar" style="width:300px; min-width:260px;">
+        <h2>問題分類</h2>
+
+        <!-- 分類篩選 -->
+        <div id="cat-filter" style="display:flex; flex-wrap:wrap; gap:5px; margin-bottom:10px;">
+          <button class="pill-btn" style="font-size:.72rem; padding:4px 10px;" onclick="filterCategory('all')" id="cat-all">全部</button>
+        </div>
+
+        <div style="flex:1; overflow-y:auto;" id="question-list"></div>
+
+        <div class="stat-card" style="margin-top:8px;">
+          <div class="label">查詢耗時</div>
+          <div class="value" id="q-query-ms">—</div>
+          <div class="sub">Neo4j → API（ms）</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">結果類型</div>
+          <div class="value" style="font-size:1rem;" id="q-result-type">—</div>
+          <div class="sub">graph / table</div>
+        </div>
+      </div>
+
+      <!-- 結果區 -->
+      <div class="graph-panel" style="flex-direction:column; display:flex;">
+        <div class="spinner-overlay" id="q-spinner"><div class="spinner"></div></div>
+
+        <!-- 標題列 -->
+        <div id="q-title-bar" style="
+          padding:12px 20px; background:#1a1d27;
+          border-bottom:1px solid #2d3748;
+          font-size:.9rem; color:#a0aec0; display:none;">
+          <span id="q-title-text"></span>
+        </div>
+
+        <!-- 圖形結果 -->
+        <div id="q-graph-area" style="flex:1; position:relative; display:none;">
+          <div id="q-graph" style="width:100%; height:100%;"></div>
+          <div id="q-node-info" style="
+            position:absolute; bottom:20px; right:20px;
+            background:#1a1d27; border:1px solid #2d3748; border-radius:10px;
+            padding:14px 16px; min-width:200px; max-width:280px;
+            display:none; font-size:.82rem;">
+            <h3 id="q-ni-name" style="font-size:.92rem;color:#63b3ed;margin-bottom:8px;"></h3>
+            <table id="q-ni-table" style="width:100%;border-collapse:collapse;"></table>
+          </div>
+        </div>
+
+        <!-- 表格結果 -->
+        <div id="q-table-area" style="flex:1; overflow:auto; padding:20px; display:none;">
+          <table id="q-table" style="
+            width:100%; border-collapse:collapse;
+            font-size:.83rem;">
+          </table>
+        </div>
+
+        <!-- 空白提示 -->
+        <div id="q-empty" style="
+          flex:1; display:flex; align-items:center; justify-content:center;
+          color:#4a5568; font-size:.9rem; flex-direction:column; gap:12px;">
+          <div style="font-size:2rem;">←</div>
+          <div>從左側選擇一個測試問題</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="legend">
+      <span><span class="legend-dot" style="background:#63b3ed"></span>Company</span>
+      <span><span class="legend-dot" style="background:#f6ad55"></span>RelatedParty</span>
+      <span><span class="legend-dot" style="background:#68d391"></span>Location / Business</span>
+      <span><span class="legend-dot" style="background:#fc8181"></span>RiskEvent</span>
+      <span><span class="legend-dot" style="background:#b794f4"></span>Stage / Segment</span>
+    </div>
+  </div>
+
+  <!-- ─── 自動對照實驗 Tab ─── -->
+  <div id="tab-bench" class="tab-panel panel-wrap" style="flex-direction:column;">
+    <div style="display:flex; flex:1; overflow:hidden;">
+      <div class="sidebar" style="width:300px; min-width:280px;">
+        <h2>自動對照實驗</h2>
+        <div style="font-size:.78rem; color:#a0aec0; line-height:1.5;">
+          控制組：<b>全圖一次渲染</b>（後端撈出全部節點與邊，前端直接畫完）<br>
+          實驗組：<b>分層動態渲染</b>（先畫 30 家核心公司，再逐一點開財報科目）
+        </div>
+        <label style="font-size:.78rem; color:#718096;">
+          回合數
+          <input id="bench-rounds" type="number" value="3" min="1" max="10" style="
+            width:60px; margin-left:8px; background:#2d3748; color:#e2e8f0;
+            border:1px solid #4a5568; border-radius:6px; padding:4px 8px;">
+        </label>
+        <label style="font-size:.78rem; color:#718096;">
+          實驗組展開家數
+          <input id="bench-expands" type="number" value="3" min="1" max="30" style="
+            width:60px; margin-left:8px; background:#2d3748; color:#e2e8f0;
+            border:1px solid #4a5568; border-radius:6px; padding:4px 8px;">
+        </label>
+        <button class="btn btn-primary" id="bench-run-btn" onclick="runBenchmark()">執行對照實驗</button>
+        <button class="btn btn-ghost" onclick="downloadBenchResult()" id="bench-dl-btn" disabled>下載結果 JSON</button>
+        <div class="stat-card">
+          <div class="label">狀態</div>
+          <div class="value" style="font-size:.95rem;" id="bench-status">待執行</div>
+          <div class="sub" id="bench-progress"></div>
+        </div>
+      </div>
+
+      <div class="graph-panel" style="display:flex; flex-direction:column;">
+        <!-- 渲染畫布（實驗過程可見）-->
+        <div style="flex:1; position:relative; min-height:200px;">
+          <div id="bench-graph" class="graph-canvas"></div>
+          <div id="bench-canvas-label" style="
+            position:absolute; top:12px; left:16px; font-size:.78rem;
+            color:#718096; background:#1a1d27cc; padding:4px 10px; border-radius:6px;"></div>
+        </div>
+        <!-- 結果表 -->
+        <div id="bench-report" style="
+          max-height:46%; overflow:auto; border-top:1px solid #2d3748;
+          background:#1a1d27; padding:16px 20px; display:none;">
+        </div>
+      </div>
+    </div>
+    <div class="legend">
+      <span>計時定義：<b>後端查詢</b>＝Neo4j→API（伺服器回報）｜<b>下載</b>＝fetch 往返－後端查詢｜<b>前端渲染</b>＝資料到手→vis.js 物理佈局穩定（stabilizationIterationsDone）｜<b>首屏可互動</b>＝點按鈕→畫面可操作</span>
+    </div>
+  </div>
+
+  <!-- ─── v14 圖譜問答 Tab ─── -->
+  <div id="tab-v14" class="tab-panel panel-wrap" style="flex-direction:column;">
+    <div style="display:flex; flex:1; overflow:hidden;">
+      <div class="sidebar" style="width:360px; min-width:320px;">
+        <h2>rag_test_system_v14 圖譜問答</h2>
+        <div style="font-size:.78rem; color:#a0aec0; line-height:1.6;">
+          直接呼叫 v14 內建圖譜引擎（GraphRAG <b>Layer 0</b> 樣板直答，
+          pandas、<b>零 LLM</b>），支援四類圖譜問題：
+          產業鏈階段／風險分類／投資關係／關係人交易。<br>
+          首次呼叫需載入模組與圖譜（約 3–5 秒），之後為毫秒級。
+        </div>
+        <label style="font-size:.78rem; color:#718096;">範例問題（arch100_v2 圖譜 30 題）</label>
+        <select id="v14-example-select" onchange="v14PickExample()" style="
+          width:100%; background:#2d3748; color:#e2e8f0; border:1px solid #4a5568;
+          border-radius:6px; padding:6px 8px; font-size:.76rem;">
+          <option value="">— 選擇範例問題 —</option>
+        </select>
+        <textarea id="v14-question" rows="5" placeholder="或自行輸入圖譜問題…" style="
+          width:100%; background:#2d3748; color:#e2e8f0; border:1px solid #4a5568;
+          border-radius:6px; padding:8px 10px; font-size:.8rem; resize:vertical;"></textarea>
+        <button class="btn btn-primary" id="v14-ask-btn" onclick="v14Ask()">送出問題</button>
+        <div class="stat-card">
+          <div class="label">圖譜查詢耗時</div>
+          <div class="value" id="v14-query-ms">—</div>
+          <div class="sub">Layer 0 直答（不含 LLM）</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Layer 0 命中</div>
+          <div class="value" style="font-size:1rem;" id="v14-hit">—</div>
+          <div class="sub">未命中時 v14 會降級走 LLM 路由</div>
+        </div>
+      </div>
+
+      <div class="graph-panel" style="display:flex; flex-direction:column; overflow:auto;">
+        <div id="v14-result" style="padding:24px 28px; font-size:.9rem; line-height:1.8; color:#e2e8f0;">
+          <div style="color:#4a5568;">← 選擇範例或輸入問題後送出</div>
+        </div>
+      </div>
+    </div>
+    <div class="legend">
+      <span>後端：<b>/api/v14/ask</b> → rag_test_system_v14._gkg_pattern_direct_answer()（與 E2E 評測同一套圖譜引擎；E2E 含 LLM 約 3.2 s，Layer 0 僅 ~10 ms）</span>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<script>
+/* ════════════════════════════════════════════════════════════════
+   vis.js 全局設定
+════════════════════════════════════════════════════════════════ */
+const VIS_OPTIONS = {
+  nodes: {
+    shape: "dot",
+    font: { color: "#e2e8f0", size: 13 },
+    borderWidth: 2,
+  },
+  edges: {
+    color: { color: "#4a5568", highlight: "#63b3ed" },
+    width: 1.5,
+    smooth: { type: "dynamic" },
+  },
+  groups: {
+    company: {
+      color: { background: "#2b6cb0", border: "#63b3ed", highlight: { background:"#3182ce", border:"#90cdf4" } },
+      size: 26,
+      font: { size: 15, bold: true },
+    },
+    financial: {
+      color: { background: "#276749", border: "#68d391", highlight: { background:"#2f855a", border:"#9ae6b4" } },
+      size: 18,
+    },
+    expanded: {
+      color: { background: "#7b341e", border: "#f6ad55", highlight: { background:"#9c4221", border:"#fbd38d" } },
+      size: 26,
+      font: { size: 15, bold: true },
+    },
+  },
+  physics: {
+    stabilization: { iterations: 150 },
+    barnesHut: { gravitationalConstant: -8000, centralGravity: 0.3, springLength: 120 },
+  },
+  interaction: { hover: true, tooltipDelay: 200 },
+};
+
+/* ════════════════════════════════════════════════════════════════
+   Tab 切換
+════════════════════════════════════════════════════════════════ */
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
+  });
+});
+
+/* ════════════════════════════════════════════════════════════════
+   Neo4j 健康檢查
+════════════════════════════════════════════════════════════════ */
+async function checkHealth() {
+  try {
+    const r = await fetch("/api/health");
+    const d = await r.json();
+    const dot = document.getElementById("health-dot");
+    dot.className = d.status === "ok" ? "ok" : "err";
+  } catch { document.getElementById("health-dot").className = "err"; }
+}
+checkHealth();
+setInterval(checkHealth, 10000);
+
+/* ════════════════════════════════════════════════════════════════
+   共用工具
+════════════════════════════════════════════════════════════════ */
+function setSpinner(id, show) {
+  document.getElementById(id).style.display = show ? "flex" : "none";
+}
+
+function updateStats(prefix, queryMs, renderMs, nodes, edges) {
+  document.getElementById(`${prefix}-query-ms`).textContent  = queryMs  != null ? queryMs  + " ms" : "—";
+  document.getElementById(`${prefix}-render-ms`).textContent = renderMs != null ? renderMs + " ms" : "—";
+  document.getElementById(`${prefix}-counts`).textContent    = (nodes != null) ? `${nodes} / ${edges}` : "—";
+}
+
+function showNodeInfo(panelId, nameId, tableId, nodeData) {
+  const panel = document.getElementById(panelId);
+  document.getElementById(nameId).textContent = nodeData.label || "節點";
+  const table = document.getElementById(tableId);
+  table.innerHTML = "";
+  const data = nodeData.data || {};
+  for (const [k, v] of Object.entries(data)) {
+    if (k === "name") continue;
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${k}</td><td>${v}</td>`;
+    table.appendChild(tr);
+  }
+  panel.style.display = "block";
+}
+
+/* ════════════════════════════════════════════════════════════════
+   控制組
+════════════════════════════════════════════════════════════════ */
+let ctrlNetwork = null;
+
+async function controlLoadAll() {
+  document.getElementById("ctrl-load-btn").disabled = true;
+  setSpinner("ctrl-spinner", true);
+  updateStats("ctrl", null, null, null, null);
+
+  const fetchStart = performance.now();
+  try {
+    const res  = await fetch("/api/control/all");
+    const data = await res.json();
+    if (data.error) { alert("錯誤：" + data.error); return; }
+
+    const renderStart = performance.now();
+
+    const dsNodes = new vis.DataSet(data.nodes);
+    const dsEdges = new vis.DataSet(data.edges);
+
+    const container = document.getElementById("ctrl-graph");
+    if (ctrlNetwork) ctrlNetwork.destroy();
+    ctrlNetwork = new vis.Network(container, { nodes: dsNodes, edges: dsEdges }, VIS_OPTIONS);
+
+    ctrlNetwork.once("stabilizationIterationsDone", () => {
+      const renderMs = Math.round(performance.now() - renderStart);
+      updateStats("ctrl", data.query_ms, renderMs, data.nodes.length, data.edges.length);
+      setSpinner("ctrl-spinner", false);
+    });
+
+    ctrlNetwork.on("click", params => {
+      if (!params.nodes.length) {
+        document.getElementById("node-info-ctrl").style.display = "none";
+        return;
+      }
+      const node = dsNodes.get(params.nodes[0]);
+      showNodeInfo("node-info-ctrl", "ni-ctrl-name", "ni-ctrl-table", node);
+    });
+
+  } catch(e) {
+    alert("連線失敗：" + e.message);
+    setSpinner("ctrl-spinner", false);
+    document.getElementById("ctrl-load-btn").disabled = false;
+  }
+}
+
+function controlReset() {
+  if (ctrlNetwork) { ctrlNetwork.destroy(); ctrlNetwork = null; }
+  document.getElementById("ctrl-load-btn").disabled = false;
+  document.getElementById("node-info-ctrl").style.display = "none";
+  updateStats("ctrl", null, null, null, null);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   實驗組
+════════════════════════════════════════════════════════════════ */
+let expNetwork   = null;
+let expNodes     = null;
+let expEdges     = null;
+let loadedCompanies = new Set();
+
+async function experimentInit() {
+  document.getElementById("exp-init-btn").disabled = true;
+  document.getElementById("company-pills").innerHTML = "";
+  loadedCompanies.clear();
+  setSpinner("exp-spinner", true);
+  updateStats("exp", null, null, null, null);
+
+  try {
+    const res  = await fetch("/api/experiment/companies");
+    const data = await res.json();
+    if (data.error) { alert("錯誤：" + data.error); return; }
+
+    const renderStart = performance.now();
+    expNodes = new vis.DataSet(data.nodes);
+    expEdges = new vis.DataSet([]);
+
+    const container = document.getElementById("exp-graph");
+    if (expNetwork) expNetwork.destroy();
+    expNetwork = new vis.Network(container, { nodes: expNodes, edges: expEdges }, VIS_OPTIONS);
+
+    expNetwork.once("stabilizationIterationsDone", () => {
+      const renderMs = Math.round(performance.now() - renderStart);
+      updateStats("exp", data.query_ms, renderMs, expNodes.length, 0);
+      setSpinner("exp-spinner", false);
+
+      // 建立公司 pill 按鈕
+      const pills = document.getElementById("company-pills");
+      data.nodes.forEach(n => {
+        const btn = document.createElement("button");
+        btn.className  = "pill-btn";
+        btn.id         = "pill-" + n.data.name;
+        btn.textContent = "▶  " + n.data.name;
+        btn.onclick    = () => expandCompany(n.data.name);
+        pills.appendChild(btn);
+      });
+    });
+
+    // 點擊圖上節點 → 展開
+    expNetwork.on("click", params => {
+      if (!params.nodes.length) {
+        document.getElementById("node-info-exp").style.display = "none";
+        return;
+      }
+      const node = expNodes.get(params.nodes[0]);
+      if (!node) return;
+      showNodeInfo("node-info-exp", "ni-exp-name", "ni-exp-table", node);
+      if (node.group === "company" || node.group === "expanded") {
+        expandCompany(node.label);
+      }
+    });
+
+  } catch(e) {
+    alert("連線失敗：" + e.message);
+    setSpinner("exp-spinner", false);
+    document.getElementById("exp-init-btn").disabled = false;
+  }
+}
+
+async function expandCompany(name) {
+  if (loadedCompanies.has(name)) return;   // 已展開過，不重複請求
+
+  setSpinner("exp-spinner", true);
+
+  try {
+    const res  = await fetch(`/api/experiment/expand?name=${encodeURIComponent(name)}`);
+    const data = await res.json();
+    if (data.error) { alert("錯誤：" + data.error); return; }
+
+    const renderStart = performance.now();
+
+    // 增量合併節點（避免重複）
+    data.nodes.forEach(n => {
+      if (!expNodes.get(n.id)) {
+        expNodes.add(n);
+      } else if (n.group !== "financial") {
+        // 公司節點切換成「已展開」樣式
+        expNodes.update({ id: n.id, group: "expanded" });
+      }
+    });
+    // 公司節點樣式切換
+    const companyNode = expNodes.get().find(n => n.label === name);
+    if (companyNode) expNodes.update({ id: companyNode.id, group: "expanded" });
+
+    data.edges.forEach(e => {
+      if (!expEdges.get(e.id)) expEdges.add(e);
+    });
+
+    loadedCompanies.add(name);
+
+    expNetwork.once("stabilizationIterationsDone", () => {
+      const renderMs = Math.round(performance.now() - renderStart);
+      updateStats("exp", data.query_ms, renderMs, expNodes.length, expEdges.length);
+      setSpinner("exp-spinner", false);
+    });
+    expNetwork.stabilize(50);
+
+    // 更新 pill 樣式
+    const pill = document.getElementById("pill-" + name);
+    if (pill) { pill.classList.add("loaded"); pill.textContent = "✓  " + name; }
+
+  } catch(e) {
+    alert("連線失敗：" + e.message);
+    setSpinner("exp-spinner", false);
+  }
+}
+
+function experimentReset() {
+  if (expNetwork) { expNetwork.destroy(); expNetwork = null; }
+  expNodes = expEdges = null;
+  loadedCompanies.clear();
+  document.getElementById("company-pills").innerHTML = "";
+  document.getElementById("exp-init-btn").disabled   = false;
+  document.getElementById("node-info-exp").style.display = "none";
+  updateStats("exp", null, null, null, null);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   測試問題集
+════════════════════════════════════════════════════════════════ */
+let qNetwork   = null;
+let allQuestions = [];
+let currentCategory = "all";
+
+const CAT_COLORS = {
+  "Investment":  "#3182ce",
+  "RelatedParty":"#805ad5",
+  "SupplyChain": "#276749",
+  "RiskEvent":   "#c53030",
+  "跨圖":        "#b7791f",
+};
+
+const DIFF_COLORS = { "★":"#718096","★★":"#63b3ed","★★★":"#68d391","★★★★":"#f6ad55","★★★★★":"#fc8181" };
+
+// 頁面載入後拉取問題清單
+async function loadQuestions() {
+  try {
+    const res  = await fetch("/api/questions");
+    allQuestions = await res.json();
+    buildCategoryFilter();
+    renderQuestionList(allQuestions);
+  } catch(e) {
+    console.error("載入問題失敗", e);
+  }
+}
+
+function buildCategoryFilter() {
+  const cats = [...new Set(allQuestions.map(q => q.category))];
+  const bar  = document.getElementById("cat-filter");
+  cats.forEach(cat => {
+    const btn = document.createElement("button");
+    btn.className  = "pill-btn";
+    btn.id         = "cat-" + cat;
+    btn.textContent = cat;
+    btn.style.cssText = `font-size:.72rem; padding:4px 10px;
+      background:${CAT_COLORS[cat] || '#2d3748'}22;
+      border-color:${CAT_COLORS[cat] || '#4a5568'};
+      color:${CAT_COLORS[cat] || '#a0aec0'};`;
+    btn.onclick = () => filterCategory(cat);
+    bar.appendChild(btn);
+  });
+}
+
+function filterCategory(cat) {
+  currentCategory = cat;
+  document.querySelectorAll("#cat-filter .pill-btn").forEach(b => b.classList.remove("loaded"));
+  const target = document.getElementById("cat-" + (cat === "all" ? "all" : cat));
+  if (target) target.classList.add("loaded");
+
+  const filtered = cat === "all"
+    ? allQuestions
+    : allQuestions.filter(q => q.category === cat);
+  renderQuestionList(filtered);
+}
+
+function renderQuestionList(questions) {
+  const list = document.getElementById("question-list");
+  list.innerHTML = "";
+  questions.forEach(q => {
+    const item = document.createElement("div");
+    item.style.cssText = `
+      padding:10px 12px; border-radius:8px; cursor:pointer;
+      border:1px solid #2d3748; margin-bottom:6px;
+      transition:background .15s, border-color .15s;
+    `;
+    item.innerHTML = `
+      <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px;">
+        <span style="
+          font-size:.68rem; padding:2px 7px; border-radius:4px;
+          background:${CAT_COLORS[q.category] || '#2d3748'}33;
+          color:${CAT_COLORS[q.category] || '#a0aec0'};
+          border:1px solid ${CAT_COLORS[q.category] || '#4a5568'};
+        ">${q.category}</span>
+        <span style="font-size:.72rem; color:${DIFF_COLORS[q.difficulty] || '#718096'};">${q.difficulty}</span>
+        <span style="margin-left:auto; font-size:.68rem; color:#4a5568;
+          background:#2d3748; padding:2px 6px; border-radius:4px;">
+          ${q.result_type === 'graph' ? '📊 圖' : '📋 表'}
+        </span>
+      </div>
+      <div style="font-size:.82rem; color:#e2e8f0; line-height:1.4;">${q.id}. ${q.title}</div>
+    `;
+    item.onmouseenter = () => item.style.background = "#2d3748";
+    item.onmouseleave = () => item.style.background = "transparent";
+    item.onclick = () => runQuestion(q.id, q.title);
+    list.appendChild(item);
+  });
+}
+
+async function runQuestion(qid, title) {
+  setSpinner("q-spinner", true);
+  document.getElementById("q-empty").style.display      = "none";
+  document.getElementById("q-graph-area").style.display  = "none";
+  document.getElementById("q-table-area").style.display  = "none";
+  document.getElementById("q-title-bar").style.display   = "flex";
+  document.getElementById("q-title-text").textContent    = `${qid}. ${title}`;
+  document.getElementById("q-query-ms").textContent      = "…";
+  document.getElementById("q-result-type").textContent   = "…";
+
+  try {
+    const res  = await fetch(`/api/run/${qid}`);
+    const data = await res.json();
+    if (data.error) { alert("錯誤：" + data.error); setSpinner("q-spinner", false); return; }
+
+    document.getElementById("q-query-ms").textContent    = data.query_ms + " ms";
+    document.getElementById("q-result-type").textContent = data.result_type;
+
+    if (data.result_type === "graph") {
+      renderGraphResult(data);
+    } else {
+      renderTableResult(data);
+    }
+  } catch(e) {
+    alert("連線失敗：" + e.message);
+  } finally {
+    setSpinner("q-spinner", false);
+  }
+}
+
+function renderGraphResult(data) {
+  document.getElementById("q-graph-area").style.display = "block";
+
+  const VIS_Q_OPTIONS = JSON.parse(JSON.stringify(VIS_OPTIONS));
+  VIS_Q_OPTIONS.groups = {
+    company:       { color:{background:"#2b6cb0",border:"#63b3ed"}, size:22 },
+    related_party: { color:{background:"#553c9a",border:"#b794f4"}, size:18 },
+    location:      { color:{background:"#276749",border:"#68d391"}, size:16, shape:"diamond" },
+    business:      { color:{background:"#276749",border:"#68d391"}, size:16, shape:"box" },
+    risk:          { color:{background:"#742a2a",border:"#fc8181"}, size:18, shape:"triangle" },
+    stage:         { color:{background:"#44337a",border:"#b794f4"}, size:20, shape:"box" },
+    segment:       { color:{background:"#322659",border:"#9f7aea"}, size:18, shape:"box" },
+    industry:      { color:{background:"#1a202c",border:"#718096"}, size:24, shape:"star" },
+    relation_type: { color:{background:"#4a1942",border:"#d53f8c"}, size:14, shape:"box" },
+    default:       { color:{background:"#4a5568",border:"#718096"}, size:16 },
+  };
+
+  const dsNodes = new vis.DataSet(data.nodes);
+  const dsEdges = new vis.DataSet(data.edges);
+  const container = document.getElementById("q-graph");
+  if (qNetwork) qNetwork.destroy();
+  qNetwork = new vis.Network(container, { nodes: dsNodes, edges: dsEdges }, VIS_Q_OPTIONS);
+
+  qNetwork.on("click", params => {
+    if (!params.nodes.length) { document.getElementById("q-node-info").style.display="none"; return; }
+    const node = dsNodes.get(params.nodes[0]);
+    if (!node) return;
+    document.getElementById("q-ni-name").textContent = node.label || "節點";
+    const tbl = document.getElementById("q-ni-table");
+    tbl.innerHTML = "";
+    for (const [k, v] of Object.entries(node.data || {})) {
+      if (k === "name") continue;
+      tbl.innerHTML += `<tr><td style="color:#718096;padding-right:10px;">${k}</td><td style="color:#a0aec0;">${v}</td></tr>`;
+    }
+    document.getElementById("q-node-info").style.display = "block";
+  });
+}
+
+function renderTableResult(data) {
+  document.getElementById("q-table-area").style.display = "block";
+  const tbl = document.getElementById("q-table");
+
+  const headerRow = `<thead><tr>${data.columns.map(c =>
+    `<th style="
+      padding:8px 12px; background:#2d3748; text-align:left;
+      font-size:.78rem; color:#a0aec0; border-bottom:1px solid #4a5568;
+      white-space:nowrap;">${c}</th>`
+  ).join("")}</tr></thead>`;
+
+  const bodyRows = data.rows.map((row, i) => `
+    <tr style="background:${i%2===0?'transparent':'#1a1d2722'};">
+      ${row.map(cell => `<td style="
+        padding:7px 12px; border-bottom:1px solid #2d374866;
+        font-size:.8rem; color:#e2e8f0; max-width:280px;
+        word-break:break-word;">${cell}</td>`
+      ).join("")}
+    </tr>`
+  ).join("");
+
+  tbl.innerHTML = headerRow + "<tbody>" + bodyRows + "</tbody>";
+
+  if (data.rows.length === 0) {
+    tbl.innerHTML += `<tr><td colspan="${data.columns.length}"
+      style="text-align:center;padding:30px;color:#4a5568;">
+      查無符合資料</td></tr>`;
+  }
+}
+
+// Tab 切換時才載入問題清單（延遲載入）
+let questionsLoaded = false;
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.tab === "questions" && !questionsLoaded) {
+      questionsLoaded = true;
+      loadQuestions();
+    }
+  });
+});
+
+/* ════════════════════════════════════════════════════════════════
+   自動對照實驗：控制組（全圖一次渲染）vs 實驗組（分層動態渲染）
+════════════════════════════════════════════════════════════════ */
+let benchNetwork = null;
+window.__BENCH_RESULT = null;
+
+function benchLabel(text) {
+  document.getElementById("bench-canvas-label").textContent = text;
+}
+function benchStatus(text, sub) {
+  document.getElementById("bench-status").textContent = text;
+  if (sub != null) document.getElementById("bench-progress").textContent = sub;
+}
+
+// fetch 並回傳 { data, fetchMs, downloadMs, bytes }
+async function benchFetch(url) {
+  const t0 = performance.now();
+  const res = await fetch(url);
+  const txt = await res.text();
+  const fetchMs = performance.now() - t0;
+  const data = JSON.parse(txt);
+  return {
+    data,
+    fetchMs,
+    downloadMs: Math.max(0, fetchMs - (data.query_ms || 0)),
+    bytes: txt.length,
+  };
+}
+
+// 在 bench 畫布上渲染，resolve 於物理佈局穩定（含 60s 保險絲）
+function benchRender(dsNodes, dsEdges) {
+  return new Promise(resolve => {
+    const container = document.getElementById("bench-graph");
+    if (benchNetwork) benchNetwork.destroy();
+    const t0 = performance.now();
+    benchNetwork = new vis.Network(container, { nodes: dsNodes, edges: dsEdges }, VIS_OPTIONS);
+    const fuse = setTimeout(() => resolve(performance.now() - t0), 60000);
+    benchNetwork.once("stabilizationIterationsDone", () => {
+      clearTimeout(fuse);
+      resolve(performance.now() - t0);
+    });
+  });
+}
+
+// 既有網路上做增量渲染（實驗組展開），resolve 於再穩定
+function benchIncrRender(dsNodes, dsEdges, newNodes, newEdges) {
+  return new Promise(resolve => {
+    const t0 = performance.now();
+    newNodes.forEach(n => { if (!dsNodes.get(n.id)) dsNodes.add(n); });
+    newEdges.forEach(e => { if (!dsEdges.get(e.id)) dsEdges.add(e); });
+    const fuse = setTimeout(() => resolve(performance.now() - t0), 30000);
+    benchNetwork.once("stabilizationIterationsDone", () => {
+      clearTimeout(fuse);
+      resolve(performance.now() - t0);
+    });
+    benchNetwork.stabilize(50);
+  });
+}
+
+const avg = a => a.reduce((x, y) => x + y, 0) / a.length;
+const fmt = (x, d = 0) => x == null ? "—" : x.toFixed(d);
+
+async function runBenchmark() {
+  const rounds  = Math.max(1, +document.getElementById("bench-rounds").value || 3);
+  const expandK = Math.max(1, +document.getElementById("bench-expands").value || 3);
+  document.getElementById("bench-run-btn").disabled = true;
+  document.getElementById("bench-report").style.display = "none";
+  window.__BENCH_RESULT = null;
+
+  const ctrl = [], exp = [];
+  try {
+    for (let r = 1; r <= rounds; r++) {
+      // ── 控制組：全圖一次渲染 ─────────────────────────────
+      benchStatus("控制組執行中", `回合 ${r}/${rounds}`);
+      benchLabel(`控制組 回合 ${r}：全圖一次渲染`);
+      {
+        const t0 = performance.now();
+        const { data, downloadMs, bytes } = await benchFetch("/api/control/all");
+        const renderMs = await benchRender(new vis.DataSet(data.nodes), new vis.DataSet(data.edges));
+        ctrl.push({
+          query_ms: data.query_ms, download_ms: downloadMs, bytes,
+          render_ms: renderMs, ttfi_ms: performance.now() - t0,
+          nodes: data.nodes.length, edges: data.edges.length,
+        });
+      }
+
+      // ── 實驗組：分層動態渲染 ─────────────────────────────
+      benchStatus("實驗組執行中", `回合 ${r}/${rounds}`);
+      benchLabel(`實驗組 回合 ${r}：先畫核心公司`);
+      {
+        const t0 = performance.now();
+        const { data, downloadMs, bytes } = await benchFetch("/api/experiment/companies");
+        const dsNodes = new vis.DataSet(data.nodes);
+        const dsEdges = new vis.DataSet([]);
+        const renderMs = await benchRender(dsNodes, dsEdges);
+        const initTtfi = performance.now() - t0;
+
+        const expands = [];
+        const names = data.nodes.map(n => n.data.name).slice(0, expandK);
+        for (const name of names) {
+          benchLabel(`實驗組 回合 ${r}：展開「${name}」`);
+          const t1 = performance.now();
+          const e = await benchFetch(`/api/experiment/expand?name=${encodeURIComponent(name)}`);
+          const incrMs = await benchIncrRender(dsNodes, dsEdges, e.data.nodes, e.data.edges);
+          expands.push({
+            name, query_ms: e.data.query_ms, download_ms: e.downloadMs,
+            bytes: e.bytes, render_ms: incrMs, click_ms: performance.now() - t1,
+          });
+        }
+        exp.push({
+          init: { query_ms: data.query_ms, download_ms: downloadMs, bytes,
+                  render_ms: renderMs, ttfi_ms: initTtfi, nodes: data.nodes.length, edges: 0 },
+          expands,
+          final_nodes: dsNodes.length, final_edges: dsEdges.length,
+        });
+      }
+    }
+
+    // ── 彙總 ──────────────────────────────────────────────
+    const c = {
+      query_ms:    avg(ctrl.map(x => x.query_ms)),
+      download_ms: avg(ctrl.map(x => x.download_ms)),
+      render_ms:   avg(ctrl.map(x => x.render_ms)),
+      ttfi_ms:     avg(ctrl.map(x => x.ttfi_ms)),
+      bytes:       avg(ctrl.map(x => x.bytes)),
+      nodes: ctrl[0].nodes, edges: ctrl[0].edges,
+    };
+    const allExpands = exp.flatMap(x => x.expands);
+    const e = {
+      init_query_ms:    avg(exp.map(x => x.init.query_ms)),
+      init_download_ms: avg(exp.map(x => x.init.download_ms)),
+      init_render_ms:   avg(exp.map(x => x.init.render_ms)),
+      init_ttfi_ms:     avg(exp.map(x => x.init.ttfi_ms)),
+      init_bytes:       avg(exp.map(x => x.init.bytes)),
+      init_nodes: exp[0].init.nodes,
+      expand_click_ms:  avg(allExpands.map(x => x.click_ms)),
+      expand_query_ms:  avg(allExpands.map(x => x.query_ms)),
+      expand_download_ms: avg(allExpands.map(x => x.download_ms)),
+      expand_render_ms: avg(allExpands.map(x => x.render_ms)),
+      expand_bytes:     avg(allExpands.map(x => x.bytes)),
+      final_nodes: exp[0].final_nodes, final_edges: exp[0].final_edges,
+    };
+    const speedup = c.ttfi_ms / e.init_ttfi_ms;
+
+    window.__BENCH_RESULT = { rounds, expandK, control: ctrl, experiment: exp,
+                              summary: { control: c, experiment: e, first_view_speedup: speedup } };
+
+    const rep = document.getElementById("bench-report");
+    rep.style.display = "block";
+    rep.innerHTML = `
+      <h3 style="font-size:.95rem; color:#63b3ed; margin-bottom:10px;">
+        對照結果（${rounds} 回合平均；實驗組每回合展開 ${expandK} 家）
+      </h3>
+      <table style="width:100%; border-collapse:collapse; font-size:.82rem;">
+        <thead><tr>
+          ${["指標","控制組：全圖一次渲染","實驗組：分層首屏","實驗組：單次點擊展開"]
+            .map(h => `<th style="text-align:left; padding:6px 10px; background:#2d3748; color:#a0aec0;">${h}</th>`).join("")}
+        </tr></thead>
+        <tbody>
+        ${[
+          ["後端查詢 (ms)",  fmt(c.query_ms,1),            fmt(e.init_query_ms,1),    fmt(avg(allExpands.map(x=>x.query_ms)),1)],
+          ["資料下載 (ms)",  fmt(c.download_ms,1),         fmt(e.init_download_ms,1), fmt(avg(allExpands.map(x=>x.download_ms)),1)],
+          ["傳輸量 (KB)",    fmt(c.bytes/1024,1),          fmt(e.init_bytes/1024,1),  fmt(e.expand_bytes/1024,1)],
+          ["前端渲染 (ms)",  fmt(c.render_ms),             fmt(e.init_render_ms),     fmt(e.expand_render_ms)],
+          ["<b>可互動時間 (ms)</b>", `<b>${fmt(c.ttfi_ms)}</b>`, `<b>${fmt(e.init_ttfi_ms)}</b>`, fmt(e.expand_click_ms)],
+          ["畫面元素（節點/邊）", `${c.nodes} / ${c.edges}`, `${e.init_nodes} / 0`, `全部展開後 ${e.final_nodes} / ${e.final_edges}`],
+        ].map(row => `<tr>${row.map((cell,i) =>
+          `<td style="padding:6px 10px; border-bottom:1px solid #2d374866; color:${i===0?'#718096':'#e2e8f0'};">${cell}</td>`).join("")}</tr>`).join("")}
+        </tbody>
+      </table>
+      <div style="margin-top:10px; font-size:.85rem; color:#9ae6b4;">
+        ▶ 實驗組首屏可互動時間為控制組的 1/${speedup.toFixed(1)}（快 ${speedup.toFixed(1)} 倍）；
+        使用者只為看到的層級付出渲染成本。
+      </div>`;
+    benchStatus("完成", `控制組首屏 ${fmt(c.ttfi_ms)} ms vs 實驗組 ${fmt(e.init_ttfi_ms)} ms`);
+    benchLabel("");
+    document.getElementById("bench-dl-btn").disabled = false;
+  } catch (err) {
+    benchStatus("失敗", err.message);
+  } finally {
+    document.getElementById("bench-run-btn").disabled = false;
+  }
+}
+
+function downloadBenchResult() {
+  if (!window.__BENCH_RESULT) return;
+  const blob = new Blob([JSON.stringify(window.__BENCH_RESULT, null, 1)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "render_benchmark_result.json";
+  a.click();
+}
+
+/* ════════════════════════════════════════════════════════════════
+   v14 圖譜問答（自建 KG-RAG Layer 0 直答，零 LLM）
+════════════════════════════════════════════════════════════════ */
+let V14_EXAMPLES = [];
+
+function v14Escape(s) {
+  const div = document.createElement("div");
+  div.textContent = s == null ? "" : String(s);
+  return div.innerHTML;
+}
+
+async function v14LoadExamples() {
+  try {
+    const r = await fetch("/api/v14/examples");
+    V14_EXAMPLES = await r.json();
+    const sel = document.getElementById("v14-example-select");
+    V14_EXAMPLES.forEach((ex, i) => {
+      const opt = document.createElement("option");
+      opt.value = i;
+      const route = (ex.route || "").replace("graph_rag_", "");
+      opt.textContent = `${ex.id}｜${route}｜${ex.question.slice(0, 38)}…`;
+      sel.appendChild(opt);
+    });
+  } catch (e) { console.warn("v14 examples 載入失敗", e); }
+}
+v14LoadExamples();
+
+function v14PickExample() {
+  const i = document.getElementById("v14-example-select").value;
+  if (i === "") return;
+  document.getElementById("v14-question").value = V14_EXAMPLES[i].question;
+}
+
+async function v14Ask() {
+  const q = document.getElementById("v14-question").value.trim();
+  if (!q) return;
+  const btn = document.getElementById("v14-ask-btn");
+  const res = document.getElementById("v14-result");
+  btn.disabled = true;
+  res.innerHTML = '<div style="color:#718096;">查詢中…（首次呼叫需載入模組與圖譜約 3–5 秒）</div>';
+  try {
+    const r = await fetch("/api/v14/ask?q=" + encodeURIComponent(q));
+    const d = await r.json();
+    if (d.error) throw new Error(d.detail || d.error);
+    document.getElementById("v14-query-ms").textContent = d.query_ms + " ms";
+    document.getElementById("v14-hit").textContent = d.hit ? "✅ 命中" : "✳ 未命中";
+    const selIdx = document.getElementById("v14-example-select").value;
+    const expected = (selIdx !== "" && V14_EXAMPLES[selIdx] &&
+                      V14_EXAMPLES[selIdx].question === q)
+                     ? V14_EXAMPLES[selIdx].expected : null;
+    res.innerHTML = `
+      <div style="color:#718096; font-size:.78rem; margin-bottom:6px;">問題</div>
+      <div style="margin-bottom:18px;">${v14Escape(q)}</div>
+      <div style="color:#718096; font-size:.78rem; margin-bottom:6px;">v14 圖譜引擎回答（${v14Escape(d.engine)}）</div>
+      <div style="background:#1a1d27; border:1px solid #2d3748; border-radius:10px;
+                  padding:14px 18px; color:${d.hit ? "#9ae6b4" : "#f6ad55"};">${v14Escape(d.answer)}</div>
+      ${expected ? `
+      <div style="color:#718096; font-size:.78rem; margin:18px 0 6px;">資料集標準答案</div>
+      <div style="background:#1a1d27; border:1px solid #2d3748; border-radius:10px;
+                  padding:14px 18px;">${v14Escape(expected)}</div>` : ""}`;
+  } catch (e) {
+    res.innerHTML = `<div style="color:#fc8181;">查詢失敗：${v14Escape(e.message || e)}</div>`;
+  } finally {
+    btn.disabled = false;
+  }
+}
+</script>
+</body>
+</html>

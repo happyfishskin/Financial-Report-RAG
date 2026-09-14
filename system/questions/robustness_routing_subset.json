@@ -1,0 +1,428 @@
+[
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【台灣積體電路製造】113Q1 的財報附註，本合併財務報告的遵循聲明是依據哪些準則編製的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "台灣積體電路製造",
+      "quarter": "113Q1",
+      "company_code": "2330",
+      "source_table": "重大會計政策之彙總說明",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_001"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【景碩科技】113Q3 的財報附註，本合併財務報告的遵循聲明是依據哪些準則編製的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "景碩科技",
+      "quarter": "113Q3",
+      "company_code": "3189",
+      "source_table": "重大會計政策之彙總說明",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_002"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【台灣光罩】113Q2 的財報附註，本合併財務報告的遵循聲明是依據哪些準則編製的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "台灣光罩",
+      "quarter": "113Q2",
+      "company_code": "2338",
+      "source_table": "重大會計政策之彙總說明",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_003"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【大聯大控股】114Q2 的財報附註，本合併財務報告的遵循聲明是依據哪些準則編製的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "大聯大控股",
+      "quarter": "114Q2",
+      "company_code": "3702",
+      "source_table": "重大會計政策之彙總說明",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_004"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【穩懋半導體】113Q2 的財報附註，本合併財務報告的遵循聲明是依據哪些準則編製的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "穩懋半導體",
+      "quarter": "113Q2",
+      "company_code": "3105",
+      "source_table": "重大會計政策之彙總說明",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_005"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【新應材】113Q1 的財報附註，本合併財務報告的遵循聲明是依據哪些準則編製的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "新應材",
+      "quarter": "113Q1",
+      "company_code": "4749",
+      "source_table": "重大會計政策之彙總說明",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_006"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【穩懋半導體】113Q3 的財報附註，所得稅費用在期中期間是如何評估與計算的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "穩懋半導體",
+      "quarter": "113Q3",
+      "company_code": "3105",
+      "source_table": "資產與負債區分流動與非流動之標準",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_007"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【致茂電子】113Q3 的財報附註，所得稅費用在期中期間是如何評估與計算的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "致茂電子",
+      "quarter": "113Q3",
+      "company_code": "2360",
+      "source_table": "資產與負債區分流動與非流動之標準",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_008"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【環球晶圓】113Q3 的財報附註，所得稅費用在期中期間是如何評估與計算的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "環球晶圓",
+      "quarter": "113Q3",
+      "company_code": "6488",
+      "source_table": "資產與負債區分流動與非流動之標準",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_009"
+  },
+  {
+    "question_type": "narrative_policy",
+    "question": "根據【環球晶圓】113Q2 的財報附註，所得稅費用在期中期間是如何評估與計算的？",
+    "expected_answer": "[敘述型，無單一數值金標；以人工有據性判定]",
+    "metadata": {
+      "target_route": "vector_search",
+      "subset": "C1_軌道二敘述題",
+      "company_name": "環球晶圓",
+      "quarter": "113Q2",
+      "company_code": "6488",
+      "source_table": "資產與負債區分流動與非流動之標準",
+      "scoring": "human_groundedness"
+    },
+    "id": "robust_010"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【力成科技】在【114Q3】的【為他人背書保證】，為他人背書保證的期末餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "力成科技",
+      "quarter": "114Q3",
+      "company_code": "6239",
+      "absent_table": "為他人背書保證",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「為他人背書保證」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_011"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【新應材】在【114Q2】的【為他人背書保證】，為他人背書保證的期末餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "新應材",
+      "quarter": "114Q2",
+      "company_code": "4749",
+      "absent_table": "為他人背書保證",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「為他人背書保證」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_012"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【京元電子】在【114Q3】的【為他人背書保證】，為他人背書保證的期末餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "京元電子",
+      "quarter": "114Q3",
+      "company_code": "2449",
+      "absent_table": "為他人背書保證",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「為他人背書保證」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_013"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【祥碩科技】在【113Q1】的【為他人背書保證】，為他人背書保證的期末餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "祥碩科技",
+      "quarter": "113Q1",
+      "company_code": "5269",
+      "absent_table": "為他人背書保證",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「為他人背書保證」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_014"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【祥碩科技】在【113Q4】的【資金貸與他人】，資金貸與他人的本期最高餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "祥碩科技",
+      "quarter": "113Q4",
+      "company_code": "5269",
+      "absent_table": "資金貸與他人",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「資金貸與他人」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_015"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【智原科技】在【114Q1】的【資金貸與他人】，資金貸與他人的本期最高餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "智原科技",
+      "quarter": "114Q1",
+      "company_code": "3035",
+      "absent_table": "資金貸與他人",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「資金貸與他人」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_016"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【創意電子】在【114Q2】的【資金貸與他人】，資金貸與他人的本期最高餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "創意電子",
+      "quarter": "114Q2",
+      "company_code": "3443",
+      "absent_table": "資金貸與他人",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「資金貸與他人」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_017"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【台灣光罩】在【114Q1】的【向關係人借款】，向關係人借款的期末餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "台灣光罩",
+      "quarter": "114Q1",
+      "company_code": "2338",
+      "absent_table": "向關係人借款",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「向關係人借款」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_018"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【中華精測科技】在【113Q1】的【向關係人借款】，向關係人借款的期末餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "中華精測科技",
+      "quarter": "113Q1",
+      "company_code": "6510",
+      "absent_table": "向關係人借款",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「向關係人借款」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_019"
+  },
+  {
+    "question_type": "undisclosed_item",
+    "question": "請查詢【中華精測科技】在【114Q4】的【向關係人借款】，向關係人借款的期末餘額是多少？",
+    "expected_answer": "找不到相關資料",
+    "metadata": {
+      "target_route": "no_evidence",
+      "subset": "C2_近似無答案題",
+      "company_name": "中華精測科技",
+      "quarter": "114Q4",
+      "company_code": "6510",
+      "absent_table": "向關係人借款",
+      "scoring": "refusal_correctness",
+      "note": "該公司該季語料中不存在「向關係人借款」，屬真實未揭露而非虛構問題"
+    },
+    "id": "robust_020"
+  },
+  {
+    "question_type": "ambiguous_counterparty",
+    "question": "請查詢【力成科技】在【114Q4】的關係人進貨金額是多少？",
+    "expected_answer": "[候選不唯一，應拒答或要求補充交易對象]",
+    "metadata": {
+      "target_route": "refuse_or_clarify",
+      "subset": "C3_候選不唯一題",
+      "company_name": "力成科技",
+      "quarter": "114Q4",
+      "company_code": "6239",
+      "scoring": "refusal_correctness",
+      "note": "未指定交易對象，同期可能對應多筆進貨金額"
+    },
+    "id": "robust_021"
+  },
+  {
+    "question_type": "ambiguous_counterparty",
+    "question": "請查詢【創意電子】在【113Q3】的關係人進貨金額是多少？",
+    "expected_answer": "[候選不唯一，應拒答或要求補充交易對象]",
+    "metadata": {
+      "target_route": "refuse_or_clarify",
+      "subset": "C3_候選不唯一題",
+      "company_name": "創意電子",
+      "quarter": "113Q3",
+      "company_code": "3443",
+      "scoring": "refusal_correctness",
+      "note": "未指定交易對象，同期可能對應多筆進貨金額"
+    },
+    "id": "robust_022"
+  },
+  {
+    "question_type": "ambiguous_counterparty",
+    "question": "請查詢【家登精密工業】在【114Q1】的關係人進貨金額是多少？",
+    "expected_answer": "[候選不唯一，應拒答或要求補充交易對象]",
+    "metadata": {
+      "target_route": "refuse_or_clarify",
+      "subset": "C3_候選不唯一題",
+      "company_name": "家登精密工業",
+      "quarter": "114Q1",
+      "company_code": "3680",
+      "scoring": "refusal_correctness",
+      "note": "未指定交易對象，同期可能對應多筆進貨金額"
+    },
+    "id": "robust_023"
+  },
+  {
+    "question_type": "ambiguous_counterparty",
+    "question": "請查詢【達興材料】在【113Q3】的關係人進貨金額是多少？",
+    "expected_answer": "[候選不唯一，應拒答或要求補充交易對象]",
+    "metadata": {
+      "target_route": "refuse_or_clarify",
+      "subset": "C3_候選不唯一題",
+      "company_name": "達興材料",
+      "quarter": "113Q3",
+      "company_code": "5234",
+      "scoring": "refusal_correctness",
+      "note": "未指定交易對象，同期可能對應多筆進貨金額"
+    },
+    "id": "robust_024"
+  },
+  {
+    "question_type": "ambiguous_no_period",
+    "question": "請問【世界先進積體電路】的營業收入合計是多少？",
+    "expected_answer": "[未指定期別；Fix 20 應採最新期別作答並揭露假設]",
+    "metadata": {
+      "target_route": "latest_period_with_disclosure",
+      "subset": "C3_候選不唯一題",
+      "company_name": "世界先進積體電路",
+      "company_code": "5347",
+      "scoring": "assumption_disclosure",
+      "note": "未指定期別之單值題，Fix 20 應以最新期別作答並於答案內揭露"
+    },
+    "id": "robust_025"
+  },
+  {
+    "question_type": "ambiguous_no_period",
+    "question": "請問【中華精測科技】的營業收入合計是多少？",
+    "expected_answer": "[未指定期別；Fix 20 應採最新期別作答並揭露假設]",
+    "metadata": {
+      "target_route": "latest_period_with_disclosure",
+      "subset": "C3_候選不唯一題",
+      "company_name": "中華精測科技",
+      "company_code": "6510",
+      "scoring": "assumption_disclosure",
+      "note": "未指定期別之單值題，Fix 20 應以最新期別作答並於答案內揭露"
+    },
+    "id": "robust_026"
+  },
+  {
+    "question_type": "ambiguous_no_period",
+    "question": "請問【京元電子】的營業收入合計是多少？",
+    "expected_answer": "[未指定期別；Fix 20 應採最新期別作答並揭露假設]",
+    "metadata": {
+      "target_route": "latest_period_with_disclosure",
+      "subset": "C3_候選不唯一題",
+      "company_name": "京元電子",
+      "company_code": "2449",
+      "scoring": "assumption_disclosure",
+      "note": "未指定期別之單值題，Fix 20 應以最新期別作答並於答案內揭露"
+    },
+    "id": "robust_027"
+  },
+  {
+    "question_type": "ambiguous_no_period",
+    "question": "請問【京鼎精密科技】的營業收入合計是多少？",
+    "expected_answer": "[未指定期別；Fix 20 應採最新期別作答並揭露假設]",
+    "metadata": {
+      "target_route": "latest_period_with_disclosure",
+      "subset": "C3_候選不唯一題",
+      "company_name": "京鼎精密科技",
+      "company_code": "3413",
+      "scoring": "assumption_disclosure",
+      "note": "未指定期別之單值題，Fix 20 應以最新期別作答並於答案內揭露"
+    },
+    "id": "robust_028"
+  }
+]

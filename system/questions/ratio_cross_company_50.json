@@ -1,0 +1,1702 @@
+[
+ {
+  "id": "ratio_xc_001",
+  "question_type": "ratio_cross_company",
+  "question": "日月光投控跟世界先進比，113Q1的研發費用率哪一家高？",
+  "expected_answer": "日月光投控: 4.98% ｜ 世界先進: 5.04% ｜ 較高: 世界先進",
+  "expected_winner": "世界先進",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "研發費用率",
+   "margin_pp": 0.06,
+   "margin_band": "near",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "日月光投控",
+     "company_name": "日月光投資控股",
+     "company_code": "3711",
+     "ratio_value": 4.98,
+     "numerator_raw": "6,609,122",
+     "denominator_raw": "132,802,855"
+    },
+    {
+     "alias": "世界先進",
+     "company_name": "世界先進積體電路",
+     "company_code": "5347",
+     "ratio_value": 5.04,
+     "numerator_raw": "485,201",
+     "denominator_raw": "9,632,844"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_002",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下群聯和聯電，113Q2的毛利率各是多少？誰比較高？",
+  "expected_answer": "群聯: 35.26% ｜ 聯電: 35.18% ｜ 較高: 群聯",
+  "expected_winner": "群聯",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q2",
+   "ratio_type": "毛利率",
+   "margin_pp": 0.08,
+   "margin_band": "near",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "群聯",
+     "company_name": "群聯電子",
+     "company_code": "8299",
+     "ratio_value": 35.26,
+     "numerator_raw": "5,604,201",
+     "denominator_raw": "15,894,768"
+    },
+    {
+     "alias": "聯電",
+     "company_name": "聯華電子",
+     "company_code": "2303",
+     "ratio_value": 35.18,
+     "numerator_raw": "19,983,224",
+     "denominator_raw": "56,799,290"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_003",
+  "question_type": "ratio_cross_company",
+  "question": "旺矽和家登在113Q3的淨利率誰比較高？",
+  "expected_answer": "旺矽: 23.79% ｜ 家登: 23.72% ｜ 較高: 旺矽",
+  "expected_winner": "旺矽",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q3",
+   "ratio_type": "淨利率",
+   "margin_pp": 0.07,
+   "margin_band": "near",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "旺矽",
+     "company_name": "旺矽科技",
+     "company_code": "6223",
+     "ratio_value": 23.79,
+     "numerator_raw": "649,279",
+     "denominator_raw": "2,729,350"
+    },
+    {
+     "alias": "家登",
+     "company_name": "家登精密工業",
+     "company_code": "3680",
+     "ratio_value": 23.72,
+     "numerator_raw": "449,186",
+     "denominator_raw": "1,893,879"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_004",
+  "question_type": "ratio_cross_company",
+  "question": "景碩跟日月光比，114Q1的營業利益率哪一家高？",
+  "expected_answer": "景碩: 5.81% ｜ 日月光: 6.53% ｜ 較高: 日月光",
+  "expected_winner": "日月光",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "ratio_type": "營業利益率",
+   "margin_pp": 0.72,
+   "margin_band": "near",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "景碩",
+     "company_name": "景碩科技",
+     "company_code": "3189",
+     "ratio_value": 5.81,
+     "numerator_raw": "501,092",
+     "denominator_raw": "8,619,744"
+    },
+    {
+     "alias": "日月光",
+     "company_name": "日月光投資控股",
+     "company_code": "3711",
+     "ratio_value": 6.53,
+     "numerator_raw": "9,671,301",
+     "denominator_raw": "148,153,262"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_005",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下京元電和辛耘，113Q1的研發費用率各是多少？誰比較高？",
+  "expected_answer": "京元電: 4.19% ｜ 辛耘: 3.8% ｜ 較高: 京元電",
+  "expected_winner": "京元電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "研發費用率",
+   "margin_pp": 0.39,
+   "margin_band": "near",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "京元電",
+     "company_name": "京元電子",
+     "company_code": "2449",
+     "ratio_value": 4.19,
+     "numerator_raw": "344,215",
+     "denominator_raw": "8,214,718"
+    },
+    {
+     "alias": "辛耘",
+     "company_name": "辛耘企業",
+     "company_code": "3583",
+     "ratio_value": 3.8,
+     "numerator_raw": "85,386",
+     "denominator_raw": "2,244,514"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_006",
+  "question_type": "ratio_cross_company",
+  "question": "京鼎和家登在113Q2的研發費用率誰比較高？",
+  "expected_answer": "京鼎: 3.57% ｜ 家登: 7.88% ｜ 較高: 家登",
+  "expected_winner": "家登",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q2",
+   "ratio_type": "研發費用率",
+   "margin_pp": 4.31,
+   "margin_band": "mid",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "京鼎",
+     "company_name": "京鼎精密科技",
+     "company_code": "3413",
+     "ratio_value": 3.57,
+     "numerator_raw": "132,716",
+     "denominator_raw": "3,720,950"
+    },
+    {
+     "alias": "家登",
+     "company_name": "家登精密工業",
+     "company_code": "3680",
+     "ratio_value": 7.88,
+     "numerator_raw": "138,376",
+     "denominator_raw": "1,756,163"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_007",
+  "question_type": "ratio_cross_company",
+  "question": "辛耘跟群聯比，114Q4的毛利率哪一家高？",
+  "expected_answer": "辛耘: 33.49% ｜ 群聯: 34.4% ｜ 較高: 群聯",
+  "expected_winner": "群聯",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q4",
+   "ratio_type": "毛利率",
+   "margin_pp": 0.91,
+   "margin_band": "near",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "辛耘",
+     "company_name": "辛耘企業",
+     "company_code": "3583",
+     "ratio_value": 33.49,
+     "numerator_raw": "3,808,379",
+     "denominator_raw": "11,371,368"
+    },
+    {
+     "alias": "群聯",
+     "company_name": "群聯電子",
+     "company_code": "8299",
+     "ratio_value": 34.4,
+     "numerator_raw": "24,998,653",
+     "denominator_raw": "72,664,091"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_008",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下群聯和聯電，114Q1的毛利率各是多少？誰比較高？",
+  "expected_answer": "群聯: 31.17% ｜ 聯電: 26.7% ｜ 較高: 群聯",
+  "expected_winner": "群聯",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "ratio_type": "毛利率",
+   "margin_pp": 4.47,
+   "margin_band": "mid",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "群聯",
+     "company_name": "群聯電子",
+     "company_code": "8299",
+     "ratio_value": 31.17,
+     "numerator_raw": "4,312,936",
+     "denominator_raw": "13,838,565"
+    },
+    {
+     "alias": "聯電",
+     "company_name": "聯華電子",
+     "company_code": "2303",
+     "ratio_value": 26.7,
+     "numerator_raw": "15,446,645",
+     "denominator_raw": "57,858,957"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_009",
+  "question_type": "ratio_cross_company",
+  "question": "達興和力積電在113Q1的淨利率誰比較高？",
+  "expected_answer": "達興: 12.02% ｜ 力積電: -4.06% ｜ 較高: 達興",
+  "expected_winner": "達興",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "淨利率",
+   "margin_pp": 16.08,
+   "margin_band": "far",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "達興",
+     "company_name": "達興材料",
+     "company_code": "5234",
+     "ratio_value": 12.02,
+     "numerator_raw": "114,001",
+     "denominator_raw": "948,762"
+    },
+    {
+     "alias": "力積電",
+     "company_name": "力晶積成電子製造",
+     "company_code": "6770",
+     "ratio_value": -4.06,
+     "numerator_raw": "( 439,236 )",
+     "denominator_raw": "10,820,046"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_010",
+  "question_type": "ratio_cross_company",
+  "question": "致茂跟達興比，113Q3的負債比率哪一家高？",
+  "expected_answer": "致茂: 32.85% ｜ 達興: 33.47% ｜ 較高: 達興",
+  "expected_winner": "達興",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q3",
+   "ratio_type": "負債比率",
+   "margin_pp": 0.62,
+   "margin_band": "near",
+   "numerator_item": "負債總計",
+   "denominator_item": "資產總計",
+   "companies": [
+    {
+     "alias": "致茂",
+     "company_name": "致茂電子",
+     "company_code": "2360",
+     "ratio_value": 32.85,
+     "numerator_raw": "11,648,385",
+     "denominator_raw": "35,459,957"
+    },
+    {
+     "alias": "達興",
+     "company_name": "達興材料",
+     "company_code": "5234",
+     "ratio_value": 33.47,
+     "numerator_raw": "1,561,914",
+     "denominator_raw": "4,666,302"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_011",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下辛耘和日月光投控，114Q3的研發費用率各是多少？誰比較高？",
+  "expected_answer": "辛耘: 4.08% ｜ 日月光投控: 4.93% ｜ 較高: 日月光投控",
+  "expected_winner": "日月光投控",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "ratio_type": "研發費用率",
+   "margin_pp": 0.85,
+   "margin_band": "near",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "辛耘",
+     "company_name": "辛耘企業",
+     "company_code": "3583",
+     "ratio_value": 4.08,
+     "numerator_raw": "115,482",
+     "denominator_raw": "2,831,280"
+    },
+    {
+     "alias": "日月光投控",
+     "company_name": "日月光投資控股",
+     "company_code": "3711",
+     "ratio_value": 4.93,
+     "numerator_raw": "8,308,319",
+     "denominator_raw": "168,568,888"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_012",
+  "question_type": "ratio_cross_company",
+  "question": "辛耘和力成在114Q1的淨利率誰比較高？",
+  "expected_answer": "辛耘: 9.58% ｜ 力成: 10.19% ｜ 較高: 力成",
+  "expected_winner": "力成",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "ratio_type": "淨利率",
+   "margin_pp": 0.61,
+   "margin_band": "near",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "辛耘",
+     "company_name": "辛耘企業",
+     "company_code": "3583",
+     "ratio_value": 9.58,
+     "numerator_raw": "269,543",
+     "denominator_raw": "2,812,388"
+    },
+    {
+     "alias": "力成",
+     "company_name": "力成科技",
+     "company_code": "6239",
+     "ratio_value": 10.19,
+     "numerator_raw": "1,578,408",
+     "denominator_raw": "15,493,936"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_013",
+  "question_type": "ratio_cross_company",
+  "question": "瑞昱跟中華精測比，113Q4的淨利率哪一家高？",
+  "expected_answer": "瑞昱: 13.49% ｜ 中華精測: 13.45% ｜ 較高: 瑞昱",
+  "expected_winner": "瑞昱",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "ratio_type": "淨利率",
+   "margin_pp": 0.04,
+   "margin_band": "near",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "瑞昱",
+     "company_name": "瑞昱半導體",
+     "company_code": "2379",
+     "ratio_value": 13.49,
+     "numerator_raw": "15,291,525",
+     "denominator_raw": "113,393,698"
+    },
+    {
+     "alias": "中華精測",
+     "company_name": "中華精測科技",
+     "company_code": "6510",
+     "ratio_value": 13.45,
+     "numerator_raw": "484,871",
+     "denominator_raw": "3,604,674"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_014",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下群聯和家登，114Q3的研發費用率各是多少？誰比較高？",
+  "expected_answer": "群聯: 20.44% ｜ 家登: 9.0% ｜ 較高: 群聯",
+  "expected_winner": "群聯",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "ratio_type": "研發費用率",
+   "margin_pp": 11.44,
+   "margin_band": "far",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "群聯",
+     "company_name": "群聯電子",
+     "company_code": "8299",
+     "ratio_value": 20.44,
+     "numerator_raw": "3,706,841",
+     "denominator_raw": "18,136,797"
+    },
+    {
+     "alias": "家登",
+     "company_name": "家登精密工業",
+     "company_code": "3680",
+     "ratio_value": 9.0,
+     "numerator_raw": "149,457",
+     "denominator_raw": "1,660,379"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_015",
+  "question_type": "ratio_cross_company",
+  "question": "力成和聯發科在113Q4的毛利率誰比較高？",
+  "expected_answer": "力成: 19.08% ｜ 聯發科: 49.64% ｜ 較高: 聯發科",
+  "expected_winner": "聯發科",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "ratio_type": "毛利率",
+   "margin_pp": 30.56,
+   "margin_band": "far",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "力成",
+     "company_name": "力成科技",
+     "company_code": "6239",
+     "ratio_value": 19.08,
+     "numerator_raw": "13,991,440",
+     "denominator_raw": "73,315,042"
+    },
+    {
+     "alias": "聯發科",
+     "company_name": "聯發科技",
+     "company_code": "2454",
+     "ratio_value": 49.64,
+     "numerator_raw": "263,385,701",
+     "denominator_raw": "530,585,886"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_016",
+  "question_type": "ratio_cross_company",
+  "question": "力旺跟旺矽比，114Q2的淨利率哪一家高？",
+  "expected_answer": "力旺: 42.49% ｜ 旺矽: 19.07% ｜ 較高: 力旺",
+  "expected_winner": "力旺",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q2",
+   "ratio_type": "淨利率",
+   "margin_pp": 23.42,
+   "margin_band": "far",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "力旺",
+     "company_name": "力旺電子",
+     "company_code": "3529",
+     "ratio_value": 42.49,
+     "numerator_raw": "397,890",
+     "denominator_raw": "936,535"
+    },
+    {
+     "alias": "旺矽",
+     "company_name": "旺矽科技",
+     "company_code": "6223",
+     "ratio_value": 19.07,
+     "numerator_raw": "627,916",
+     "denominator_raw": "3,292,785"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_017",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下環球晶和世界先進，114Q3的淨利率各是多少？誰比較高？",
+  "expected_answer": "環球晶: 13.59% ｜ 世界先進: 13.65% ｜ 較高: 世界先進",
+  "expected_winner": "世界先進",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "ratio_type": "淨利率",
+   "margin_pp": 0.06,
+   "margin_band": "near",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "環球晶",
+     "company_name": "環球晶圓",
+     "company_code": "6488",
+     "ratio_value": 13.59,
+     "numerator_raw": "1,969,271",
+     "denominator_raw": "14,493,434"
+    },
+    {
+     "alias": "世界先進",
+     "company_name": "世界先進積體電路",
+     "company_code": "5347",
+     "ratio_value": 13.65,
+     "numerator_raw": "1,685,407",
+     "denominator_raw": "12,348,866"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_018",
+  "question_type": "ratio_cross_company",
+  "question": "世界先進和力成在113Q1的營業利益率誰比較高？",
+  "expected_answer": "世界先進: 12.8% ｜ 力成: 11.15% ｜ 較高: 世界先進",
+  "expected_winner": "世界先進",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "營業利益率",
+   "margin_pp": 1.65,
+   "margin_band": "mid",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "世界先進",
+     "company_name": "世界先進積體電路",
+     "company_code": "5347",
+     "ratio_value": 12.8,
+     "numerator_raw": "1,233,037",
+     "denominator_raw": "9,632,844"
+    },
+    {
+     "alias": "力成",
+     "company_name": "力成科技",
+     "company_code": "6239",
+     "ratio_value": 11.15,
+     "numerator_raw": "2,044,565",
+     "denominator_raw": "18,328,881"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_019",
+  "question_type": "ratio_cross_company",
+  "question": "穩懋跟世界先進比，113Q4的毛利率哪一家高？",
+  "expected_answer": "穩懋: 23.15% ｜ 世界先進: 27.09% ｜ 較高: 世界先進",
+  "expected_winner": "世界先進",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "ratio_type": "毛利率",
+   "margin_pp": 3.94,
+   "margin_band": "mid",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "穩懋",
+     "company_name": "穩懋半導體",
+     "company_code": "3105",
+     "ratio_value": 23.15,
+     "numerator_raw": "4,041,970",
+     "denominator_raw": "17,457,713"
+    },
+    {
+     "alias": "世界先進",
+     "company_name": "世界先進積體電路",
+     "company_code": "5347",
+     "ratio_value": 27.09,
+     "numerator_raw": "11,932,914",
+     "denominator_raw": "44,054,762"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_020",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下台積電和旺矽，113Q3的毛利率各是多少？誰比較高？",
+  "expected_answer": "台積電: 57.83% ｜ 旺矽: 56.69% ｜ 較高: 台積電",
+  "expected_winner": "台積電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q3",
+   "ratio_type": "毛利率",
+   "margin_pp": 1.14,
+   "margin_band": "mid",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "台積電",
+     "company_name": "台灣積體電路製造",
+     "company_code": "2330",
+     "ratio_value": 57.83,
+     "numerator_raw": "439,345,666",
+     "denominator_raw": "759,692,143"
+    },
+    {
+     "alias": "旺矽",
+     "company_name": "旺矽科技",
+     "company_code": "6223",
+     "ratio_value": 56.69,
+     "numerator_raw": "1,547,273",
+     "denominator_raw": "2,729,350"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_021",
+  "question_type": "ratio_cross_company",
+  "question": "華邦電和環球晶在114Q1的研發費用率誰比較高？",
+  "expected_answer": "華邦電: 21.39% ｜ 環球晶: 3.92% ｜ 較高: 華邦電",
+  "expected_winner": "華邦電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "ratio_type": "研發費用率",
+   "margin_pp": 17.47,
+   "margin_band": "far",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "華邦電",
+     "company_name": "華邦電子",
+     "company_code": "2344",
+     "ratio_value": 21.39,
+     "numerator_raw": "4,277,226",
+     "denominator_raw": "19,992,617"
+    },
+    {
+     "alias": "環球晶",
+     "company_name": "環球晶圓",
+     "company_code": "6488",
+     "ratio_value": 3.92,
+     "numerator_raw": "611,430",
+     "denominator_raw": "15,594,522"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_022",
+  "question_type": "ratio_cross_company",
+  "question": "世界先進跟達興比，113Q2的營業利益率哪一家高？",
+  "expected_answer": "世界先進: 15.58% ｜ 達興: 14.6% ｜ 較高: 世界先進",
+  "expected_winner": "世界先進",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q2",
+   "ratio_type": "營業利益率",
+   "margin_pp": 0.98,
+   "margin_band": "near",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "世界先進",
+     "company_name": "世界先進積體電路",
+     "company_code": "5347",
+     "ratio_value": 15.58,
+     "numerator_raw": "1,723,724",
+     "denominator_raw": "11,065,086"
+    },
+    {
+     "alias": "達興",
+     "company_name": "達興材料",
+     "company_code": "5234",
+     "ratio_value": 14.6,
+     "numerator_raw": "150,141",
+     "denominator_raw": "1,028,213"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_023",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下環球晶和力旺，113Q2的營業利益率各是多少？誰比較高？",
+  "expected_answer": "環球晶: 21.97% ｜ 力旺: 55.45% ｜ 較高: 力旺",
+  "expected_winner": "力旺",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q2",
+   "ratio_type": "營業利益率",
+   "margin_pp": 33.48,
+   "margin_band": "far",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "環球晶",
+     "company_name": "環球晶圓",
+     "company_code": "6488",
+     "ratio_value": 21.97,
+     "numerator_raw": "3,366,737",
+     "denominator_raw": "15,325,629"
+    },
+    {
+     "alias": "力旺",
+     "company_name": "力旺電子",
+     "company_code": "3529",
+     "ratio_value": 55.45,
+     "numerator_raw": "495,181",
+     "denominator_raw": "893,010"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_024",
+  "question_type": "ratio_cross_company",
+  "question": "世界先進和瑞昱在114Q3的研發費用率誰比較高？",
+  "expected_answer": "世界先進: 4.57% ｜ 瑞昱: 29.31% ｜ 較高: 瑞昱",
+  "expected_winner": "瑞昱",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "ratio_type": "研發費用率",
+   "margin_pp": 24.74,
+   "margin_band": "far",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "世界先進",
+     "company_name": "世界先進積體電路",
+     "company_code": "5347",
+     "ratio_value": 4.57,
+     "numerator_raw": "564,845",
+     "denominator_raw": "12,348,866"
+    },
+    {
+     "alias": "瑞昱",
+     "company_name": "瑞昱半導體",
+     "company_code": "2379",
+     "ratio_value": 29.31,
+     "numerator_raw": "8,643,988",
+     "denominator_raw": "29,491,139"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_025",
+  "question_type": "ratio_cross_company",
+  "question": "大聯大跟日月光投控比，114Q2的淨利率哪一家高？",
+  "expected_answer": "大聯大: 0.91% ｜ 日月光投控: 5.09% ｜ 較高: 日月光投控",
+  "expected_winner": "日月光投控",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q2",
+   "ratio_type": "淨利率",
+   "margin_pp": 4.18,
+   "margin_band": "mid",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "大聯大",
+     "company_name": "大聯大控股",
+     "company_code": "3702",
+     "ratio_value": 0.91,
+     "numerator_raw": "2,278,602",
+     "denominator_raw": "250,452,020"
+    },
+    {
+     "alias": "日月光投控",
+     "company_name": "日月光投資控股",
+     "company_code": "3711",
+     "ratio_value": 5.09,
+     "numerator_raw": "7,678,678",
+     "denominator_raw": "150,750,323"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_026",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下大聯大和力成，114Q1的負債比率各是多少？誰比較高？",
+  "expected_answer": "大聯大: 79.31% ｜ 力成: 32.63% ｜ 較高: 大聯大",
+  "expected_winner": "大聯大",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "ratio_type": "負債比率",
+   "margin_pp": 46.68,
+   "margin_band": "far",
+   "numerator_item": "負債總計",
+   "denominator_item": "資產總計",
+   "companies": [
+    {
+     "alias": "大聯大",
+     "company_name": "大聯大控股",
+     "company_code": "3702",
+     "ratio_value": 79.31,
+     "numerator_raw": "336,150,568",
+     "denominator_raw": "423,849,685"
+    },
+    {
+     "alias": "力成",
+     "company_name": "力成科技",
+     "company_code": "6239",
+     "ratio_value": 32.63,
+     "numerator_raw": "35,235,768",
+     "denominator_raw": "107,995,312"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_027",
+  "question_type": "ratio_cross_company",
+  "question": "力成和家登在114Q2的淨利率誰比較高？",
+  "expected_answer": "力成: 7.06% ｜ 家登: 3.58% ｜ 較高: 力成",
+  "expected_winner": "力成",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q2",
+   "ratio_type": "淨利率",
+   "margin_pp": 3.48,
+   "margin_band": "mid",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "力成",
+     "company_name": "力成科技",
+     "company_code": "6239",
+     "ratio_value": 7.06,
+     "numerator_raw": "1,275,014",
+     "denominator_raw": "18,060,026"
+    },
+    {
+     "alias": "家登",
+     "company_name": "家登精密工業",
+     "company_code": "3680",
+     "ratio_value": 3.58,
+     "numerator_raw": "61,291",
+     "denominator_raw": "1,710,009"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_028",
+  "question_type": "ratio_cross_company",
+  "question": "聯電跟環球晶比，114Q1的毛利率哪一家高？",
+  "expected_answer": "聯電: 26.7% ｜ 環球晶: 26.37% ｜ 較高: 聯電",
+  "expected_winner": "聯電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "ratio_type": "毛利率",
+   "margin_pp": 0.33,
+   "margin_band": "near",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "聯電",
+     "company_name": "聯華電子",
+     "company_code": "2303",
+     "ratio_value": 26.7,
+     "numerator_raw": "15,446,645",
+     "denominator_raw": "57,858,957"
+    },
+    {
+     "alias": "環球晶",
+     "company_name": "環球晶圓",
+     "company_code": "6488",
+     "ratio_value": 26.37,
+     "numerator_raw": "4,111,859",
+     "denominator_raw": "15,594,522"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_029",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下達興和環球晶，113Q4的淨利率各是多少？誰比較高？",
+  "expected_answer": "達興: 13.86% ｜ 環球晶: 15.71% ｜ 較高: 環球晶",
+  "expected_winner": "環球晶",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "ratio_type": "淨利率",
+   "margin_pp": 1.85,
+   "margin_band": "mid",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "達興",
+     "company_name": "達興材料",
+     "company_code": "5234",
+     "ratio_value": 13.86,
+     "numerator_raw": "570,612",
+     "denominator_raw": "4,117,847"
+    },
+    {
+     "alias": "環球晶",
+     "company_name": "環球晶圓",
+     "company_code": "6488",
+     "ratio_value": 15.71,
+     "numerator_raw": "9,838,780",
+     "denominator_raw": "62,626,004"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_030",
+  "question_type": "ratio_cross_company",
+  "question": "祥碩和力旺在113Q1的負債比率誰比較高？",
+  "expected_answer": "祥碩: 14.48% ｜ 力旺: 18.59% ｜ 較高: 力旺",
+  "expected_winner": "力旺",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "負債比率",
+   "margin_pp": 4.11,
+   "margin_band": "mid",
+   "numerator_item": "負債總計",
+   "denominator_item": "資產總計",
+   "companies": [
+    {
+     "alias": "祥碩",
+     "company_name": "祥碩科技",
+     "company_code": "5269",
+     "ratio_value": 14.48,
+     "numerator_raw": "3,246,948",
+     "denominator_raw": "22,422,179"
+    },
+    {
+     "alias": "力旺",
+     "company_name": "力旺電子",
+     "company_code": "3529",
+     "ratio_value": 18.59,
+     "numerator_raw": "794,826",
+     "denominator_raw": "4,275,736"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_031",
+  "question_type": "ratio_cross_company",
+  "question": "穩懋跟致茂比，113Q1的研發費用率哪一家高？",
+  "expected_answer": "穩懋: 9.26% ｜ 致茂: 10.97% ｜ 較高: 致茂",
+  "expected_winner": "致茂",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "研發費用率",
+   "margin_pp": 1.71,
+   "margin_band": "mid",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "穩懋",
+     "company_name": "穩懋半導體",
+     "company_code": "3105",
+     "ratio_value": 9.26,
+     "numerator_raw": "411,262",
+     "denominator_raw": "4,442,401"
+    },
+    {
+     "alias": "致茂",
+     "company_name": "致茂電子",
+     "company_code": "2360",
+     "ratio_value": 10.97,
+     "numerator_raw": "484,554",
+     "denominator_raw": "4,418,077"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_032",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下達興和台積電，114Q2的負債比率各是多少？誰比較高？",
+  "expected_answer": "達興: 33.6% ｜ 台積電: 34.11% ｜ 較高: 台積電",
+  "expected_winner": "台積電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q2",
+   "ratio_type": "負債比率",
+   "margin_pp": 0.51,
+   "margin_band": "near",
+   "numerator_item": "負債總計",
+   "denominator_item": "資產總計",
+   "companies": [
+    {
+     "alias": "達興",
+     "company_name": "達興材料",
+     "company_code": "5234",
+     "ratio_value": 33.6,
+     "numerator_raw": "1,580,104",
+     "denominator_raw": "4,702,869"
+    },
+    {
+     "alias": "台積電",
+     "company_name": "台灣積體電路製造",
+     "company_code": "2330",
+     "ratio_value": 34.11,
+     "numerator_raw": "2,389,717,699",
+     "denominator_raw": "7,006,349,549"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_033",
+  "question_type": "ratio_cross_company",
+  "question": "力成和致茂在113Q3的負債比率誰比較高？",
+  "expected_answer": "力成: 34.91% ｜ 致茂: 32.85% ｜ 較高: 力成",
+  "expected_winner": "力成",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q3",
+   "ratio_type": "負債比率",
+   "margin_pp": 2.06,
+   "margin_band": "mid",
+   "numerator_item": "負債總計",
+   "denominator_item": "資產總計",
+   "companies": [
+    {
+     "alias": "力成",
+     "company_name": "力成科技",
+     "company_code": "6239",
+     "ratio_value": 34.91,
+     "numerator_raw": "37,476,738",
+     "denominator_raw": "107,353,312"
+    },
+    {
+     "alias": "致茂",
+     "company_name": "致茂電子",
+     "company_code": "2360",
+     "ratio_value": 32.85,
+     "numerator_raw": "11,648,385",
+     "denominator_raw": "35,459,957"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_034",
+  "question_type": "ratio_cross_company",
+  "question": "京元電跟大聯大比，114Q2的營業利益率哪一家高？",
+  "expected_answer": "京元電: 26.02% ｜ 大聯大: 1.96% ｜ 較高: 京元電",
+  "expected_winner": "京元電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q2",
+   "ratio_type": "營業利益率",
+   "margin_pp": 24.06,
+   "margin_band": "far",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "京元電",
+     "company_name": "京元電子",
+     "company_code": "2449",
+     "ratio_value": 26.02,
+     "numerator_raw": "2,176,162",
+     "denominator_raw": "8,361,874"
+    },
+    {
+     "alias": "大聯大",
+     "company_name": "大聯大控股",
+     "company_code": "3702",
+     "ratio_value": 1.96,
+     "numerator_raw": "4,906,128",
+     "denominator_raw": "250,452,020"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_035",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下京元電和日月光，113Q2的淨利率各是多少？誰比較高？",
+  "expected_answer": "京元電: 30.26% ｜ 日月光: 5.82% ｜ 較高: 京元電",
+  "expected_winner": "京元電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q2",
+   "ratio_type": "淨利率",
+   "margin_pp": 24.44,
+   "margin_band": "far",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "京元電",
+     "company_name": "京元電子",
+     "company_code": "2449",
+     "ratio_value": 30.26,
+     "numerator_raw": "1,980,266",
+     "denominator_raw": "6,543,206"
+    },
+    {
+     "alias": "日月光",
+     "company_name": "日月光投資控股",
+     "company_code": "3711",
+     "ratio_value": 5.82,
+     "numerator_raw": "8,165,136",
+     "denominator_raw": "140,238,063"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_036",
+  "question_type": "ratio_cross_company",
+  "question": "華邦電和環球晶在113Q4的毛利率誰比較高？",
+  "expected_answer": "華邦電: 29.41% ｜ 環球晶: 31.62% ｜ 較高: 環球晶",
+  "expected_winner": "環球晶",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "ratio_type": "毛利率",
+   "margin_pp": 2.21,
+   "margin_band": "mid",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "華邦電",
+     "company_name": "華邦電子",
+     "company_code": "2344",
+     "ratio_value": 29.41,
+     "numerator_raw": "24,001,109",
+     "denominator_raw": "81,609,768"
+    },
+    {
+     "alias": "環球晶",
+     "company_name": "環球晶圓",
+     "company_code": "6488",
+     "ratio_value": 31.62,
+     "numerator_raw": "19,803,501",
+     "denominator_raw": "62,626,004"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_037",
+  "question_type": "ratio_cross_company",
+  "question": "力積電跟穩懋比，113Q1的營業利益率哪一家高？",
+  "expected_answer": "力積電: -9.91% ｜ 穩懋: 4.13% ｜ 較高: 穩懋",
+  "expected_winner": "穩懋",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "營業利益率",
+   "margin_pp": 14.04,
+   "margin_band": "far",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "力積電",
+     "company_name": "力晶積成電子製造",
+     "company_code": "6770",
+     "ratio_value": -9.91,
+     "numerator_raw": "( 1,071,986 )",
+     "denominator_raw": "10,820,046"
+    },
+    {
+     "alias": "穩懋",
+     "company_name": "穩懋半導體",
+     "company_code": "3105",
+     "ratio_value": 4.13,
+     "numerator_raw": "183,565",
+     "denominator_raw": "4,442,401"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_038",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下祥碩和智原，114Q4的毛利率各是多少？誰比較高？",
+  "expected_answer": "祥碩: 52.23% ｜ 智原: 27.0% ｜ 較高: 祥碩",
+  "expected_winner": "祥碩",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q4",
+   "ratio_type": "毛利率",
+   "margin_pp": 25.23,
+   "margin_band": "far",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "祥碩",
+     "company_name": "祥碩科技",
+     "company_code": "5269",
+     "ratio_value": 52.23,
+     "numerator_raw": "7,006,592",
+     "denominator_raw": "13,414,563"
+    },
+    {
+     "alias": "智原",
+     "company_name": "智原科技",
+     "company_code": "3035",
+     "ratio_value": 27.0,
+     "numerator_raw": "4,857,493",
+     "denominator_raw": "17,992,808"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_039",
+  "question_type": "ratio_cross_company",
+  "question": "辛耘和日月光在113Q4的淨利率誰比較高？",
+  "expected_answer": "辛耘: 9.57% ｜ 日月光: 5.7% ｜ 較高: 辛耘",
+  "expected_winner": "辛耘",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "ratio_type": "淨利率",
+   "margin_pp": 3.87,
+   "margin_band": "mid",
+   "numerator_item": "本期淨利（淨損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "辛耘",
+     "company_name": "辛耘企業",
+     "company_code": "3583",
+     "ratio_value": 9.57,
+     "numerator_raw": "926,983",
+     "denominator_raw": "9,688,280"
+    },
+    {
+     "alias": "日月光",
+     "company_name": "日月光投資控股",
+     "company_code": "3711",
+     "ratio_value": 5.7,
+     "numerator_raw": "33,925,642",
+     "denominator_raw": "595,409,585"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_040",
+  "question_type": "ratio_cross_company",
+  "question": "京鼎跟致茂比，113Q1的負債比率哪一家高？",
+  "expected_answer": "京鼎: 40.64% ｜ 致茂: 39.68% ｜ 較高: 京鼎",
+  "expected_winner": "京鼎",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "負債比率",
+   "margin_pp": 0.96,
+   "margin_band": "near",
+   "numerator_item": "負債總計",
+   "denominator_item": "資產總計",
+   "companies": [
+    {
+     "alias": "京鼎",
+     "company_name": "京鼎精密科技",
+     "company_code": "3413",
+     "ratio_value": 40.64,
+     "numerator_raw": "8,194,144",
+     "denominator_raw": "20,160,968"
+    },
+    {
+     "alias": "致茂",
+     "company_name": "致茂電子",
+     "company_code": "2360",
+     "ratio_value": 39.68,
+     "numerator_raw": "13,770,679",
+     "denominator_raw": "34,706,992"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_041",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下家登和達興，114Q3的毛利率各是多少？誰比較高？",
+  "expected_answer": "家登: 39.06% ｜ 達興: 39.68% ｜ 較高: 達興",
+  "expected_winner": "達興",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "ratio_type": "毛利率",
+   "margin_pp": 0.62,
+   "margin_band": "near",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "家登",
+     "company_name": "家登精密工業",
+     "company_code": "3680",
+     "ratio_value": 39.06,
+     "numerator_raw": "648,621",
+     "denominator_raw": "1,660,379"
+    },
+    {
+     "alias": "達興",
+     "company_name": "達興材料",
+     "company_code": "5234",
+     "ratio_value": 39.68,
+     "numerator_raw": "470,647",
+     "denominator_raw": "1,186,248"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_042",
+  "question_type": "ratio_cross_company",
+  "question": "日月光和中華精測在113Q2的營業利益率誰比較高？",
+  "expected_answer": "日月光: 6.43% ｜ 中華精測: 3.65% ｜ 較高: 日月光",
+  "expected_winner": "日月光",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q2",
+   "ratio_type": "營業利益率",
+   "margin_pp": 2.78,
+   "margin_band": "mid",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "日月光",
+     "company_name": "日月光投資控股",
+     "company_code": "3711",
+     "ratio_value": 6.43,
+     "numerator_raw": "9,020,652",
+     "denominator_raw": "140,238,063"
+    },
+    {
+     "alias": "中華精測",
+     "company_name": "中華精測科技",
+     "company_code": "6510",
+     "ratio_value": 3.65,
+     "numerator_raw": "26,364",
+     "denominator_raw": "722,818"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_043",
+  "question_type": "ratio_cross_company",
+  "question": "世界先進跟家登比，114Q1的負債比率哪一家高？",
+  "expected_answer": "世界先進: 53.33% ｜ 家登: 49.5% ｜ 較高: 世界先進",
+  "expected_winner": "世界先進",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "ratio_type": "負債比率",
+   "margin_pp": 3.83,
+   "margin_band": "mid",
+   "numerator_item": "負債總計",
+   "denominator_item": "資產總計",
+   "companies": [
+    {
+     "alias": "世界先進",
+     "company_name": "世界先進積體電路",
+     "company_code": "5347",
+     "ratio_value": 53.33,
+     "numerator_raw": "82,354,308",
+     "denominator_raw": "154,428,750"
+    },
+    {
+     "alias": "家登",
+     "company_name": "家登精密工業",
+     "company_code": "3680",
+     "ratio_value": 49.5,
+     "numerator_raw": "10,916,449",
+     "denominator_raw": "22,055,398"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_044",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下祥碩和致茂，114Q3的營業利益率各是多少？誰比較高？",
+  "expected_answer": "祥碩: 29.12% ｜ 致茂: 28.83% ｜ 較高: 祥碩",
+  "expected_winner": "祥碩",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "ratio_type": "營業利益率",
+   "margin_pp": 0.29,
+   "margin_band": "near",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "祥碩",
+     "company_name": "祥碩科技",
+     "company_code": "5269",
+     "ratio_value": 29.12,
+     "numerator_raw": "1,162,434",
+     "denominator_raw": "3,992,220"
+    },
+    {
+     "alias": "致茂",
+     "company_name": "致茂電子",
+     "company_code": "2360",
+     "ratio_value": 28.83,
+     "numerator_raw": "1,848,170",
+     "denominator_raw": "6,410,119"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_045",
+  "question_type": "ratio_cross_company",
+  "question": "世界先進和聯發科在114Q1的營業利益率誰比較高？",
+  "expected_answer": "世界先進: 18.73% ｜ 聯發科: 19.6% ｜ 較高: 聯發科",
+  "expected_winner": "聯發科",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "ratio_type": "營業利益率",
+   "margin_pp": 0.87,
+   "margin_band": "near",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "世界先進",
+     "company_name": "世界先進積體電路",
+     "company_code": "5347",
+     "ratio_value": 18.73,
+     "numerator_raw": "2,238,120",
+     "denominator_raw": "11,949,331"
+    },
+    {
+     "alias": "聯發科",
+     "company_name": "聯發科技",
+     "company_code": "2454",
+     "ratio_value": 19.6,
+     "numerator_raw": "30,053,291",
+     "denominator_raw": "153,312,237"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_046",
+  "question_type": "ratio_cross_company",
+  "question": "瑞昱跟穩懋比，114Q3的營業利益率哪一家高？",
+  "expected_answer": "瑞昱: 10.56% ｜ 穩懋: 8.59% ｜ 較高: 瑞昱",
+  "expected_winner": "瑞昱",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "ratio_type": "營業利益率",
+   "margin_pp": 1.97,
+   "margin_band": "mid",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "瑞昱",
+     "company_name": "瑞昱半導體",
+     "company_code": "2379",
+     "ratio_value": 10.56,
+     "numerator_raw": "3,113,462",
+     "denominator_raw": "29,491,139"
+    },
+    {
+     "alias": "穩懋",
+     "company_name": "穩懋半導體",
+     "company_code": "3105",
+     "ratio_value": 8.59,
+     "numerator_raw": "385,436",
+     "denominator_raw": "4,487,879"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_047",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下家登和力積電，113Q4的毛利率各是多少？誰比較高？",
+  "expected_answer": "家登: 44.17% ｜ 力積電: 1.17% ｜ 較高: 家登",
+  "expected_winner": "家登",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "ratio_type": "毛利率",
+   "margin_pp": 43.0,
+   "margin_band": "far",
+   "numerator_item": "營業毛利（毛損）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "家登",
+     "company_name": "家登精密工業",
+     "company_code": "3680",
+     "ratio_value": 44.17,
+     "numerator_raw": "2,890,936",
+     "denominator_raw": "6,544,796"
+    },
+    {
+     "alias": "力積電",
+     "company_name": "力晶積成電子製造",
+     "company_code": "6770",
+     "ratio_value": 1.17,
+     "numerator_raw": "525,425",
+     "denominator_raw": "44,725,710"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_048",
+  "question_type": "ratio_cross_company",
+  "question": "力積電和達興在113Q1的研發費用率誰比較高？",
+  "expected_answer": "力積電: 10.69% ｜ 達興: 12.38% ｜ 較高: 達興",
+  "expected_winner": "達興",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "ratio_type": "研發費用率",
+   "margin_pp": 1.69,
+   "margin_band": "mid",
+   "numerator_item": "研究發展費用",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "力積電",
+     "company_name": "力晶積成電子製造",
+     "company_code": "6770",
+     "ratio_value": 10.69,
+     "numerator_raw": "1,156,845",
+     "denominator_raw": "10,820,046"
+    },
+    {
+     "alias": "達興",
+     "company_name": "達興材料",
+     "company_code": "5234",
+     "ratio_value": 12.38,
+     "numerator_raw": "117,443",
+     "denominator_raw": "948,762"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_049",
+  "question_type": "ratio_cross_company",
+  "question": "聯電跟南亞科比，114Q3的負債比率哪一家高？",
+  "expected_answer": "聯電: 34.97% ｜ 南亞科: 22.32% ｜ 較高: 聯電",
+  "expected_winner": "聯電",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "ratio_type": "負債比率",
+   "margin_pp": 12.65,
+   "margin_band": "far",
+   "numerator_item": "負債總計",
+   "denominator_item": "資產總計",
+   "companies": [
+    {
+     "alias": "聯電",
+     "company_name": "聯華電子",
+     "company_code": "2303",
+     "ratio_value": 34.97,
+     "numerator_raw": "194,195,228",
+     "denominator_raw": "555,395,422"
+    },
+    {
+     "alias": "南亞科",
+     "company_name": "南亞科技",
+     "company_code": "2408",
+     "ratio_value": 22.32,
+     "numerator_raw": "45,219,776",
+     "denominator_raw": "202,562,637"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ratio_xc_050",
+  "question_type": "ratio_cross_company",
+  "question": "幫我比一下力成和達興，113Q4的營業利益率各是多少？誰比較高？",
+  "expected_answer": "力成: 12.8% ｜ 達興: 14.74% ｜ 較高: 達興",
+  "expected_winner": "達興",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "ratio_type": "營業利益率",
+   "margin_pp": 1.94,
+   "margin_band": "mid",
+   "numerator_item": "營業利益（損失）",
+   "denominator_item": "營業收入合計",
+   "companies": [
+    {
+     "alias": "力成",
+     "company_name": "力成科技",
+     "company_code": "6239",
+     "ratio_value": 12.8,
+     "numerator_raw": "9,382,266",
+     "denominator_raw": "73,315,042"
+    },
+    {
+     "alias": "達興",
+     "company_name": "達興材料",
+     "company_code": "5234",
+     "ratio_value": 14.74,
+     "numerator_raw": "607,165",
+     "denominator_raw": "4,117,847"
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,1384 @@
+[
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【環球晶圓】在【114Q4】揭露的投資方【本公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "GSI ｜ GW GmbH ｜ GWBV ｜ GWJ ｜ GWS ｜ 兆遠科技 ｜ 寰球鑫 ｜ 弘望投資股份有限公司 ｜ 旭信電力 ｜ 旭愛能源 ｜ 環球晶資本",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "環球晶圓",
+   "quarter": "114Q4",
+   "investor_name": "本公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "GSI",
+    "GW GmbH",
+    "GWBV",
+    "GWJ",
+    "GWS",
+    "兆遠科技",
+    "寰球鑫",
+    "弘望投資股份有限公司",
+    "旭信電力",
+    "旭愛能源",
+    "環球晶資本"
+   ],
+   "n_candidates": 11,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_001"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【景碩科技】在【114Q1】揭露的投資方【晶碩光學股份有限公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "PEGAVISION JAPAN INC. ｜ PEGAVISION VIETNAM COMPANY LIMITED ｜ 竹荷投資股份有限公司 ｜ 美韻投資股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "景碩科技",
+   "quarter": "114Q1",
+   "investor_name": "晶碩光學股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "PEGAVISION JAPAN INC.",
+    "PEGAVISION VIETNAM COMPANY LIMITED",
+    "竹荷投資股份有限公司",
+    "美韻投資股份有限公司"
+   ],
+   "n_candidates": 4,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_002"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【聯發科技】在【113Q1】揭露的投資方【Gaintech Co. Limited】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Amobile Intelligent Corp. Limited ｜ CMC Capital Investments, L.P. ｜ CSVI VENTURES, L.P. ｜ Core Tech Resources Inc. ｜ MTK Wireless Limited ｜ MediaTek Global Holdings Limited ｜ MediaTek Japan Inc. ｜ MediaTek Korea Inc. ｜ MediaTek Wireless FZ-LLC ｜ Nephos Cayman Co. Limited ｜ Sigmastar Technology Inc. ｜ Smarthead Limited ｜ ZENA TECHNOLOGY INTERNATIONAL, INC. ｜ 聯發科中國有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯發科技",
+   "quarter": "113Q1",
+   "investor_name": "Gaintech Co. Limited",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Amobile Intelligent Corp. Limited",
+    "CMC Capital Investments, L.P.",
+    "CSVI VENTURES, L.P.",
+    "Core Tech Resources Inc.",
+    "MTK Wireless Limited",
+    "MediaTek Global Holdings Limited",
+    "MediaTek Japan Inc.",
+    "MediaTek Korea Inc.",
+    "MediaTek Wireless FZ-LLC",
+    "Nephos Cayman Co. Limited",
+    "Sigmastar Technology Inc.",
+    "Smarthead Limited",
+    "ZENA TECHNOLOGY INTERNATIONAL, INC.",
+    "聯發科中國有限公司"
+   ],
+   "n_candidates": 14,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_003"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【聯發科技】在【114Q4】揭露的投資方【MediaTek Singapore Pte. Ltd.】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "MaiSys Design Technology SG Pte. Ltd. ｜ 聯發科香港投資有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯發科技",
+   "quarter": "114Q4",
+   "investor_name": "MediaTek Singapore Pte. Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "MaiSys Design Technology SG Pte. Ltd.",
+    "聯發科香港投資有限公司"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_004"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【大聯大控股】在【113Q4】揭露的投資方【鑫聯大投資控股股份有限公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "捷元股份有限公司 ｜ 鑫聯大(香港)有限公司 ｜ 鑫鵬瑜有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "大聯大控股",
+   "quarter": "113Q4",
+   "investor_name": "鑫聯大投資控股股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "捷元股份有限公司",
+    "鑫聯大(香港)有限公司",
+    "鑫鵬瑜有限公司"
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_005"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【中華精測科技】在【114Q1】揭露的投資方【中華精測科技】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "CHPT Japan Co., Ltd. ｜ Chunghwa Precision Test Tech USA Corporation ｜ Chunghwa Precision Test Tech. International, Ltd. ｜ 測冠投資股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "中華精測科技",
+   "quarter": "114Q1",
+   "investor_name": "中華精測科技",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "CHPT Japan Co., Ltd.",
+    "Chunghwa Precision Test Tech USA Corporation",
+    "Chunghwa Precision Test Tech. International, Ltd.",
+    "測冠投資股份有限公司"
+   ],
+   "n_candidates": 4,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_006"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【日月光投資控股】在【113Q1】揭露的投資方【SPIL (B.V.I.) Holding Limited】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "SPIL (Cayman) Holding Limited ｜ Siliconware USA, Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q1",
+   "investor_name": "SPIL (B.V.I.) Holding Limited",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "SPIL (Cayman) Holding Limited",
+    "Siliconware USA, Inc."
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_007"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【世界先進積體電路】在【113Q4】揭露的投資方【世界先進公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Qromis, Inc. ｜ VIS Associates Inc. ｜ Vanguard International Semiconductor Singapore Pte. Ltd. ｜ VisionPower Semiconductor Manufacturing Company Pte. Ltd.（註） ｜ 漢磊科技股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "世界先進積體電路",
+   "quarter": "113Q4",
+   "investor_name": "世界先進公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Qromis, Inc.",
+    "VIS Associates Inc.",
+    "Vanguard International Semiconductor Singapore Pte. Ltd.",
+    "VisionPower Semiconductor Manufacturing Company Pte. Ltd.（註）",
+    "漢磊科技股份有限公司"
+   ],
+   "n_candidates": 5,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_008"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【新應材】在【114Q4】揭露的投資方【新應材】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "AEMC USA ｜ 思微公司 ｜ 新寶紘公司 ｜ 新應材日本 ｜ 昱鐳公司 ｜ 歐利得公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "新應材",
+   "quarter": "114Q4",
+   "investor_name": "新應材",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "AEMC USA",
+    "思微公司",
+    "新寶紘公司",
+    "新應材日本",
+    "昱鐳公司",
+    "歐利得公司"
+   ],
+   "n_candidates": 6,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_009"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【台灣光罩】在【113Q3】揭露的投資方【昱嘉科技(股)公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Innova Vision (B.V.I) Inc. ｜ iPro Vision Inc. ｜ 英諾華科技(股)公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "台灣光罩",
+   "quarter": "113Q3",
+   "investor_name": "昱嘉科技(股)公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Innova Vision (B.V.I) Inc.",
+    "iPro Vision Inc.",
+    "英諾華科技(股)公司"
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_010"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【中華精測科技】在【114Q4】揭露的投資方【中華精測科技】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "CHPT Japan Co., Ltd. ｜ Chunghwa Precision Test Tech USA Corporation ｜ Chunghwa Precision Test Tech. International, Ltd. ｜ 測冠投資股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "中華精測科技",
+   "quarter": "114Q4",
+   "investor_name": "中華精測科技",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "CHPT Japan Co., Ltd.",
+    "Chunghwa Precision Test Tech USA Corporation",
+    "Chunghwa Precision Test Tech. International, Ltd.",
+    "測冠投資股份有限公司"
+   ],
+   "n_candidates": 4,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_011"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【景碩科技】在【113Q3】揭露的投資方【晶澈科技股份有限公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Beautytech Platform (Singapore) Pte. Ltd. ｜ 舶美股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "景碩科技",
+   "quarter": "113Q3",
+   "investor_name": "晶澈科技股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Beautytech Platform (Singapore) Pte. Ltd.",
+    "舶美股份有限公司"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_012"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【新應材】在【114Q3】揭露的投資方【新應材】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "AEMC USA ｜ 思微公司 ｜ 新應材日本 ｜ 昱鐳公司 ｜ 歐利得公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "新應材",
+   "quarter": "114Q3",
+   "investor_name": "新應材",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "AEMC USA",
+    "思微公司",
+    "新應材日本",
+    "昱鐳公司",
+    "歐利得公司"
+   ],
+   "n_candidates": 5,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_013"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【致茂電子】在【113Q3】揭露的投資方【Quantel Private Ltd.】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Quantel Global Company Limited ｜ Quantel Global Philippines Corporation ｜ Quantel Global Sdn. Bhd. ｜ Quantel Global Vietnam Co.,Ltd. ｜ Quantel Technologies India Private Ltd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "致茂電子",
+   "quarter": "113Q3",
+   "investor_name": "Quantel Private Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Quantel Global Company Limited",
+    "Quantel Global Philippines Corporation",
+    "Quantel Global Sdn. Bhd.",
+    "Quantel Global Vietnam Co.,Ltd.",
+    "Quantel Technologies India Private Ltd."
+   ],
+   "n_candidates": 5,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_014"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【環球晶圓】在【114Q1】揭露的投資方【本公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "GSI ｜ GW GmbH ｜ GWBV ｜ GWJ ｜ GWS ｜ 兆遠科技 ｜ 寰球鑫 ｜ 弘望投資股份有限公司 ｜ 旭信電力 ｜ 旭愛能源 ｜ 環球晶資本",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "環球晶圓",
+   "quarter": "114Q1",
+   "investor_name": "本公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "GSI",
+    "GW GmbH",
+    "GWBV",
+    "GWJ",
+    "GWS",
+    "兆遠科技",
+    "寰球鑫",
+    "弘望投資股份有限公司",
+    "旭信電力",
+    "旭愛能源",
+    "環球晶資本"
+   ],
+   "n_candidates": 11,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_015"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【聯發科技】在【114Q2】揭露的投資方【翔發投資(股)公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Intelligo Technology Inc. ｜ 常憶科技(股)公司 ｜ 矽實科技(股)公司 ｜ 聚星電子(股)公司 ｜ 聯發創新基地(股)公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯發科技",
+   "quarter": "114Q2",
+   "investor_name": "翔發投資(股)公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Intelligo Technology Inc.",
+    "常憶科技(股)公司",
+    "矽實科技(股)公司",
+    "聚星電子(股)公司",
+    "聯發創新基地(股)公司"
+   ],
+   "n_candidates": 5,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_016"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【日月光投資控股】在【113Q2】揭露的投資方【日 月 光】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "A.S.E. Holding Limited ｜ ASE Electronics (M) Sdn. Bhd. ｜ ASE Marketing ＆ Service Japan Co., Ltd. ｜ ASE Singapore Pte. Ltd. ｜ Deca Technologies, Inc. ｜ Innosource Limited ｜ J ＆ R Holding Limited ｜ Omniquest Industrial Limited ｜ 元隆電子公司 ｜ 台灣福雷電子公司 ｜ 宏璟建設公司 ｜ 宏錦光公司 ｜ 牧德科技公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q2",
+   "investor_name": "日 月 光",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "A.S.E. Holding Limited",
+    "ASE Electronics (M) Sdn. Bhd.",
+    "ASE Marketing ＆ Service Japan Co., Ltd.",
+    "ASE Singapore Pte. Ltd.",
+    "Deca Technologies, Inc.",
+    "Innosource Limited",
+    "J ＆ R Holding Limited",
+    "Omniquest Industrial Limited",
+    "元隆電子公司",
+    "台灣福雷電子公司",
+    "宏璟建設公司",
+    "宏錦光公司",
+    "牧德科技公司"
+   ],
+   "n_candidates": 13,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_017"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【智原科技】在【114Q4】揭露的投資方【智宏投資股份有限公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "FaradayTek Solutions India Private Limited ｜ 寅通科技股份有限公司 ｜ 昇邁科技股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "智原科技",
+   "quarter": "114Q4",
+   "investor_name": "智宏投資股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "FaradayTek Solutions India Private Limited",
+    "寅通科技股份有限公司",
+    "昇邁科技股份有限公司"
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_018"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【家登精密工業】在【114Q1】揭露的投資方【家登創業投資股份有限公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "垚鋐系統科技股份有限公司 ｜ 寰美電子股份有限公司 ｜ 恆陽綠能股份有限公司 ｜ 愛思分析儀器股份有限公司 ｜ 金匯科技股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "家登精密工業",
+   "quarter": "114Q1",
+   "investor_name": "家登創業投資股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "垚鋐系統科技股份有限公司",
+    "寰美電子股份有限公司",
+    "恆陽綠能股份有限公司",
+    "愛思分析儀器股份有限公司",
+    "金匯科技股份有限公司"
+   ],
+   "n_candidates": 5,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_019"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【穩懋半導體】在【114Q1】揭露的投資方【Win Semiconductors Cayman Islands Co., Ltd.】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Chainwin Biotech and Agrotech (Cayman Islands) Co., Ltd. ｜ Rainbow Star Group Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "穩懋半導體",
+   "quarter": "114Q1",
+   "investor_name": "Win Semiconductors Cayman Islands Co., Ltd.",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Chainwin Biotech and Agrotech (Cayman Islands) Co., Ltd.",
+    "Rainbow Star Group Limited"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_020"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【聯發科技】在【113Q2】揭露的投資方【聯發科香港投資有限公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Hsu Chia (Samoa) Investment Ltd. ｜ Hsu Fa (Samoa) Investment Ltd. ｜ Hsu Kang (Samoa) Investment Ltd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯發科技",
+   "quarter": "113Q2",
+   "investor_name": "聯發科香港投資有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Hsu Chia (Samoa) Investment Ltd.",
+    "Hsu Fa (Samoa) Investment Ltd.",
+    "Hsu Kang (Samoa) Investment Ltd."
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_021"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【日月光投資控股】在【114Q3】揭露的投資方【Universal Global Technology Co., Limited】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "M-Universe Investments Pte. Ltd. ｜ UNIVERSAL SCIENTIFIC INDUSTRIAL VIETNAM COMPANY LIMITED ｜ USI America Inc. ｜ USI Japan Co., Ltd. ｜ Universal Scientific Industrial (France) ｜ Universal Scientific Industrial De Mexico S.A. De C.V. ｜ 環強電子公司 ｜ 環旭科技公司 ｜ 環鴻科技公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q3",
+   "investor_name": "Universal Global Technology Co., Limited",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "M-Universe Investments Pte. Ltd.",
+    "UNIVERSAL SCIENTIFIC INDUSTRIAL VIETNAM COMPANY LIMITED",
+    "USI America Inc.",
+    "USI Japan Co., Ltd.",
+    "Universal Scientific Industrial (France)",
+    "Universal Scientific Industrial De Mexico S.A. De C.V.",
+    "環強電子公司",
+    "環旭科技公司",
+    "環鴻科技公司"
+   ],
+   "n_candidates": 9,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_022"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【致茂電子】在【114Q4】揭露的投資方【本 公 司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "CHI Incorporation Ltd. ｜ Camtek Ltd. ｜ Chen Hwa Technology Inc. ｜ Chroma ATE Europe B.V. ｜ Chroma ATE Inc. ｜ Chroma Europe Holding B.V. ｜ Chroma Germany GmbH ｜ Chroma Japan Corp. ｜ Chroma Systems Solutions, Inc. ｜ Deep Red Holding Co., Ltd. ｜ Neworld Electronics Limited ｜ Quantel Private Ltd. ｜ San Eagle Development Corp. ｜ Sensational Holdings Ltd. ｜ 兆晟奈米科技股份有限公司 ｜ 光遠科技股份有限公司 ｜ 凌華科技股份有限公司 ｜ 匯宏科技股份有限公司 ｜ 合茂投資股份有限公司 ｜ 太奇智聯股份有限公司 ｜ 奈視科技股份有限公司 ｜ 威光自動化科技股份有限公司 ｜ 易維特科技股份有限公司 ｜ 晶測電子股份有限公司 ｜ 致禾順開發股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "致茂電子",
+   "quarter": "114Q4",
+   "investor_name": "本 公 司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "CHI Incorporation Ltd.",
+    "Camtek Ltd.",
+    "Chen Hwa Technology Inc.",
+    "Chroma ATE Europe B.V.",
+    "Chroma ATE Inc.",
+    "Chroma Europe Holding B.V.",
+    "Chroma Germany GmbH",
+    "Chroma Japan Corp.",
+    "Chroma Systems Solutions, Inc.",
+    "Deep Red Holding Co., Ltd.",
+    "Neworld Electronics Limited",
+    "Quantel Private Ltd.",
+    "San Eagle Development Corp.",
+    "Sensational Holdings Ltd.",
+    "兆晟奈米科技股份有限公司",
+    "光遠科技股份有限公司",
+    "凌華科技股份有限公司",
+    "匯宏科技股份有限公司",
+    "合茂投資股份有限公司",
+    "太奇智聯股份有限公司",
+    "奈視科技股份有限公司",
+    "威光自動化科技股份有限公司",
+    "易維特科技股份有限公司",
+    "晶測電子股份有限公司",
+    "致禾順開發股份有限公司"
+   ],
+   "n_candidates": 25,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_023"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【聯發科技】在【114Q2】揭露的投資方【MTKC Global Holdings Co. Limited】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Amiti IV Quantum L.P. ｜ 聯發利寶(香港)有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯發科技",
+   "quarter": "114Q2",
+   "investor_name": "MTKC Global Holdings Co. Limited",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Amiti IV Quantum L.P.",
+    "聯發利寶(香港)有限公司"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_024"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【聯發科技】在【113Q3】揭露的投資方【旭達投資(股)公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "MediaTek Bangalore Private Limited ｜ 翔發投資(股)公司 ｜ 達發科技(股)公司 ｜ 鈺太科技(股)公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯發科技",
+   "quarter": "113Q3",
+   "investor_name": "旭達投資(股)公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "MediaTek Bangalore Private Limited",
+    "翔發投資(股)公司",
+    "達發科技(股)公司",
+    "鈺太科技(股)公司"
+   ],
+   "n_candidates": 4,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_025"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【力成科技】在【113Q1】揭露的投資方【力成科技日本合同會社】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "Powertech Technology Akita Inc. ｜ Tera Probe, Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "力成科技",
+   "quarter": "113Q1",
+   "investor_name": "力成科技日本合同會社",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "Powertech Technology Akita Inc.",
+    "Tera Probe, Inc."
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_026"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【日月光投資控股】在【113Q4】揭露的投資方【本 公 司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "日 月 光 ｜ 日月光整合服務公司 ｜ 日月光社會企業公司 ｜ 環電公司 ｜ 矽 品",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q4",
+   "investor_name": "本 公 司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "日 月 光",
+    "日月光整合服務公司",
+    "日月光社會企業公司",
+    "環電公司",
+    "矽 品"
+   ],
+   "n_candidates": 5,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_027"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【景碩科技】在【113Q3】揭露的投資方【景碩投資股份有限公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "復揚科技股份有限公司 ｜ 晶碩光學股份有限公司 ｜ 竹荷投資股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "景碩科技",
+   "quarter": "113Q3",
+   "investor_name": "景碩投資股份有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "復揚科技股份有限公司",
+    "晶碩光學股份有限公司",
+    "竹荷投資股份有限公司"
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_028"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【台灣光罩】在【113Q4】揭露的投資方【台灣光罩】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "ONE TEST SYSTEMS ｜ SunnyLake Park International Holdings, Inc. ｜ 光環科技(股)公司 ｜ 友縳投資(股)公司 ｜ 威達高科(股)公司 ｜ 昱厚生技(股)公司 ｜ 昱嘉科技(股)公司 ｜ 百樂千翔能源(股)公司 ｜ 美祿科技(股)公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "台灣光罩",
+   "quarter": "113Q4",
+   "investor_name": "台灣光罩",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "ONE TEST SYSTEMS",
+    "SunnyLake Park International Holdings, Inc.",
+    "光環科技(股)公司",
+    "友縳投資(股)公司",
+    "威達高科(股)公司",
+    "昱厚生技(股)公司",
+    "昱嘉科技(股)公司",
+    "百樂千翔能源(股)公司",
+    "美祿科技(股)公司"
+   ],
+   "n_candidates": 9,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_029"
+ },
+ {
+  "question_type": "investment_ambiguous",
+  "question": "根據投資關係圖譜，【大聯大控股】在【114Q4】揭露的投資方【世平國際(香港)有限公司】投資了哪些被投資公司？請全部列出。",
+  "expected_answer": "WPG Americas Inc. ｜ WPG C＆C Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "大聯大控股",
+   "quarter": "114Q4",
+   "investor_name": "世平國際(香港)有限公司",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "WPG Americas Inc.",
+    "WPG C＆C Limited"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": false,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_030"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【天虹】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "天虹",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_031"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【崇越】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "中游；化學品 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "崇越",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "中游；化學品",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_032"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【漢測】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "漢測",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_033"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【宏正】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "宏正",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_034"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【同欣電】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；IC封裝測試 ｜ 下游；IC模組 ｜ 下游；基板",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "同欣電",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；IC封裝測試",
+    "下游；IC模組",
+    "下游；基板"
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_035"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【濾能】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "濾能",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_036"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【漢科】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "漢科",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_037"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【南亞科】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "上游；IC設計 ｜ 中游；IC/晶圓製造",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "南亞科",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "上游；IC設計",
+    "中游；IC/晶圓製造"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_038"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【福懋】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；IC封裝測試 ｜ 下游；IC模組",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "福懋",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；IC封裝測試",
+    "下游；IC模組"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_039"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【穎崴】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "穎崴",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_040"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【旺宏】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "上游；IC設計 ｜ 下游；IC封裝測試 ｜ 中游；IC/晶圓製造",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "旺宏",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "上游；IC設計",
+    "下游；IC封裝測試",
+    "中游；IC/晶圓製造"
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_041"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【由田】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "由田",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_042"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【辛耘】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "辛耘",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_043"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【長華*】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；基板 ｜ 下游；導線架 ｜ 下游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "長華*",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；基板",
+    "下游；導線架",
+    "下游；生產製程及檢測設備"
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_044"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【利機】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；IC封裝測試 ｜ 下游；IC模組 ｜ 下游；IC通路 ｜ 下游；基板 ｜ 下游；導線架",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "利機",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；IC封裝測試",
+    "下游；IC模組",
+    "下游；IC通路",
+    "下游；基板",
+    "下游；導線架"
+   ],
+   "n_candidates": 5,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_045"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【鈦昇】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "鈦昇",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_046"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【世禾】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "世禾",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_047"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【鈺祥】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "鈺祥",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_048"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【尚立】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；IC模組 ｜ 下游；IC通路",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "尚立",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；IC模組",
+    "下游；IC通路"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_049"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【光焱科技】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "光焱科技",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_050"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【倍利科】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "倍利科",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_051"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【陞達科技】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "上游；IC設計 ｜ 下游；IC通路",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "陞達科技",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "上游；IC設計",
+    "下游；IC通路"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_052"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【迅得】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "迅得",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_053"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【群聯】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "上游；IC設計 ｜ 上游；IP設計/IC設計代工服務 ｜ 下游；IC模組 ｜ 下游；IC通路",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "群聯",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "上游；IC設計",
+    "上游；IP設計/IC設計代工服務",
+    "下游；IC模組",
+    "下游；IC通路"
+   ],
+   "n_candidates": 4,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_054"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【竑騰】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；IC封裝測試 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "竑騰",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；IC封裝測試",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_055"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【雷科】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；IC封裝測試 ｜ 下游；基板 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "雷科",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；IC封裝測試",
+    "下游；基板",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 3,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_056"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【旭東】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "旭東",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_057"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【志聖】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "志聖",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_058"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【德律】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "德律",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_059"
+ },
+ {
+  "question_type": "supply_chain_ambiguous",
+  "question": "根據半導體產業鏈圖譜，【旺矽】涵蓋哪些產業鏈階段與 segment？請全部列出。",
+  "expected_answer": "下游；生產製程及檢測設備 ｜ 中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "旺矽",
+   "answer_semantics": "set",
+   "set_delimiter": "｜",
+   "expected_set": [
+    "下游；生產製程及檢測設備",
+    "中游；生產製程及檢測設備"
+   ],
+   "n_candidates": 2,
+   "system_has_listall_branch": true,
+   "heldout_stratum": "candidate_ambiguity",
+   "gold_semantics": "A：全部列出才算對（集合相等，順序無關）"
+  },
+  "id": "ho2_ambig_060"
+ }
+]

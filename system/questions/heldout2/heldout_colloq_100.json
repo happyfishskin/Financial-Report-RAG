@@ -1,0 +1,1847 @@
+[
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "辛耘企業在114Q3的現金大概多少？（科目：【資產負債表帳列之現金及約當現金 Cash and cash equivalents reported in the statement of financial position】）（表：【現金流量表】）（2025年1月1日至9月30日 2025/1/1To9/30）",
+  "expected_answer": "5,529,097",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "3583",
+   "company_name": "辛耘企業",
+   "quarter": "114Q3",
+   "table_name": "現金流量表",
+   "item_name": "資產負債表帳列之現金及約當現金 Cash and cash equivalents reported in the statement of financial position",
+   "column_header": "2025年1月1日至9月30日 2025/1/1To9/30",
+   "source_csv": "3583_114Q3_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_001"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "致茂電子在114Q1的淨利大概多少？（科目：【營業利益（損失） Net operating income (loss)】）（表：【綜合損益表】）（2025年1月1日至3月31日 2025/1/1To3/31）",
+  "expected_answer": "2,164,147",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2360",
+   "company_name": "致茂電子",
+   "quarter": "114Q1",
+   "table_name": "綜合損益表",
+   "item_name": "營業利益（損失） Net operating income (loss)",
+   "column_header": "2025年1月1日至3月31日 2025/1/1To3/31",
+   "source_csv": "2360_114Q1_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_002"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下聯華電子113Q4的獲利是多少（科目：【營業毛利（毛損） Gross profit (loss) from operations】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "75,654,080",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2303",
+   "company_name": "聯華電子",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業毛利（毛損） Gross profit (loss) from operations",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "2303_113Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_003"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "新應材113Q3手上現金有多少？（科目：【期末現金及約當現金餘額 Cash and cash equivalents at end of period】）（表：【現金流量表】）（2024年1月1日至9月30日 2024/1/1To9/30）",
+  "expected_answer": "504,851",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "4749",
+   "company_name": "新應材",
+   "quarter": "113Q3",
+   "table_name": "現金流量表",
+   "item_name": "期末現金及約當現金餘額 Cash and cash equivalents at end of period",
+   "column_header": "2024年1月1日至9月30日 2024/1/1To9/30",
+   "source_csv": "4749_113Q3_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_004"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "創意電子在113Q3的現金大概多少？（科目：【現金及約當現金 Cash and cash equivalents】）（表：【資產負債表】）（2024年9月30日 2024/9/30）",
+  "expected_answer": "9,257,167",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "3443",
+   "company_name": "創意電子",
+   "quarter": "113Q3",
+   "table_name": "資產負債表",
+   "item_name": "現金及約當現金 Cash and cash equivalents",
+   "column_header": "2024年9月30日 2024/9/30",
+   "source_csv": "3443_113Q3_資產負債表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_005"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "京鼎精密科技114Q3手上現金有多少？（科目：【期末現金及約當現金餘額 Cash and cash equivalents at end of period】）（表：【現金流量表】）（2025年1月1日至9月30日 2025/1/1To9/30）",
+  "expected_answer": "5,117,573",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "3413",
+   "company_name": "京鼎精密科技",
+   "quarter": "114Q3",
+   "table_name": "現金流量表",
+   "item_name": "期末現金及約當現金餘額 Cash and cash equivalents at end of period",
+   "column_header": "2025年1月1日至9月30日 2025/1/1To9/30",
+   "source_csv": "3413_114Q3_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_006"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下台灣光罩113Q3的資產總計（科目：【資產總計 Total assets】）（表：【資產負債表】）（2024年9月30日 2024/9/30）",
+  "expected_answer": "22,035,664",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2338",
+   "company_name": "台灣光罩",
+   "quarter": "113Q3",
+   "table_name": "資產負債表",
+   "item_name": "資產總計 Total assets",
+   "column_header": "2024年9月30日 2024/9/30",
+   "source_csv": "2338_113Q3_資產負債表.csv",
+   "metric": "assets",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_007"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "華邦電子114Q3手上現金有多少？（科目：【期末現金及約當現金餘額 Cash and cash equivalents at end of period】）（表：【現金流量表】）（2025年1月1日至9月30日 2025/1/1To9/30）",
+  "expected_answer": "17,203,148",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2344",
+   "company_name": "華邦電子",
+   "quarter": "114Q3",
+   "table_name": "現金流量表",
+   "item_name": "期末現金及約當現金餘額 Cash and cash equivalents at end of period",
+   "column_header": "2025年1月1日至9月30日 2025/1/1To9/30",
+   "source_csv": "2344_114Q3_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_008"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "台灣積體電路製造在114Q2的現金大概多少？（科目：【期末現金及約當現金餘額 Cash and cash equivalents at end of period】）（表：【現金流量表】）（2025年1月1日至6月30日 2025/1/1To6/30）",
+  "expected_answer": "2,364,524,340",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2330",
+   "company_name": "台灣積體電路製造",
+   "quarter": "114Q2",
+   "table_name": "現金流量表",
+   "item_name": "期末現金及約當現金餘額 Cash and cash equivalents at end of period",
+   "column_header": "2025年1月1日至6月30日 2025/1/1To6/30",
+   "source_csv": "2330_114Q2_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_009"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "華邦電子在114Q1的現金大概多少？（科目：【資產負債表帳列之現金及約當現金 Cash and cash equivalents reported in the statement of financial position】）（表：【現金流量表】）（2025年1月1日至3月31日 2025/1/1To3/31）",
+  "expected_answer": "18,378,489",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2344",
+   "company_name": "華邦電子",
+   "quarter": "114Q1",
+   "table_name": "現金流量表",
+   "item_name": "資產負債表帳列之現金及約當現金 Cash and cash equivalents reported in the statement of financial position",
+   "column_header": "2025年1月1日至3月31日 2025/1/1To3/31",
+   "source_csv": "2344_114Q1_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_010"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "創意電子114Q4資產規模多大？（科目：【資產總計 Total assets】）（表：【資產負債表】）（2025年12月31日 2025/12/31）",
+  "expected_answer": "28,443,068",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "3443",
+   "company_name": "創意電子",
+   "quarter": "114Q4",
+   "table_name": "資產負債表",
+   "item_name": "資產總計 Total assets",
+   "column_header": "2025年12月31日 2025/12/31",
+   "source_csv": "3443_114Q4_資產負債表.csv",
+   "metric": "assets",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_011"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "致茂電子113Q4資產規模多大？（科目：【資產總計 Total assets】）（表：【資產負債表】）（2024年12月31日 2024/12/31）",
+  "expected_answer": "37,307,582",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2360",
+   "company_name": "致茂電子",
+   "quarter": "113Q4",
+   "table_name": "資產負債表",
+   "item_name": "資產總計 Total assets",
+   "column_header": "2024年12月31日 2024/12/31",
+   "source_csv": "2360_113Q4_資產負債表.csv",
+   "metric": "assets",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_012"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "力成科技114Q2手上現金有多少？（科目：【資產負債表帳列之現金及約當現金 Cash and cash equivalents reported in the statement of financial position】）（表：【現金流量表】）（2025年1月1日至6月30日 2025/1/1To6/30）",
+  "expected_answer": "20,442,078",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "6239",
+   "company_name": "力成科技",
+   "quarter": "114Q2",
+   "table_name": "現金流量表",
+   "item_name": "資產負債表帳列之現金及約當現金 Cash and cash equivalents reported in the statement of financial position",
+   "column_header": "2025年1月1日至6月30日 2025/1/1To6/30",
+   "source_csv": "6239_114Q2_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_013"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "南亞科技113Q4資產規模多大？（科目：【資產總計 Total assets】）（表：【資產負債表】）（2024年12月31日 2024/12/31）",
+  "expected_answer": "206,706,317",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2408",
+   "company_name": "南亞科技",
+   "quarter": "113Q4",
+   "table_name": "資產負債表",
+   "item_name": "資產總計 Total assets",
+   "column_header": "2024年12月31日 2024/12/31",
+   "source_csv": "2408_113Q4_資產負債表.csv",
+   "metric": "assets",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_014"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下台灣積體電路製造113Q4的獲利是多少（科目：【營業利益（損失） Net operating income (loss)】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "1,322,053,050",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2330",
+   "company_name": "台灣積體電路製造",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業利益（損失） Net operating income (loss)",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "2330_113Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_015"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "台灣積體電路製造在113Q4的現金大概多少？（科目：【期初現金及約當現金餘額 Cash and cash equivalents at beginning of period】）（表：【現金流量表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "1,465,427,753",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2330",
+   "company_name": "台灣積體電路製造",
+   "quarter": "113Q4",
+   "table_name": "現金流量表",
+   "item_name": "期初現金及約當現金餘額 Cash and cash equivalents at beginning of period",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "2330_113Q4_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_016"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下新應材114Q4現金水位是多少（科目：【現金及約當現金 Cash and cash equivalents】）（表：【資產負債表】）（2025年12月31日 2025/12/31）",
+  "expected_answer": "937,541",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "4749",
+   "company_name": "新應材",
+   "quarter": "114Q4",
+   "table_name": "資產負債表",
+   "item_name": "現金及約當現金 Cash and cash equivalents",
+   "column_header": "2025年12月31日 2025/12/31",
+   "source_csv": "4749_114Q4_資產負債表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_017"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下聯發科技113Q3現金水位是多少（科目：【期初現金及約當現金餘額 Cash and cash equivalents at beginning of period】）（表：【現金流量表】）（2024年1月1日至9月30日 2024/1/1To9/30）",
+  "expected_answer": "165,396,010",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2454",
+   "company_name": "聯發科技",
+   "quarter": "113Q3",
+   "table_name": "現金流量表",
+   "item_name": "期初現金及約當現金餘額 Cash and cash equivalents at beginning of period",
+   "column_header": "2024年1月1日至9月30日 2024/1/1To9/30",
+   "source_csv": "2454_113Q3_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_018"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "大聯大控股在113Q3的現金大概多少？（科目：【期末現金及約當現金餘額 Cash and cash equivalents at end of period】）（表：【現金流量表】）（2024年1月1日至9月30日 2024/1/1To9/30）",
+  "expected_answer": "32,740,646",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "3702",
+   "company_name": "大聯大控股",
+   "quarter": "113Q3",
+   "table_name": "現金流量表",
+   "item_name": "期末現金及約當現金餘額 Cash and cash equivalents at end of period",
+   "column_header": "2024年1月1日至9月30日 2024/1/1To9/30",
+   "source_csv": "3702_113Q3_現金流量表.csv",
+   "metric": "cash",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_019"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "世界先進積體電路在113Q4的淨利大概多少？（科目：【本期淨利（淨損） Profit (loss)】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "7,047,208",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "5347",
+   "company_name": "世界先進積體電路",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "本期淨利（淨損） Profit (loss)",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "5347_113Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_020"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下華邦電子113Q4的獲利是多少（科目：【營業利益（損失） Net operating income (loss)】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "507,483",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2344",
+   "company_name": "華邦電子",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業利益（損失） Net operating income (loss)",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "2344_113Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_021"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "京元電子在113Q4的淨利大概多少？（科目：【本期淨利（淨損） Profit (loss)】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "8,095,286",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2449",
+   "company_name": "京元電子",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "本期淨利（淨損） Profit (loss)",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "2449_113Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_022"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下力晶積成電子製造114Q4的獲利是多少（科目：【營業毛利（毛損）淨額 Gross profit (loss) from operations】）（表：【綜合損益表】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "( 1,536,997 )",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "6770",
+   "company_name": "力晶積成電子製造",
+   "quarter": "114Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業毛利（毛損）淨額 Gross profit (loss) from operations",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "source_csv": "6770_114Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_023"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "群聯電子在114Q4的淨利大概多少？（科目：【營業利益（損失） Net operating income (loss)】）（表：【綜合損益表】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "8,266,461",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "8299",
+   "company_name": "群聯電子",
+   "quarter": "114Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業利益（損失） Net operating income (loss)",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "source_csv": "8299_114Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_024"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "環球晶圓114Q4營收多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "60,597,938",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "6488",
+   "company_name": "環球晶圓",
+   "quarter": "114Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "source_csv": "6488_114Q4_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_025"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "京鼎精密科技114Q1賺了多少？（科目：【營業毛利（毛損） Gross profit (loss) from operations】）（表：【綜合損益表】）（2025年1月1日至3月31日 2025/1/1To3/31）",
+  "expected_answer": "1,329,849",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "3413",
+   "company_name": "京鼎精密科技",
+   "quarter": "114Q1",
+   "table_name": "綜合損益表",
+   "item_name": "營業毛利（毛損） Gross profit (loss) from operations",
+   "column_header": "2025年1月1日至3月31日 2025/1/1To3/31",
+   "source_csv": "3413_114Q1_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_026"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "新應材113Q4賺了多少？（科目：【營業利益（損失） Net operating income (loss)】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "586,794",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "4749",
+   "company_name": "新應材",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業利益（損失） Net operating income (loss)",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "4749_113Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_027"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下瑞昱半導體114Q1的獲利是多少（科目：【營業毛利（毛損）淨額 Gross profit (loss) from operations】）（表：【綜合損益表】）（2025年1月1日至3月31日 2025/1/1To3/31）",
+  "expected_answer": "18,056,988",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2379",
+   "company_name": "瑞昱半導體",
+   "quarter": "114Q1",
+   "table_name": "綜合損益表",
+   "item_name": "營業毛利（毛損）淨額 Gross profit (loss) from operations",
+   "column_header": "2025年1月1日至3月31日 2025/1/1To3/31",
+   "source_csv": "2379_114Q1_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_028"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下世界先進積體電路114Q4的獲利是多少（科目：【營業毛利（毛損）淨額 Gross profit (loss) from operations】）（表：【綜合損益表】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "13,653,839",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "5347",
+   "company_name": "世界先進積體電路",
+   "quarter": "114Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業毛利（毛損）淨額 Gross profit (loss) from operations",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "source_csv": "5347_114Q4_綜合損益表.csv",
+   "metric": "profit",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_029"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "智原科技113Q4營收多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "11,064,852",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "3035",
+   "company_name": "智原科技",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "3035_113Q4_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_030"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "新應材在114Q1的營收大概多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2025年1月1日至3月31日 2025/1/1To3/31）",
+  "expected_answer": "959,316",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "4749",
+   "company_name": "新應材",
+   "quarter": "114Q1",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2025年1月1日至3月31日 2025/1/1To3/31",
+   "source_csv": "4749_114Q1_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_031"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下台灣光罩114Q4的營業收入是多少（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "6,038,069",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2338",
+   "company_name": "台灣光罩",
+   "quarter": "114Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "source_csv": "2338_114Q4_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_032"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下旺矽科技113Q1的營業收入是多少（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2024年1月1日至3月31日 2024/1/1To3/31）",
+  "expected_answer": "2,046,692",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "6223",
+   "company_name": "旺矽科技",
+   "quarter": "113Q1",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2024年1月1日至3月31日 2024/1/1To3/31",
+   "source_csv": "6223_113Q1_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_033"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "力晶積成電子製造114Q4營收多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "46,730,113",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "6770",
+   "company_name": "力晶積成電子製造",
+   "quarter": "114Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "source_csv": "6770_114Q4_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_034"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "群聯電子在113Q4的營收大概多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "58,935,513",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "8299",
+   "company_name": "群聯電子",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "8299_113Q4_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_035"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "致茂電子在114Q1的營收大概多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2025年1月1日至3月31日 2025/1/1To3/31）",
+  "expected_answer": "6,865,051",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2360",
+   "company_name": "致茂電子",
+   "quarter": "114Q1",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2025年1月1日至3月31日 2025/1/1To3/31",
+   "source_csv": "2360_114Q1_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_036"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "幫我看一下聯發科技113Q4的營業收入是多少（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "530,585,886",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2454",
+   "company_name": "聯發科技",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "2454_113Q4_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_037"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "台灣積體電路製造113Q1營收多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2024年1月1日至3月31日 2024/1/1To3/31）",
+  "expected_answer": "592,644,201",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2330",
+   "company_name": "台灣積體電路製造",
+   "quarter": "113Q1",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2024年1月1日至3月31日 2024/1/1To3/31",
+   "source_csv": "2330_113Q1_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_038"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "力成科技113Q1營收多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2024年1月1日至3月31日 2024/1/1To3/31）",
+  "expected_answer": "18,328,881",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "6239",
+   "company_name": "力成科技",
+   "quarter": "113Q1",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2024年1月1日至3月31日 2024/1/1To3/31",
+   "source_csv": "6239_113Q1_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_039"
+ },
+ {
+  "question_type": "colloquial_single_metric",
+  "question": "瑞昱半導體在113Q4的營收大概多少？（科目：【營業收入合計 Total operating revenue】）（表：【綜合損益表】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "113,393,698",
+  "metadata": {
+   "target_route": "direct_lookup_or_vector",
+   "company_code": "2379",
+   "company_name": "瑞昱半導體",
+   "quarter": "113Q4",
+   "table_name": "綜合損益表",
+   "item_name": "營業收入合計 Total operating revenue",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "source_csv": "2379_113Q4_綜合損益表.csv",
+   "metric": "revenue",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_040"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "114Q4時，世界先進積體電路和致茂電子誰的透過損益按公允價值衡量之金融資產（負債）利益比較高？（科目：【透過損益按公允價值衡量之金融資產（負債）利益 Gains on financial assets (liabilities) at fair value through profit or loss】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "世界先進積體電路: 208,134 ｜ 致茂電子: 43,106 ｜ 較高: 世界先進積體電路",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q4",
+   "table_name": "綜合損益表",
+   "item_name": "透過損益按公允價值衡量之金融資產（負債）利益 Gains on financial assets (liabilities) at fair value through profit or loss",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "companies": [
+    "5347",
+    "2360"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_041"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "幫我比一下環球晶圓和日月光投資控股，113Q3的其他流動負債各是多少？（科目：【其他流動負債 Other current liabilities】）（2024年9月30日 2024/9/30）",
+  "expected_answer": "環球晶圓: 10,677,629 ｜ 日月光投資控股: 41,007,759 ｜ 較高: 日月光投資控股",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q3",
+   "table_name": "資產負債表",
+   "item_name": "其他流動負債 Other current liabilities",
+   "column_header": "2024年9月30日 2024/9/30",
+   "companies": [
+    "6488",
+    "3711"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_042"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "幫我比一下穩懋半導體和大聯大控股，113Q1的其他投資活動各是多少？（科目：【其他投資活動 Other investing activities】）（2024年1月1日至3月31日 2024/1/1To3/31）",
+  "expected_answer": "穩懋半導體: 8,116 ｜ 大聯大控股: 3,898 ｜ 較高: 穩懋半導體",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "table_name": "現金流量表",
+   "item_name": "其他投資活動 Other investing activities",
+   "column_header": "2024年1月1日至3月31日 2024/1/1To3/31",
+   "companies": [
+    "3105",
+    "3702"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_043"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "台灣積體電路製造跟景碩科技在113Q4的數字差多少？先列出兩家的數字（科目：【強制透過損益按公允價值衡量之金融資產（增加）減少 Decrease (increase) in financial assets at fair value through profit or loss, mandatorily measured at fair value】）（2024年1月1日至12月31日 2024/1/1To12/31）",
+  "expected_answer": "台灣積體電路製造: 842,623 ｜ 景碩科技: 2,110,049 ｜ 較高: 景碩科技",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q4",
+   "table_name": "現金流量表",
+   "item_name": "強制透過損益按公允價值衡量之金融資產（增加）減少 Decrease (increase) in financial assets at fair value through profit or loss, mandatorily measured at fair value",
+   "column_header": "2024年1月1日至12月31日 2024/1/1To12/31",
+   "companies": [
+    "2330",
+    "3189"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_044"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "旺矽科技跟景碩科技在114Q1的數字差多少？先列出兩家的數字（科目：【利息收入 Interest income】）（2025年1月1日至3月31日 2025/1/1To3/31）",
+  "expected_answer": "旺矽科技: ( 18,919 ) ｜ 景碩科技: ( 112,353 ) ｜ 較高: 旺矽科技",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q1",
+   "table_name": "現金流量表",
+   "item_name": "利息收入 Interest income",
+   "column_header": "2025年1月1日至3月31日 2025/1/1To3/31",
+   "companies": [
+    "6223",
+    "3189"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_045"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "113Q1時，京元電子和日月光投資控股誰的其他財務費用比較高？（科目：【其他財務費用】）（2024年1月1日至3月31日）",
+  "expected_answer": "京元電子: 2,172 ｜ 日月光投資控股: 7,890 ｜ 較高: 日月光投資控股",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "table_name": "財務成本",
+   "item_name": "其他財務費用",
+   "column_header": "2024年1月1日至3月31日",
+   "companies": [
+    "2449",
+    "3711"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_046"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "力成科技跟日月光投資控股在113Q3的數字差多少？先列出兩家的數字（科目：【金融資產減損損失 Impairment loss on financial assets】）（2024年1月1日至9月30日 2024/1/1To9/30）",
+  "expected_answer": "力成科技: 0 ｜ 日月光投資控股: 121,811 ｜ 較高: 日月光投資控股",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q3",
+   "table_name": "現金流量表",
+   "item_name": "金融資產減損損失 Impairment loss on financial assets",
+   "column_header": "2024年1月1日至9月30日 2024/1/1To9/30",
+   "companies": [
+    "6239",
+    "3711"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_047"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "幫我比一下世界先進積體電路和瑞昱半導體，114Q2的合約負債增加（減少）各是多少？（科目：【合約負債增加（減少） Increase (decrease) in contract liabilities】）（2025年1月1日至6月30日 2025/1/1To6/30）",
+  "expected_answer": "世界先進積體電路: 913,756 ｜ 瑞昱半導體: ( 156,730 ) ｜ 較高: 世界先進積體電路",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q2",
+   "table_name": "現金流量表",
+   "item_name": "合約負債增加（減少） Increase (decrease) in contract liabilities",
+   "column_header": "2025年1月1日至6月30日 2025/1/1To6/30",
+   "companies": [
+    "5347",
+    "2379"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_048"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "幫我比一下力成科技和世界先進積體電路，114Q3的應付帳款－關係人增加（減少）各是多少？（科目：【應付帳款－關係人增加（減少） Increase (decrease) in accounts payable to related parties】）（2025年1月1日至9月30日 2025/1/1To9/30）",
+  "expected_answer": "力成科技: 2,759 ｜ 世界先進積體電路: ( 119 ) ｜ 較高: 力成科技",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q3",
+   "table_name": "現金流量表",
+   "item_name": "應付帳款－關係人增加（減少） Increase (decrease) in accounts payable to related parties",
+   "column_header": "2025年1月1日至9月30日 2025/1/1To9/30",
+   "companies": [
+    "6239",
+    "5347"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_049"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "聯華電子跟新應材在114Q2的數字差多少？先列出兩家的數字（科目：【處分採用權益法之投資損失（利益） Loss (gain) on disposal of investments accounted for using equity method】）（2025年1月1日至6月30日 2025/1/1To6/30）",
+  "expected_answer": "聯華電子: 1,994 ｜ 新應材: 0 ｜ 較高: 聯華電子",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q2",
+   "table_name": "現金流量表",
+   "item_name": "處分採用權益法之投資損失（利益） Loss (gain) on disposal of investments accounted for using equity method",
+   "column_header": "2025年1月1日至6月30日 2025/1/1To6/30",
+   "companies": [
+    "2303",
+    "4749"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_050"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "聯華電子跟新應材在114Q4的數字差多少？先列出兩家的數字（科目：【償還長期借款 Repayments of long-term debt】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "聯華電子: ( 46,831,206 ) ｜ 新應材: ( 2,076,185 ) ｜ 較高: 新應材",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q4",
+   "table_name": "現金流量表",
+   "item_name": "償還長期借款 Repayments of long-term debt",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "companies": [
+    "2303",
+    "4749"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_051"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "辛耘企業跟群聯電子在113Q1的數字差多少？先列出兩家的數字（科目：【未實現外幣兌換損失（利益） Unrealized foreign exchange loss (gain)】）（2024年1月1日至3月31日 2024/1/1To3/31）",
+  "expected_answer": "辛耘企業: 28,492 ｜ 群聯電子: ( 191,529 ) ｜ 較高: 辛耘企業",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q1",
+   "table_name": "現金流量表",
+   "item_name": "未實現外幣兌換損失（利益） Unrealized foreign exchange loss (gain)",
+   "column_header": "2024年1月1日至3月31日 2024/1/1To3/31",
+   "companies": [
+    "3583",
+    "8299"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_052"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "聯發科技跟致茂電子在113Q2的數字差多少？先列出兩家的數字（科目：【租賃負債－非流動 Non-current lease liabilities】）（2024年6月30日 2024/6/30）",
+  "expected_answer": "聯發科技: 8,495,900 ｜ 致茂電子: 180,837 ｜ 較高: 聯發科技",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "113Q2",
+   "table_name": "資產負債表",
+   "item_name": "租賃負債－非流動 Non-current lease liabilities",
+   "column_header": "2024年6月30日 2024/6/30",
+   "companies": [
+    "2454",
+    "2360"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_053"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "幫我比一下京元電子和台灣光罩，114Q2的負債總計各是多少？（科目：【負債總計 Total liabilities】）（2025年6月30日 2025/6/30）",
+  "expected_answer": "京元電子: 38,906,331 ｜ 台灣光罩: 15,314,283 ｜ 較高: 京元電子",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q2",
+   "table_name": "資產負債表",
+   "item_name": "負債總計 Total liabilities",
+   "column_header": "2025年6月30日 2025/6/30",
+   "companies": [
+    "2449",
+    "2338"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_054"
+ },
+ {
+  "question_type": "colloquial_company_compare",
+  "question": "114Q4時，祥碩科技和京鼎精密科技誰的投資活動之淨現金流入（流出）比較高？（科目：【投資活動之淨現金流入（流出） Net cash flows from (used in) investing activities】）（2025年1月1日至12月31日 2025/1/1To12/31）",
+  "expected_answer": "祥碩科技: ( 11,480,872 ) ｜ 京鼎精密科技: ( 3,589,703 ) ｜ 較高: 京鼎精密科技",
+  "metadata": {
+   "target_route": "direct_lookup_multi_company",
+   "quarter": "114Q4",
+   "table_name": "現金流量表",
+   "item_name": "投資活動之淨現金流入（流出） Net cash flows from (used in) investing activities",
+   "column_header": "2025年1月1日至12月31日 2025/1/1To12/31",
+   "companies": [
+    "5269",
+    "3413"
+   ],
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_055"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "智原科技這兩季(113Q4、114Q2)的其他應付款增加（減少）各是多少？（科目：【其他應付款增加（減少） Increase (decrease) in other payable】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q4: ( 7,836 ) ｜ 114Q2: ( 111,982 ) ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3035",
+   "company_name": "智原科技",
+   "periods": [
+    "113Q4",
+    "114Q2"
+   ],
+   "table_name": "現金流量表",
+   "item_name": "其他應付款增加（減少） Increase (decrease) in other payable",
+   "column_header": {
+    "113Q4": "2024年1月1日至12月31日 2024/1/1To12/31",
+    "114Q2": "2025年1月1日至6月30日 2025/1/1To6/30"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_056"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "辛耘企業從113Q4到114Q4，與不重分類之項目相關之所得稅有變多嗎？（科目：【與不重分類之項目相關之所得稅 Income tax related to components of other comprehensive income that will not be reclassified to profit or loss】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q4: 86 ｜ 114Q4: 190 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3583",
+   "company_name": "辛耘企業",
+   "periods": [
+    "113Q4",
+    "114Q4"
+   ],
+   "table_name": "綜合損益表",
+   "item_name": "與不重分類之項目相關之所得稅 Income tax related to components of other comprehensive income that will not be reclassified to profit or loss",
+   "column_header": {
+    "113Q4": "2024年1月1日至12月31日 2024/1/1To12/31",
+    "114Q4": "2025年1月1日至12月31日 2025/1/1To12/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_057"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "台灣積體電路製造從113Q4到114Q1，透過其他綜合損益按公允價值衡量之金融資產利息收入有變多嗎？（科目：【透過其他綜合損益按公允價值衡量之金融資產利息收入 Interest income from financial assets measured at fair value through other comprehensive income】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q4: 6,628,996 ｜ 114Q1: 1,952,663 ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "2330",
+   "company_name": "台灣積體電路製造",
+   "periods": [
+    "113Q4",
+    "114Q1"
+   ],
+   "table_name": "綜合損益表",
+   "item_name": "透過其他綜合損益按公允價值衡量之金融資產利息收入 Interest income from financial assets measured at fair value through other comprehensive income",
+   "column_header": {
+    "113Q4": "2024年1月1日至12月31日 2024/1/1To12/31",
+    "114Q1": "2025年1月1日至3月31日 2025/1/1To3/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_058"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "南亞科技從113Q4到114Q1，本期現金及約當現金增加（減少）數有變多嗎？（科目：【本期現金及約當現金增加（減少）數 Net increase (decrease) in cash and cash equivalents】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q4: 3,090,736 ｜ 114Q1: 699,841 ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "2408",
+   "company_name": "南亞科技",
+   "periods": [
+    "113Q4",
+    "114Q1"
+   ],
+   "table_name": "現金流量表",
+   "item_name": "本期現金及約當現金增加（減少）數 Net increase (decrease) in cash and cash equivalents",
+   "column_header": {
+    "113Q4": "2024年1月1日至12月31日 2024/1/1To12/31",
+    "114Q1": "2025年1月1日至3月31日 2025/1/1To3/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_059"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "幫我看力成科技113Q4跟114Q4的透過損益按公允價值衡量金融資產及負債之淨損失（利益）差異（科目：【透過損益按公允價值衡量金融資產及負債之淨損失（利益） Net loss (gain) on financial assets or liabilities at fair value through profit or loss】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q4: 192,578 ｜ 114Q4: ( 39,169 ) ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "6239",
+   "company_name": "力成科技",
+   "periods": [
+    "113Q4",
+    "114Q4"
+   ],
+   "table_name": "現金流量表",
+   "item_name": "透過損益按公允價值衡量金融資產及負債之淨損失（利益） Net loss (gain) on financial assets or liabilities at fair value through profit or loss",
+   "column_header": {
+    "113Q4": "2024年1月1日至12月31日 2024/1/1To12/31",
+    "114Q4": "2025年1月1日至12月31日 2025/1/1To12/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_060"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "幫我看日月光投資控股113Q1跟114Q2的透過其他綜合損益按公允價值衡量之金融資產減資退回股款差異（科目：【透過其他綜合損益按公允價值衡量之金融資產減資退回股款 Proceeds from capital reduction of financial assets at fair value through other comprehensive income】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q1: 0 ｜ 114Q2: 29,000 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3711",
+   "company_name": "日月光投資控股",
+   "periods": [
+    "113Q1",
+    "114Q2"
+   ],
+   "table_name": "現金流量表",
+   "item_name": "透過其他綜合損益按公允價值衡量之金融資產減資退回股款 Proceeds from capital reduction of financial assets at fair value through other comprehensive income",
+   "column_header": {
+    "113Q1": "2024年1月1日至3月31日 2024/1/1To3/31",
+    "114Q2": "2025年1月1日至6月30日 2025/1/1To6/30"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_061"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "聯詠科技這兩季(113Q3、114Q4)的預付款項各是多少？（科目：【預付款項 Prepayments】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q3: 635,393 ｜ 114Q4: 670,031 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3034",
+   "company_name": "聯詠科技",
+   "periods": [
+    "113Q3",
+    "114Q4"
+   ],
+   "table_name": "資產負債表",
+   "item_name": "預付款項 Prepayments",
+   "column_header": {
+    "113Q3": "2024年9月30日 2024/9/30",
+    "114Q4": "2025年12月31日 2025/12/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_062"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "台灣積體電路製造從113Q4到114Q4，發放現金股利有變多嗎？（科目：【發放現金股利 Cash dividends paid】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q4: ( 363,055,226 ) ｜ 114Q4: ( 466,779,199 ) ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "2330",
+   "company_name": "台灣積體電路製造",
+   "periods": [
+    "113Q4",
+    "114Q4"
+   ],
+   "table_name": "現金流量表",
+   "item_name": "發放現金股利 Cash dividends paid",
+   "column_header": {
+    "113Q4": "2024年1月1日至12月31日 2024/1/1To12/31",
+    "114Q4": "2025年1月1日至12月31日 2025/1/1To12/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_063"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "世界先進積體電路這兩季(113Q3、114Q1)的本期稅前淨利（淨損）各是多少？（科目：【本期稅前淨利（淨損） Profit (loss) before tax】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q3: 6,419,314 ｜ 114Q1: 2,674,773 ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "5347",
+   "company_name": "世界先進積體電路",
+   "periods": [
+    "113Q3",
+    "114Q1"
+   ],
+   "table_name": "現金流量表",
+   "item_name": "本期稅前淨利（淨損） Profit (loss) before tax",
+   "column_header": {
+    "113Q3": "2024年1月1日至9月30日 2024/1/1To9/30",
+    "114Q1": "2025年1月1日至3月31日 2025/1/1To3/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_064"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "幫我看聯華電子113Q1跟113Q4的透過損益按公允價值衡量之金融負債－流動差異（科目：【透過損益按公允價值衡量之金融負債－流動 Current financial liabilities at fair value through profit or loss】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q1: 1,561,120 ｜ 113Q4: 901,000 ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "2303",
+   "company_name": "聯華電子",
+   "periods": [
+    "113Q1",
+    "113Q4"
+   ],
+   "table_name": "資產負債表",
+   "item_name": "透過損益按公允價值衡量之金融負債－流動 Current financial liabilities at fair value through profit or loss",
+   "column_header": {
+    "113Q1": "2024年3月31日 2024/3/31",
+    "113Q4": "2024年12月31日 2024/12/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_065"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "幫我看大聯大控股113Q1跟114Q3的流動負債合計差異（科目：【流動負債合計 Total current liabilities】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q1: 228,381,324 ｜ 114Q3: 259,310,917 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3702",
+   "company_name": "大聯大控股",
+   "periods": [
+    "113Q1",
+    "114Q3"
+   ],
+   "table_name": "資產負債表",
+   "item_name": "流動負債合計 Total current liabilities",
+   "column_header": {
+    "113Q1": "2024年3月31日 2024/3/31",
+    "114Q3": "2025年9月30日 2025/9/30"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_066"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "幫我看祥碩科技114Q2跟114Q3的流動資產合計差異（科目：【流動資產合計 Total current assets】）（各期均取該期當期欄）？",
+  "expected_answer": "114Q2: 9,675,651 ｜ 114Q3: 8,653,759 ｜ 趨勢: 下降",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "5269",
+   "company_name": "祥碩科技",
+   "periods": [
+    "114Q2",
+    "114Q3"
+   ],
+   "table_name": "資產負債表",
+   "item_name": "流動資產合計 Total current assets",
+   "column_header": {
+    "114Q2": "2025年6月30日 2025/6/30",
+    "114Q3": "2025年9月30日 2025/9/30"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_067"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "幫我看辛耘企業114Q1跟114Q4的與營業活動相關之資產及負債之淨變動合計差異（科目：【與營業活動相關之資產及負債之淨變動合計 Total changes in operating assets and liabilities】）（各期均取該期當期欄）？",
+  "expected_answer": "114Q1: ( 416,177 ) ｜ 114Q4: ( 367,394 ) ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "3583",
+   "company_name": "辛耘企業",
+   "periods": [
+    "114Q1",
+    "114Q4"
+   ],
+   "table_name": "現金流量表",
+   "item_name": "與營業活動相關之資產及負債之淨變動合計 Total changes in operating assets and liabilities",
+   "column_header": {
+    "114Q1": "2025年1月1日至3月31日 2025/1/1To3/31",
+    "114Q4": "2025年1月1日至12月31日 2025/1/1To12/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_068"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "中華精測科技從113Q1到113Q4，其他收入合計有變多嗎？（科目：【其他收入合計 Total other income】）（各期均取該期當期欄）？",
+  "expected_answer": "113Q1: 1,078 ｜ 113Q4: 4,764 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "6510",
+   "company_name": "中華精測科技",
+   "periods": [
+    "113Q1",
+    "113Q4"
+   ],
+   "table_name": "綜合損益表",
+   "item_name": "其他收入合計 Total other income",
+   "column_header": {
+    "113Q1": "2024年1月1日至3月31日 2024/1/1To3/31",
+    "113Q4": "2024年1月1日至12月31日 2024/1/1To12/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_069"
+ },
+ {
+  "question_type": "colloquial_period_compare",
+  "question": "京元電子這兩季(114Q2、114Q4)的收益費損項目合計各是多少？（科目：【收益費損項目合計 Total adjustments to reconcile profit (loss)】）（各期均取該期當期欄）？",
+  "expected_answer": "114Q2: ( 2,334,084 ) ｜ 114Q4: 2,052,276 ｜ 趨勢: 上升",
+  "metadata": {
+   "target_route": "direct_lookup_multi_period",
+   "company_code": "2449",
+   "company_name": "京元電子",
+   "periods": [
+    "114Q2",
+    "114Q4"
+   ],
+   "table_name": "現金流量表",
+   "item_name": "收益費損項目合計 Total adjustments to reconcile profit (loss)",
+   "column_header": {
+    "114Q2": "2025年1月1日至6月30日 2025/1/1To6/30",
+    "114Q4": "2025年1月1日至12月31日 2025/1/1To12/31"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_070"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "瑞昱半導體在113Q2揭露的被投資公司裡，Bluocean Inc.投到誰？（我指的是所在地為【馬來西亞】的那一家）",
+  "expected_answer": "Realtek Semiconductor (Malaysia) Sdn.Bhd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "瑞昱半導體",
+   "quarter": "113Q2",
+   "investor_name": "Bluocean Inc.",
+   "investee_name": "Realtek Semiconductor (Malaysia) Sdn.Bhd.",
+   "discriminator": {
+    "column": "location",
+    "value": "馬來西亞"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_071"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "大聯大控股在113Q3揭露的被投資公司裡，WPI Technology Pte. Ltd.投到誰？（我指的是主要業務為【電子零件代理經銷】的那一家）",
+  "expected_answer": "世平國際(香港)有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "大聯大控股",
+   "quarter": "113Q3",
+   "investor_name": "WPI Technology Pte. Ltd.",
+   "investee_name": "世平國際(香港)有限公司",
+   "discriminator": {
+    "column": "main_business",
+    "value": "電子零件代理經銷"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_072"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "穩懋半導體在114Q3揭露的被投資公司裡，Chainwin Biotech and Agrotech (Cayman Islands) Co., Ltd.投到誰？（我指的是所在地為【開曼群島】的那一家）",
+  "expected_answer": "Win Lux Biotech (Cayman Islands) Co., Ltd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "穩懋半導體",
+   "quarter": "114Q3",
+   "investor_name": "Chainwin Biotech and Agrotech (Cayman Islands) Co., Ltd.",
+   "investee_name": "Win Lux Biotech (Cayman Islands) Co., Ltd.",
+   "discriminator": {
+    "column": "location",
+    "value": "開曼群島"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_073"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "瑞昱半導體在113Q2揭露的被投資公司裡，鴻威創業投資股份有限公司投到誰？（我指的是主要業務為【電子零組件、電子材料、資訊軟體之研究、開發、設計、製造、銷售及服務】的那一家）",
+  "expected_answer": "星瑞半導體股份有限公司",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "瑞昱半導體",
+   "quarter": "113Q2",
+   "investor_name": "鴻威創業投資股份有限公司",
+   "investee_name": "星瑞半導體股份有限公司",
+   "discriminator": {
+    "column": "main_business",
+    "value": "電子零組件、電子材料、資訊軟體之研究、開發、設計、製造、銷售及服務"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_074"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "穩懋半導體在113Q2揭露的被投資公司裡，Chainwin Biotech and Agrotech (Cayman Islands) Co., Ltd.投到誰？（我指的是所在地為【開曼群島】的那一家）",
+  "expected_answer": "Win Lux Biotech (Cayman Islands) Co., Ltd.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "穩懋半導體",
+   "quarter": "113Q2",
+   "investor_name": "Chainwin Biotech and Agrotech (Cayman Islands) Co., Ltd.",
+   "investee_name": "Win Lux Biotech (Cayman Islands) Co., Ltd.",
+   "discriminator": {
+    "column": "location",
+    "value": "開曼群島"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_075"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "力晶積成電子製造在113Q2揭露的被投資公司裡，record_type投到誰？（我指的是所在地為【row_text】的那一家）",
+  "expected_answer": "source_kind",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "力晶積成電子製造",
+   "quarter": "113Q2",
+   "investor_name": "record_type",
+   "investee_name": "source_kind",
+   "discriminator": {
+    "column": "location",
+    "value": "row_text"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_076"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "聯發科技在113Q3揭露的被投資公司裡，聯發科技投到誰？（我指的是主要業務為【技術服務】的那一家）",
+  "expected_answer": "MediaTek Japan Inc.",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "聯發科技",
+   "quarter": "113Q3",
+   "investor_name": "聯發科技",
+   "investee_name": "MediaTek Japan Inc.",
+   "discriminator": {
+    "column": "main_business",
+    "value": "技術服務"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_077"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "智原科技在114Q2揭露的被投資公司裡，智宏投資股份有限公司投到誰？（我指的是主要業務為【IC設計服務】的那一家）",
+  "expected_answer": "FaradayTek Solutions India Private Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "智原科技",
+   "quarter": "114Q2",
+   "investor_name": "智宏投資股份有限公司",
+   "investee_name": "FaradayTek Solutions India Private Limited",
+   "discriminator": {
+    "column": "main_business",
+    "value": "IC設計服務"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_078"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "大聯大控股在113Q3揭露的被投資公司裡，WPG EMEA B.V.投到誰？（我指的是主要業務為【電子零組件銷售】的那一家）",
+  "expected_answer": "WPG EMEA UK LIMITED",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "大聯大控股",
+   "quarter": "113Q3",
+   "investor_name": "WPG EMEA B.V.",
+   "investee_name": "WPG EMEA UK LIMITED",
+   "discriminator": {
+    "column": "main_business",
+    "value": "電子零組件銷售"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_079"
+ },
+ {
+  "question_type": "colloquial_investment_question",
+  "question": "智原科技在114Q1揭露的被投資公司裡，Sinble Technology Pte. Ltd.投到誰？（我指的是主要業務為【IC設計服務】的那一家）",
+  "expected_answer": "Sinble Technology Vietnam Company Limited",
+  "metadata": {
+   "target_route": "graph_rag_investment",
+   "company_name": "智原科技",
+   "quarter": "114Q1",
+   "investor_name": "Sinble Technology Pte. Ltd.",
+   "investee_name": "Sinble Technology Vietnam Company Limited",
+   "discriminator": {
+    "column": "main_business",
+    "value": "IC設計服務"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_080"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看日月光投資控股114Q3關係人交易裡，環鴻電子（昆山）有限公司跟環鴻科技公司之間的營業收入交易金額是多少？",
+  "expected_answer": "9,770,648",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q3",
+   "party_or_category": "環鴻電子（昆山）有限公司",
+   "transacting_party": "環鴻電子（昆山）有限公司",
+   "counterparty": "環鴻科技公司",
+   "account_item": "營業收入",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/114Q3/3711_114Q3_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "環鴻科技公司",
+    "value_4": "營業收入"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_081"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看華邦電子113Q3關係人交易裡，華邦公司跟WECJ公司之間的應收帳款－關係人交易金額是多少？",
+  "expected_answer": "275,617",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "華邦電子",
+   "quarter": "113Q3",
+   "party_or_category": "華邦公司",
+   "transacting_party": "華邦公司",
+   "counterparty": "WECJ公司",
+   "account_item": "應收帳款－關係人",
+   "source_csv": "reports_csv_output/2344_華邦電子/113Q3/2344_113Q3_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "WECJ公司",
+    "value_4": "應收帳款－關係人"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_082"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看日月光投資控股114Q4關係人交易裡，J＆R Holding Limited跟ASE (Korea) Inc.之間的其他負債交易金額是多少？",
+  "expected_answer": "4,085,900",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "114Q4",
+   "party_or_category": "J＆R Holding Limited",
+   "transacting_party": "J＆R Holding Limited",
+   "counterparty": "ASE (Korea) Inc.",
+   "account_item": "其他負債",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/114Q4/3711_114Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "ASE (Korea) Inc.",
+    "value_4": "其他負債"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_083"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看聯發科技114Q3關係人交易裡，Gaintech Co. Limited跟旭展(香港)投資有限公司之間的其他應付款項-關係人交易金額是多少？",
+  "expected_answer": "18,418,580",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯發科技",
+   "quarter": "114Q3",
+   "party_or_category": "Gaintech Co. Limited",
+   "transacting_party": "Gaintech Co. Limited",
+   "counterparty": "旭展(香港)投資有限公司",
+   "account_item": "其他應付款項-關係人",
+   "source_csv": "reports_csv_output/2454_聯發科技/114Q3/2454_114Q3_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "旭展(香港)投資有限公司",
+    "value_4": "其他應付款項-關係人"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_084"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看日月光投資控股113Q1關係人交易裡，Universal Global Technology Co., Limited跟ASTEELFLASH FRANCE之間的其他應收款交易金額是多少？",
+  "expected_answer": "816,250",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q1",
+   "party_or_category": "Universal Global Technology Co., Limited",
+   "transacting_party": "Universal Global Technology Co., Limited",
+   "counterparty": "ASTEELFLASH FRANCE",
+   "account_item": "其他應收款",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/113Q1/3711_113Q1_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "ASTEELFLASH FRANCE",
+    "value_4": "其他應收款"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_085"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看聯發科技113Q3關係人交易裡，Gaintech Co. Limited跟MTKC Global Holdings Co. Limited之間的長期應付款-關係人交易金額是多少？",
+  "expected_answer": "3,429,559",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "聯發科技",
+   "quarter": "113Q3",
+   "party_or_category": "Gaintech Co. Limited",
+   "transacting_party": "Gaintech Co. Limited",
+   "counterparty": "MTKC Global Holdings Co. Limited",
+   "account_item": "長期應付款-關係人",
+   "source_csv": "reports_csv_output/2454_聯發科技/113Q3/2454_113Q3_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "MTKC Global Holdings Co. Limited",
+    "value_4": "長期應付款-關係人"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_086"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看群聯電子113Q2關係人交易裡，群聯電子跟Phison Technology Inc.之間的其他應付款交易金額是多少？",
+  "expected_answer": "51,917",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "群聯電子",
+   "quarter": "113Q2",
+   "party_or_category": "群聯電子",
+   "transacting_party": "群聯電子",
+   "counterparty": "Phison Technology Inc.",
+   "account_item": "其他應付款",
+   "source_csv": "reports_csv_output/8299_群聯電子/113Q2/8299_113Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "Phison Technology Inc.",
+    "value_4": "其他應付款"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_087"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看大聯大控股114Q2關係人交易裡，光勤股份有限公司跟大聯大電子(香港)有限公司之間的銷貨交易金額是多少？",
+  "expected_answer": "137,850",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "大聯大控股",
+   "quarter": "114Q2",
+   "party_or_category": "光勤股份有限公司",
+   "transacting_party": "光勤股份有限公司",
+   "counterparty": "大聯大電子(香港)有限公司",
+   "account_item": "銷貨",
+   "source_csv": "reports_csv_output/3702_大聯大控股/114Q2/3702_114Q2_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "大聯大電子(香港)有限公司",
+    "value_4": "銷貨"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_088"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看日月光投資控股113Q4關係人交易裡，Universal Global Technology Co., Limited跟FINANCIERE AFG之間的其他資產交易金額是多少？",
+  "expected_answer": "1,362,413",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "日月光投資控股",
+   "quarter": "113Q4",
+   "party_or_category": "Universal Global Technology Co., Limited",
+   "transacting_party": "Universal Global Technology Co., Limited",
+   "counterparty": "FINANCIERE AFG",
+   "account_item": "其他資產",
+   "source_csv": "reports_csv_output/3711_日月光投資控股/113Q4/3711_113Q4_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "FINANCIERE AFG",
+    "value_4": "其他資產"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_089"
+ },
+ {
+  "question_type": "colloquial_related_party_question",
+  "question": "幫我看力成科技113Q3關係人交易裡，超豐電子股份有限公司跟得群科技股份有限公司之間的銷貨成本交易金額是多少？",
+  "expected_answer": "107,356",
+  "metadata": {
+   "target_route": "graph_rag_related_party",
+   "company_name": "力成科技",
+   "quarter": "113Q3",
+   "party_or_category": "超豐電子股份有限公司",
+   "transacting_party": "超豐電子股份有限公司",
+   "counterparty": "得群科技股份有限公司",
+   "account_item": "銷貨成本",
+   "source_csv": "reports_csv_output/6239_力成科技/113Q3/6239_113Q3_母子公司間業務關係及重要交易往來情形.csv",
+   "discriminator": {
+    "value_2": "得群科技股份有限公司",
+    "value_4": "銷貨成本"
+   },
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_090"
+ },
+ {
+  "question_type": "colloquial_supply_chain_question",
+  "question": "宏觀在產業鏈圖譜裡被分到哪個類別？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "宏觀",
+   "stage": "上游",
+   "segment": "IC設計",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_091"
+ },
+ {
+  "question_type": "colloquial_supply_chain_question",
+  "question": "新特在半導體產業鏈算哪一段？",
+  "expected_answer": "下游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "新特",
+   "stage": "下游",
+   "segment": "生產製程及檢測設備",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_092"
+ },
+ {
+  "question_type": "colloquial_supply_chain_question",
+  "question": "耀穎在產業鏈圖譜裡被分到哪個類別？",
+  "expected_answer": "中游；生產製程及檢測設備",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "耀穎",
+   "stage": "中游",
+   "segment": "生產製程及檢測設備",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_093"
+ },
+ {
+  "question_type": "colloquial_supply_chain_question",
+  "question": "全宇昕在產業鏈圖譜裡被分到哪個類別？",
+  "expected_answer": "上游；IC設計",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "全宇昕",
+   "stage": "上游",
+   "segment": "IC設計",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_094"
+ },
+ {
+  "question_type": "colloquial_supply_chain_question",
+  "question": "力旺在產業鏈圖譜裡被分到哪個類別？",
+  "expected_answer": "上游；IP設計/IC設計代工服務",
+  "metadata": {
+   "target_route": "graph_rag_supply_chain",
+   "company_name": "力旺",
+   "stage": "上游",
+   "segment": "IP設計/IC設計代工服務",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_095"
+ },
+ {
+  "question_type": "colloquial_risk_question",
+  "question": "台灣光罩在113Q3的應收帳款－關係人淨額 Accounts receivable due from related parties, net，系統會標成什麼風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "台灣光罩",
+   "quarter": "113Q3",
+   "item_name": "應收帳款－關係人淨額 Accounts receivable due from related parties, net",
+   "matched_risks": "營運資金壓力",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_096"
+ },
+ {
+  "question_type": "colloquial_risk_question",
+  "question": "幫我判斷智原科技113Q4的營業收入合計 Total operating revenue會被歸到哪種財報風險？",
+  "expected_answer": "營收波動候選",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "智原科技",
+   "quarter": "113Q4",
+   "item_name": "營業收入合計 Total operating revenue",
+   "matched_risks": "營收波動候選",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_097"
+ },
+ {
+  "question_type": "colloquial_risk_question",
+  "question": "幫我判斷新應材113Q2的應付帳款－關係人增加（減少） Increase (decrease) in accounts payable to related parties會被歸到哪種財報風險？",
+  "expected_answer": "供應鏈壓力;營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "新應材",
+   "quarter": "113Q2",
+   "item_name": "應付帳款－關係人增加（減少） Increase (decrease) in accounts payable to related parties",
+   "matched_risks": "供應鏈壓力;營運資金壓力",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_098"
+ },
+ {
+  "question_type": "colloquial_risk_question",
+  "question": "聯發科技在114Q3的其他應收款（增加）減少 Decrease (increase) in other receivable，系統會標成什麼風險候選？",
+  "expected_answer": "營運資金壓力",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "聯發科技",
+   "quarter": "114Q3",
+   "item_name": "其他應收款（增加）減少 Decrease (increase) in other receivable",
+   "matched_risks": "營運資金壓力",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_099"
+ },
+ {
+  "question_type": "colloquial_risk_question",
+  "question": "幫我判斷世界先進積體電路114Q1的外幣兌換利益(損失)會被歸到哪種財報風險？",
+  "expected_answer": "匯率風險",
+  "metadata": {
+   "target_route": "graph_rag_risk_event",
+   "company_name": "世界先進積體電路",
+   "quarter": "114Q1",
+   "item_name": "外幣兌換利益(損失)",
+   "matched_risks": "匯率風險",
+   "heldout_twin_of": "customer_colloquial_test_questions_100_v2_v3.json"
+  },
+  "id": "ho_colloq_100"
+ }
+]
